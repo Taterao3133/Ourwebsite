@@ -350,8 +350,8 @@ function Home () {
                <h3 className="text-[#FD4755] max-sm:text-center max-sm:text-base text-xl max-sm:mx-4 ml-20 font-roboto-serif font-medium pt-10">Why Choose Us</h3>
                <div className="grid lg:grid-cols-2 max-sm:mx-4 mx-20">
                  <div className="l-c">
-                    <h2 className="text-[40px] max-sm:text-2xl font-medium text-[#000000] leading-tight mt-6">Why The  XXXXX Ranked Top Among The Leading Web & App Development Companies</h2>
-                    <p className="text-xl max-sm:text-[17px] text-[#302F68] font-roboto-serif mt-7">Celebrated for our innovative solutions and unwavering commitment to client success, XXXXX is 
+                    <h2 className="text-[40px] max-sm:text-2xl max-sm:text-center font-medium text-[#000000] leading-tight mt-6">Why The  XXXXX Ranked Top Among The Leading Web & App Development Companies</h2>
+                    <p className="text-xl max-sm:text-[17px] max-sm:text-center text-[#302F68] font-roboto-serif mt-7">Celebrated for our innovative solutions and unwavering commitment to client success, XXXXX is 
                         recognized as a premier choice among web and app development companies. Explore what sets us apart</p>
 
                     <div className="c-in flex max-sm:mt-10 mt-8">
