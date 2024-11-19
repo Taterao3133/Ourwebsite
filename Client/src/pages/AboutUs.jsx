@@ -80,79 +80,79 @@ function AboutUs() {
         </div>
       </div>
       {/*  */}
-      <div className="cmp-details pb-10 w-full h-auto grid grid-cols-2 bg-[#E0CDE7]">
-            <div className="l-cmp-details xl:ml-20 mt-9 h-auto  ">
-                <h3 className="font-roboto-serif text-[#000000] font-medium text-4xl"> <span>XXXXX </span> Websites and App Development Company</h3>
-                <p className="text-lg font-roboto-serif text-[#302F68] mt-7">At XXXXX, we take pride in being a top-rated Websites and mobile app development company. Our team brings together creativity 
+      <div className="cmp-details pb-10 w-full h-auto grid lg:grid-cols-2 max-sm:text-center  bg-[#E0CDE7]">
+            <div className="l-cmp-details max-sm:mx-4 xl:ml-20 mt-9 h-auto  ">
+                <h3 className="font-roboto-serif text-[#000000] font-medium max-sm:text-2xl lg:text-4xl"> <span>XXXXX </span> Websites and App Development Company</h3>
+                <p className="lg:text-lg max-sm:text-base font-roboto-serif text-[#302F68] mt-7">At XXXXX, we take pride in being a top-rated Websites and mobile app development company. Our team brings together creativity 
                     and extensive experience to deliver cutting-edge Websites and mobile app solutions. Located in India, we have established 
                     ourselves as a leading force in the industry.</p>
-                <p className="text-lg font-roboto-serif text-[#302F68] mt-6">XXXXX is your go-to destination for cutting-edge websites and mobile app development solutions in Hyderabad, India. 
+                <p className="text-lg max-sm:text-base font-roboto-serif text-[#302F68] mt-6">XXXXX is your go-to destination for cutting-edge websites and mobile app development solutions in Hyderabad, India. 
                     Renowned as a top-rated company, we pride ourselves on being the creative powerhouse behind numerous successful 
                     Websites and mobile applications</p>
 
-                <p className="font-roboto-serif mt-5 text-[#302F68] font-medium text-lg">At XXXXX, we don't just create Websites, we craft exceptional user experiences that drive success.
+                <p className="font-roboto-serif mt-5 text-[#302F68] font-medium max-sm:text-base text-lg">At XXXXX, we don't just create Websites, we craft exceptional user experiences that drive success.
                      Join us on your journey to Website And Mobile App excellence</p>
 
-                <div className="bt flex  mt-7  w-64  h-16 border-2 border-white bg-[#3F36CD]  rounded-[40px]">
-                    <button className='text-xl text-white font-medium font-roboto my-auto mx-auto  flex'>REQUEST A QUOTE <FaGreaterThan className=" mt-[4px] ml-2 text-white"/>  </button>
+                <div className="bt flex  max-sm:mx-auto mt-7 max-sm:w-[65%] max-sm:h-12  w-64  h-16 border-2 border-white bg-[#3F36CD]  rounded-[40px]">
+                    <button className='text-xl max-sm:text-base text-white font-medium font-roboto my-auto mx-auto  flex'>REQUEST A QUOTE <FaGreaterThan className=" mt-[4px] ml-2 text-white"/>  </button>
                     
                 </div>
             </div>
-            <div className="r-cmp-details xl:mx-20 mt-11  gap-x-2 h-auto  grid grid-cols-2">
-                <div className="bx w-[80%] pb-3 h-[87%] text-center shadow-xl border-b-4 border-[#6DDDD6] rounded-bl-[80px] rounded-tl-2xl rounded-tr-2xl rounded-br-md bg-[#B3EFEB]">
+            <div className="r-cmp-details xl:mx-20 mt-11 max-md:gap-y-5 w-full  lg:gap-x-2 h-auto max-sm:justify-center max-sm:items-center max-sm:text-center grid lg:grid-cols-2">
+                <div className="bx w-[80%] max-sm:w-[100%] max-sm:h-full pb-3 h-[87%] text-center shadow-xl border-b-4 border-[#6DDDD6] rounded-bl-[80px] rounded-tl-2xl rounded-tr-2xl rounded-br-md bg-[#B3EFEB]">
                     <img src={aboutexpicon} alt="" className="mx-auto p-3 " />
-                    <p className="text-[#0D4E57] text-3xl font-bold ">2+</p>
-                    <h4 className="font-roboto-serif text-[#0D4E57] mt-1 font-semibold text-xl">Years <br /> Experience</h4>
+                    <p className="text-[#0D4E57] text-3xl max-sm:text-lg font-bold ">2+</p>
+                    <h4 className="font-roboto-serif text-[#0D4E57] mt-1 font-semibold max-sm:text-base text-xl">Years <br /> Experience</h4>
                 </div>
-                <div className="bx bx w-[80%] pb-3 h-[87%]  text-center shadow-xl border-b-4 border-[#EAA2A2] rounded-bl-[80px] rounded-tl-2xl rounded-tr-2xl rounded-br-md bg-[#EAA2A2]">
+                <div className="bx bx max-sm:w-[100%] max-sm:h-full w-[80%] pb-3 h-[87%]  text-center shadow-xl border-b-4 border-[#EAA2A2] rounded-bl-[80px] rounded-tl-2xl rounded-tr-2xl rounded-br-md bg-[#EAA2A2]">
                     <img src={aboutwebicon} alt="" className="mx-auto p-3 " />
-                    <p className="text-[#0D4E57] text-3xl font-bold ">2+</p>
-                    <h4 className="font-roboto-serif text-[#0D4E57] mt-1 font-semibold text-xl">Web & Apps <br /> Developed</h4>
+                    <p className="text-[#0D4E57] text-3xl font-bold max-sm:text-lg ">2+</p>
+                    <h4 className="font-roboto-serif text-[#0D4E57] mt-1 max-sm:text-base font-semibold text-xl">Web & Apps <br /> Developed</h4>
                 </div>
-                <div className="bx bx w-[80%] pb-3 h-[87%] text-center shadow-xl border-b-4 border-[#EC91E3] rounded-bl-[80px] rounded-tl-2xl rounded-tr-2xl rounded-br-md bg-[#E9A4E2]">
+                <div className="bx bx max-sm:w-[100%] max-sm:h-full w-[80%] pb-3 h-[87%] text-center shadow-xl border-b-4 border-[#EC91E3] rounded-bl-[80px] rounded-tl-2xl rounded-tr-2xl rounded-br-md bg-[#E9A4E2]">
                     <img src={aboutproicon} alt="" className="mx-auto p-3 " />
-                    <p className="text-[#0D4E57] text-3xl font-bold ">100%</p>
-                    <h4 className="font-roboto-serif text-[#0D4E57] mt-1 font-semibold text-xl">Projects <br /> Delivered</h4>
+                    <p className="text-[#0D4E57] text-3xl font-bold  max-sm:text-lg ">100%</p>
+                    <h4 className="font-roboto-serif text-[#0D4E57] mt-1 max-sm:text-base font-semibold text-xl">Projects <br /> Delivered</h4>
                 </div>
-                <div className="bx bx w-[80%] pb-3 h-[87%] text-center shadow-xl border-b-4 border-[#93B2E0] rounded-bl-[80px] rounded-tl-2xl rounded-tr-2xl rounded-br-md bg-[#9BB4D9]">
+                <div className="bx bx max-sm:w-[100%] max-sm:h-full w-[80%] pb-3 h-[87%] text-center shadow-xl border-b-4 border-[#93B2E0] rounded-bl-[80px] rounded-tl-2xl rounded-tr-2xl rounded-br-md bg-[#9BB4D9]">
                     <img src={aboutclieicon} alt="" className="mx-auto p-3  " />
-                    <p className="text-[#0D4E57] text-3xl font-bold ">100%</p>
-                    <h4 className="font-roboto-serif text-[#0D4E57] mt-1 font-semibold text-xl">Clients <br /> Satisfaction</h4>
+                    <p className="text-[#0D4E57] text-3xl font-bold max-sm:text-lg">100%</p>
+                    <h4 className="font-roboto-serif text-[#0D4E57] mt-1 font-semibold max-sm:text-base text-xl">Clients <br /> Satisfaction</h4>
                 </div>
                 
                 
             </div>
         </div> 
         {/* choose section */}
-        <div className="choose-sec pb-14 px-20">
+        <div className="choose-sec pb-14 lg:px-20">
           <div className="txt text-center ">
-            <h3 className="text-[#365E7D] font-medium text-xl mt-7 font-roboto-serif">We Are Awesome</h3>
-            <h2 className="text-[#0D4E57] font-roboto-serif mt-6 text-[40px]">Why Choose XXXXX</h2>
+            <h3 className="text-[#365E7D] font-medium max-sm:text-lg text-xl mt-7 font-roboto-serif">We Are Awesome</h3>
+            <h2 className="text-[#0D4E57] font-roboto-serif mt-6 max-sm:text-2xl text-[40px]">Why Choose XXXXX</h2>
 
           </div>
-          <div className="grid grid-cols-4 gap-3 mt-6z">
-            <div className="bx1 border-2 w-full h-auto rounded-lg border-b-4 border-r-4   text-center p-6  ">
+          <div className="grid lg:grid-cols-4 gap-3 mt-6">
+            <div className="bx1 border-2 w-full  max-sm:w-[80%] max-sm:mx-auto h-auto rounded-lg border-b-4 border-r-4   text-center p-6  ">
               <img src={aboutInn} alt="" className="mx-auto mt-5" />
-              <h2 className="text-2xl text-[#0D4E57] font-roboto-serif font-medium mt-3">Expertise and 
+              <h2 className="text-2xl max-sm:text-lg text-[#0D4E57] font-roboto-serif font-medium mt-3">Expertise and 
               Innovation</h2>
-              <p className="text-[] font-roboto-serif text-lg mt-5">We pride ourselves staying at the front of innovation, constantly pushing boundaries a redefining what is possible.</p>
+              <p className="m max-sm:text-base font-roboto-serif text-lg mt-5">We pride ourselves staying at the front of innovation, constantly pushing boundaries a redefining what is possible.</p>
             </div>
-            <div className="bx1 border-2 w-full h-96 rounded-lg border-b-4 border-r-4   text-center p-6  ">
+            <div className="bx1 border-2 w-full max-sm:w-[80%] max-sm:mx-auto max-sm:h-auto  h-96 rounded-lg border-b-4 border-r-4   text-center p-6  ">
               <img src={aboutProcess} alt="" className="mx-auto mt-5" />
-              <h2 className="text-2xl text-[#0D4E57] font-roboto-serif font-medium mt-3">Transparent
+              <h2 className="text-2xl  max-sm:text-lg text-[#0D4E57] font-roboto-serif font-medium mt-3">Transparent
               Process</h2>
-              <p className="text-[] font-roboto-serif text-lg mt-5">Our transparent process is designed to demystify the journey from concept to delivery</p>
+              <p className="text-[] max-sm:text-base  font-roboto-serif text-lg mt-5">Our transparent process is designed to demystify the journey from concept to delivery</p>
             </div>
-            <div className="bx1 border-2 w-full h-auto rounded-lg border-b-4 border-r-4   text-center p-6  pb-20 ">
+            <div className="bx1 border-2 w-full max-sm:w-[80%] max-sm:mx-auto h-auto rounded-lg border-b-4 border-r-4   text-center p-6  lg:pb-20 ">
               <img src={aboutAppro} alt="" className="mx-auto mt-5" />
-              <h2 className="text-2xl text-[#0D4E57] font-roboto-serif font-medium mt-3">Client-Centric 
+              <h2 className="text-2xl max-sm:text-lg text-[#0D4E57] font-roboto-serif font-medium mt-3">Client-Centric 
               Approach</h2>
-              <p className="text-[] font-roboto-serif text-lg mt-5">Our dedicated team takes the time to listen, & collaborate, ensuring that every interaction a step towards your success.</p>
+              <p className="text-[]  max-sm:text-base font-roboto-serif text-lg mt-5">Our dedicated team takes the time to listen, & collaborate, ensuring that every interaction a step towards your success.</p>
             </div>
-            <div className="bx1 border-2 w-full h-96 rounded-lg border-b-4 border-r-4   text-center p-6  ">
+            <div className="bx1 border-2 w-full max-sm:w-[80%] max-sm:mx-auto max-sm:h-auto h-96 rounded-lg border-b-4 border-r-4   text-center p-6  ">
               <img src={aboutCost} alt="" className="mx-auto mt-5" />
-              <h2 className="text-2xl text-[#0D4E57] font-roboto-serif font-medium mt-3">Cost-Effective</h2>
-              <p className="text-[] font-roboto-serif text-lg mt-5">Our commitment to providing cost-effective solutions is ingrained in our mission.</p>
+              <h2 className="text-2xl max-sm:text-lg text-[#0D4E57] font-roboto-serif font-medium mt-3">Cost-Effective</h2>
+              <p className="text-[] max-sm:text-base  font-roboto-serif text-lg mt-5">Our commitment to providing cost-effective solutions is ingrained in our mission.</p>
             </div>
             
 
@@ -162,28 +162,28 @@ function AboutUs() {
 
         {/* f */}
         <div className="w-sec bg-[#B9C5E3] w-full h-auto pb-5 justify-center text-center items-center">
-            <h3 className="text-xl text-[#263156] font-roboto-serif pt-10">LET'S WORK TOGETHER</h3>
-            <h1 className="font-roboto-serif font-medium text-[40px] text-[#365E7D] mt-3">We Love to Listen to Your <br /> Requirements</h1>
+            <h3 className="text-xl max-sm:text-base text-[#263156] font-roboto-serif pt-10">LET'S WORK TOGETHER</h3>
+            <h1 className="font-roboto-serif font-medium max-sm:text-2xl text-[40px]  text-[#365E7D] mt-3">We Love to Listen to Your <br /> Requirements</h1>
             <div className="bt flex  mt-10  w-64  h-14 border-2 border-[#302F68] mx-auto  rounded-[40px]">
-                <button className='text-xl text-[#302F68] font-medium font-roboto my-auto mx-auto  flex'>GET STARTS <FaGreaterThan className=" mt-[4px] ml-2 text-[#302F68]"/>  </button>   
+                <button className='text-xl max-sm:text-base text-[#302F68] font-medium font-roboto my-auto mx-auto  flex'>GET STARTS <FaGreaterThan className=" mt-[4px] ml-2 text-[#302F68]"/>  </button>   
             </div>
             <div className="cal-d flex text-center items-center justify-center mt-11 gap-2">
-                <h3 className="font-roboto-serif text-xl text-[#263156]">Or call us now</h3>
+                <h3 className="font-roboto-serif max-sm:text-base text-xl text-[#263156]">Or call us now</h3>
                 <img src={callIcon} alt="" />
-                <p className="text-xl text-[#263156] font-medium">+91 8331950396  <br /> +91 9948732151 </p>
+                <p className="text-xl max-sm:text-lg text-[#263156] font-medium">+91 8331950396  <br /> +91 9948732151 </p>
                 
             </div>
         </div>
         <Portfolio/>
         {/* office detail section */}
         <div className="o-d w-full h-auto bg-[#FFFFFF]  text-center pb-8 ">
-            <h2 className="text-[#2B2D3E]  text-xl font-roboto-serif mt-14"> OUR LOCATION</h2>
-            <h1 className=" text-[40px]  text-[#FD4755] font-roboto-serif font-medium">Our Office</h1>
-                <img src={charminarImg} alt="" className="mx-auto mt-3 border-t-1 border-[#FFFFFF]" />   
-            <div className="txt px-20 text-left">
-               <h3 className="text-2xl mt-3 font-roboto-serif text-[#FFAC33] ">HYDERABAD, INDIA</h3>
-               <h4 className="text-xl font-roboto-serif text-[#365E7D] mt-4">REGISTERED OFFICE</h4>
-               <p className="font-roboto-serif text-xl text-[#090B4F] mt-3">Flat no 102, Narayanguda Main Rd, <br /> Beside Shanthi Theatre Narayanguda,<br /> Hyderabad, 500029</p>
+            <h2 className="text-[#2B2D3E]  text-xl max-sm:text-base font-roboto-serif mt-14"> OUR LOCATION</h2>
+            <h1 className=" text-[40px] max-sm:text-2xl  text-[#FD4755] font-roboto-serif font-medium">Our Office</h1>
+                <img src={charminarImg} alt="" className="mx-auto mt-3 max-sm:w-40 max-sm:h-auto border-t-1 border-[#FFFFFF]" />   
+            <div className="txt max-sm:px-8 px-20 text-left">
+               <h3 className="text-2xl max-sm:text-lg mt-3 font-roboto-serif text-[#FFAC33] ">HYDERABAD, INDIA</h3>
+               <h4 className="text-xl max-sm:text-base font-roboto-serif text-[#365E7D] mt-4">REGISTERED OFFICE</h4>
+               <p className="font-roboto-serif text-xl max-sm:text-base text-[#090B4F] mt-3">Flat no 102, Narayanguda Main Rd, <br /> Beside Shanthi Theatre Narayanguda,<br /> Hyderabad, 500029</p>
             </div>
             
 
