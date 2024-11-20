@@ -62,13 +62,13 @@ function Home () {
 
   return (
     <div className='root-home scroll-smooth overflow-hidden'>
-        <div className="hero-section bg-[#3434A1] w-full xl:h-auto xl:pb-4  max-sm:h-auto lg:h-[800px]  md:grid md:grid-cols-2">
-            <div className="r-content xl:mt-24 md:mt-20 max-sm:pt-10   xl:ml-20">
+        <div className="hero-section bg-[#3434A1] w-full xl:h-auto xl:pb-4 md:text-center md:px-7  max-sm:h-auto lg:h-[800px]   lg:grid lg:grid-cols-2">
+            <div className="r-content xl:mt-24 md:pt-10 max-sm:pt-10  xl:ml-20">
                <div className="text max-sm:text-center max-sm:px-8 ">
                     <h2 className='custom-gradient-text max-sm:hidden text-[44px] xl:text-[40px] tracking-wide font-roboto-serif font-bold  '>
                         Together, we bring your vision to life with solutions that drive success.   
                     </h2>
-                    <h2 className='custom-gradient-text md:hidden text-[44px] xl:text-[40px] tracking-wide font-roboto-serif font-bold  '>
+                    <h2 className='custom-gradient-text md:hidden text-[44px] max-sm:text-3xl xl:text-[40px] tracking-wide font-roboto-serif font-bold  '>
                         We bring your vision to life with solutions.   
                     </h2>
 
@@ -76,26 +76,30 @@ function Home () {
                         solutions that solve real problems and drive lasting change
                     </h4>
                 </div> 
-                <div className="bt flex max-sm:mx-auto  mt-7  max-sm:w-[55%] max-sm:h-14 w-64  h-14 border-2 border-white  rounded-[40px]">
+                <div className="bt flex max-sm:mx-auto  mt-7 md:mx-auto max-sm:w-[55%] max-sm:h-14 w-64  h-14 border-2 border-white  rounded-[40px]">
                     <button className='text-xl max-sm:text-base max-sm:px-8 text-white font-medium font-roboto my-auto mx-auto flex'>GET STARTS <FaGreaterThan className=" mt-[4px] ml-2 text-white"/>  </button>
                     
                 </div>
-                <div className="our-amb max-sm:mt-10 max-sm:mx-10 mt-10 max-sm:text-center">
-                    <h2 className="font-roboto font-medium text-white max-sm:text-[17px] text-2xl tracking-wide">OUR AMBITION</h2>
+                <div className="our-amb md:mx-9 max-sm:mt-10 max-sm:mx-10 mt-10 max-sm:text-center">
+                    <h2 className="font-roboto font-medium md:text-center text-white max-sm:text-[17px] text-2xl tracking-wide">OUR AMBITION</h2>
 
                     <Swiper
-                spaceBetween={20} // spacing between slides
-                slidesPerView={2} // show 2 slides at a time on larger screens
+                spaceBetween={14} 
+                slidesPerView={3} 
                 breakpoints={{
-                    640: {
-                        slidesPerView: 2, // show 2 slides on screens >= 640px
+                    200:{
+                        slidesPerView:2,
                     },
+                    640: {
+                        slidesPerView: 3,
+                    },
+
                    
                 }}
                 pagination={{ clickable: true }}
-                navigation={true}
+                navigation={false}
                 modules={[Pagination, Navigation]}
-                className="mt-3 md:hidden"
+                className="mt-3 md:mt-4 md:ml-20 "
             >
                 <SwiperSlide>
                     <div
@@ -147,7 +151,7 @@ function Home () {
             </Swiper>
                 </div>
            </div>
-            <div className="l-content max-sm:pb-14">
+            <div className="l-content max-sm:pb-14 md:pb-7">
                 <div className="laptop-icn flex xl:mt-1 ml-10 ">
                 <img src={homelaptop1} alt="" className="w-[70%] max-sm:w-[80%] max-sm:h-40 h-80 max-sm:mt-10  mt-24" />
                 <img src={homemobile} alt="" className="-ml-40 mt-48 xl:w-[25%] max-sm:w-[25%] max-sm:mt-24 max-sm:-ml-[80px]" />
@@ -202,8 +206,8 @@ function Home () {
         {/* </div> */}
         </div>
         {/* company details */}
-        <div className="cmp-details pb-10 w-full h-auto md:grid md:grid-cols-2 max-sm:bg-[rgb(255,255,255)] bg-[#E0CDE7]">
-            <div className="l-cmp-details xl:ml-20 max-sm:px-5  max-sm:mt-0 max-sm:pt-14 mt-9 h-auto  ">
+        <div className="cmp-details pb-10 w-full h-auto lg:grid lg:grid-cols-2 max-sm:bg-[rgb(255,255,255)] bg-[#E0CDE7]">
+            <div className="l-cmp-details md:px-5 xl:ml-20 max-sm:px-5 md:pt-14 md:text-center max-sm:text-center  max-sm:mt-0 max-sm:pt-14 lg:mt-9 h-auto  ">
                 <h3 className="font-roboto-serif text-[#000000] font-medium max-sm:text-2xl text-4xl"> <span className="text-red-300">XXXXX </span> Websites and App Development Company</h3>
                 <p className="text-lg max-sm:text-base font-roboto-serif text-[#302F68] mt-7">At XXXXX, we take pride in being a top-rated Websites and mobile app development company. Our team brings together creativity 
                     and extensive experience to deliver cutting-edge Websites and mobile app solutions. Located in India, we have established 
@@ -215,28 +219,28 @@ function Home () {
                 <p className="font-roboto-serif max-sm:mt-3 mt-5 text-[#302F68] font-medium max-sm:text-base text-lg">At XXXXX, we don't just create Websites, we craft exceptional user experiences that drive success.
                      Join us on your journey to Website And Mobile App excellence</p>
 
-                <div className="bt flex  max-sm:mt-10 mt-7  max-sm:mx-auto w-64  max-sm:w-[70%] max-sm:h-14 h-16 border-2 border-white bg-[#3F36CD]  rounded-[40px]">
+                <div className="bt flex  max-sm:mt-10 mt-7  md:mx-auto max-sm:mx-auto w-64  max-sm:w-[70%] max-sm:h-14 h-16 border-2 border-white bg-[#3F36CD]  rounded-[40px]">
                     <button className='text-xl text-white max-sm:text-base max-sm:px-4 font-medium font-roboto my-auto mx-auto  flex'>REQUEST A QUOTE <FaGreaterThan className=" mt-[4px] max-sm:ml-[1px] ml-2 text-white"/>  </button>
                     
                 </div>
             </div>
-            <div className="r-cmp-details xl:mx-20 max-sm:mx-4 mt-11   gap-x-2 h-auto  grid grid-cols-2">
-                <div className="bx  w-[80%] max-sm:w-[100%] pb-3 h-[87%] max-sm:h-[95%] text-center shadow-xl border-b-4 border-[#6DDDD6] rounded-bl-[80px] rounded-tl-2xl rounded-tr-2xl rounded-br-md bg-[#B3EFEB]">
+            <div className="r-cmp-details xl:mx-20 max-sm:mx-4 mt-11 md:mx-4 md:gap-8  lg:gap-x-2 h-auto  grid grid-cols-2">
+                <div className="bx  w-[80%] max-sm:w-[100%] pb-3 md:w-full md:h-auto h-[87%] max-sm:h-[95%] text-center shadow-xl border-b-4 border-[#6DDDD6] rounded-bl-[80px] rounded-tl-2xl rounded-tr-2xl rounded-br-md bg-[#B3EFEB]">
                     <img src={aboutexpicon} alt="" className="mx-auto p-3 max-sm:w-[70%] max-sm:h-[60%]  " />
                     <p className="text-[#0D4E57] text-3xl font-bold max-sm:text-2xl ">2+</p>
                     <h4 className="font-roboto-serif text-[#0D4E57] mt-1 font-semibold max-sm:text-[17px] text-xl">Years <br /> Experience</h4>
                 </div>
-                <div className="bx bx w-[80%] max-sm:w-[100%] pb-3 h-[87%] max-sm:h-[95%]  text-center shadow-xl border-b-4 border-[#EAA2A2] rounded-bl-[80px] rounded-tl-2xl rounded-tr-2xl rounded-br-md bg-[#EAA2A2]">
+                <div className="bx bx w-[80%] max-sm:w-[100%] pb-3 h-[87%] md:w-full md:h-auto max-sm:h-[95%]  text-center shadow-xl border-b-4 border-[#EAA2A2] rounded-bl-[80px] rounded-tl-2xl rounded-tr-2xl rounded-br-md bg-[#EAA2A2]">
                     <img src={aboutwebicon} alt="" className="mx-auto p-3 max-sm:w-[70%] max-sm:h-[60%] " />
                     <p className="text-[#0D4E57] text-3xl font-bold max-sm:text-2xl ">2+</p>
                     <h4 className="font-roboto-serif text-[#0D4E57] mt-1 font-semibold max-sm:text-[17px] text-xl">Web & Apps <br /> Developed</h4>
                 </div>
-                <div className="bx bx w-[80%] max-sm:w-[100%] pb-3 h-[87%] max-sm:h-[95%] text-center shadow-xl border-b-4 border-[#EC91E3] rounded-bl-[80px] rounded-tl-2xl rounded-tr-2xl rounded-br-md bg-[#E9A4E2]">
+                <div className="bx bx w-[80%] max-sm:w-[100%] pb-3 h-[87%] md:w-full md:h-auto max-sm:h-[95%] text-center shadow-xl border-b-4 border-[#EC91E3] rounded-bl-[80px] rounded-tl-2xl rounded-tr-2xl rounded-br-md bg-[#E9A4E2]">
                     <img src={aboutproicon} alt="" className="mx-auto p-3 max-sm:w-[70%] max-sm:h-[60%] " />
                     <p className="text-[#0D4E57] text-3xl font-bold max-sm:text-2xl ">100%</p>
                     <h4 className="font-roboto-serif text-[#0D4E57] mt-1 font-semibold max-sm:text-[17px] text-xl">Projects <br /> Delivered</h4>
                 </div>
-                <div className="bx bx w-[80%]max-sm:w-[100%] pb-3 h-[87%] max-sm:h-[95%] text-center shadow-xl border-b-4 border-[#93B2E0] rounded-bl-[80px] rounded-tl-2xl rounded-tr-2xl rounded-br-md bg-[#9BB4D9]">
+                <div className="bx bx w-[80%]max-sm:w-[100%] pb-3 h-[87%]   md:w-full md:h-auto max-sm:h-[95%] text-center shadow-xl border-b-4 border-[#93B2E0] rounded-bl-[80px] rounded-tl-2xl rounded-tr-2xl rounded-br-md bg-[#9BB4D9]">
                     <img src={aboutclieicon} alt="" className="mx-auto p-3  max-sm:w-[70%] max-sm:h-[60%] " />
                     <p className="text-[#0D4E57] text-3xl font-bold  max-sm:text-2xl">100%</p>
                     <h4 className="font-roboto-serif text-[#0D4E57] mt-1 font-semibold max-sm:text-[17px] text-xl">Clients <br /> Satisfaction</h4>
@@ -309,7 +313,7 @@ function Home () {
                         crafting responsive designs, e-commerce solutions, 
                         or custom web applications, we transform your web vision into reality with skill and innovation.</p>
                 </div>
-                <div className="bxs max-sm:px-5 lg:pl-10 text-left w-full max-sm:w-full h-auto bg-[#FFFFFF] border-[1px] drop-shadow-xl rounded-lg rounded-bl-[90px] pb-10">
+                <div className="bxs max-sm:px-5 pl-10 text-left w-full max-sm:w-full h-auto bg-[#FFFFFF] border-[1px] drop-shadow-xl rounded-lg rounded-bl-[90px] pb-10">
                     <h3 className="text-[#0D4E57] pt-8 font-roboto-serif text-2xl max-sm:text-xl font-semibold">Web Development</h3>
                     <div className="flex text-xl max-sm:text-xs text-[#4F5D81] mt-3 max-sm:space-x-2 lg:space-x-3">
                         <p>Figma</p> <p>|</p>
@@ -346,7 +350,7 @@ function Home () {
             <div className="absolute inset-0 grid grid-cols-100 h-full">
             {lines}
             </div>
-            <div className="relative z-10">
+            <div className="relative md:text-center z-10">
                <h3 className="text-[#FD4755] max-sm:text-center max-sm:text-base text-xl max-sm:mx-4 ml-20 font-roboto-serif font-medium pt-10">Why Choose Us</h3>
                <div className="grid lg:grid-cols-2 max-sm:mx-4 mx-20">
                  <div className="l-c">
@@ -374,9 +378,9 @@ function Home () {
 
                  <div className="r-c ">
                     <img src={oursection} alt=""  className="ml-20 mt-10 max-sm:hidden"/>
-                    <div className="c-in flex max-sm:ml-0 ml-10 mt-10">
+                    <div className="c-in flex max-sm:ml-0 md:ml-0 ml-10 mt-10">
                         <img src={choosecpt} alt="" />
-                        <div className="c-intxt ml-2 ">
+                        <div className="c-intxt ml-2  ">
                             <h3 className="font-roboto-serif text-2xl max-sm:text-xl font-medium">Completion of Project in Given Time</h3>
                             <p className="text-lg text-[#302F68] max-sm:text-base font-roboto-serif mt-3">We guarantee timely project completion at XXXXX, delivering on our promises and meeting your deadlines.</p>
                         </div>
@@ -384,8 +388,8 @@ function Home () {
                  </div>
                </div>
 
-               <h1 className="font-roboto-serif font-medium text-[40px] text-[#365E7D] max-sm:px-4 max-sm:text-center px-60 text-center max-sm:mt-14 max-sm:text-2xl mt-28 ">Turning Ideas into Reality  <span className="text-[#FD4755]">Let's Begin Your Next  Project </span>  Together</h1>
-               <p className="text-[#090B4F] text-lg px-72 max-sm:px-4 text-center font-roboto-serif max-sm:text-[17px]  mt-4">Embark on a journey of innovation with Techweblabs. 
+               <h1 className="font-roboto-serif font-medium text-[40px] text-[#365E7D] max-sm:px-4 max-sm:text-center md:px-3 lg:px-60 text-center max-sm:mt-14 max-sm:text-2xl mt-28 ">Turning Ideas into Reality  <span className="text-[#FD4755]">Let's Begin Your Next  Project </span>  Together</h1>
+               <p className="text-[#090B4F] text-lg lg:px-72 max-sm:px-4 md:px-5 text-center font-roboto-serif max-sm:text-[17px]  mt-4">Embark on a journey of innovation with Techweblabs. 
                 Our expertise transforms your concepts into thriving projects. Let's start creating together.</p>
 
                 <div className="bt flex  mt-7  max-sm:w-[65%] w-64  h-14 border-2 border-white bg-[#3F36CD] mx-auto  rounded-[40px]">
@@ -394,10 +398,10 @@ function Home () {
                 </div>
             </div>
         </div> 
-        <div className="client-sect bg-[#5878EA] w-full max-sm:h-auto max-sm:pb-10 h-[400px]">
+        <div className="client-sect bg-[#5878EA] w-full max-sm:h-auto max-sm:pb-10 md:h-auto md:pb-6 h-[400px]">
             <h3 className="text-[#80D6FB] text-2xl max-sm:text-base  font-roboto-serif text-center font-medium  pt-12">Our happy customers</h3>
             <h3 className="text-[40px] font-roboto-serif font-medium text-[#FFFFFF] text-center max-sm:text-2xl mt-5">Some of our Clients</h3>
-            <div className="clients-img grid max-sm:grid-cols-2 max-sm:mx-16 lg:grid-cols-4 max-sm:gap-2 gap-5 mx-20">
+            <div className="clients-img grid max-sm:grid-cols-2 max-sm:mx-16 md:grid-cols-2 lg:grid-cols-4 max-sm:gap-2 gap-5 mx-20">
                 <div className="flex bg-[#fff] border-2 w-full  mt-9 max-sm:h-24 max-sm:w-24 h-36 rounded-xl">
                     <img src={salonIcn} alt="" className="w-auto max-sm:h-20     h-24 my-auto max-sm:mx-auto ml-11" />
                     <h2 className="font-roboto-serif max-md:hidden font-medium ml-4 text-2xl my-auto">UNIQUE<br /> SALON</h2>
@@ -418,10 +422,10 @@ function Home () {
             </div>
 
         </div>
-        <div className="quote-sec items-center gap-8 justify-center md:flex h-40">
-            <h2 className="text-[40px] max-sm:text-[25px] max-sm:text-center max-sm:mt-10  text-[#108ABF] font-roboto-serif font-medium">We Promise. We Deliver.</h2>
-            <div className="bt flex  max-sm:w-[60%] w-64  h-14 border-2 border-white bg-[#3F36CD] max-sm:mt-5 max-sm:mx-auto  rounded-[40px]">
-                <button className='text-xl max-sm:text-base text-white font-medium font-roboto my-auto mx-auto  flex'>REQUEST A QUOTE <FaGreaterThan className=" mt-[4px] ml-2 text-white"/>  </button> 
+        <div className="quote-sec items-center gap-8 justify-center md:pb-5   lg:flex h-40">
+            <h2 className="text-[40px] max-sm:text-[25px] md:pt-5 md:text-center max-sm:text-center max-sm:mt-10  text-[#108ABF] font-roboto-serif font-medium">We Promise. We Deliver.</h2>
+            <div className="bt flex  max-sm:w-[60%] w-64 md:mx-auto md:mt-4   h-14 border-2 border-white bg-[#3F36CD] max-sm:mt-5 max-sm:mx-auto  rounded-[40px]">
+                <button className='text-xl max-sm:text-base  text-white font-medium font-roboto my-auto mx-auto  flex'>REQUEST A QUOTE <FaGreaterThan className=" mt-[4px] ml-2 text-white"/>  </button> 
             </div>
 
         </div>
@@ -435,52 +439,52 @@ function Home () {
                      tailored solutions to <br className="max-md:hidden"/> meet the unique needs of each sector</p>
                  <p className="md:hidden font-roboto-serif text-[#333262] text-lg  max-sm:text-base max-sm:mx-4">meet the unique needs of each sector</p>
             </div>
-            <div className="grid lg:grid-cols-4 max-sm:grid-cols-2 max-sm:gap-3 max-sm:mx-4 lg:gap-5 lg:mx-20 mt-12 ">
-                <div className="bxs lg:flex w-full h-28 border-2 justify-center items-center rounded-2xl border-black bg-[#505CC3]">
+            <div className="grid lg:grid-cols-4 md:grid-cols-2 md:gap-5 md:mx-5 max-sm:grid-cols-2 max-sm:gap-3 max-sm:mx-4 lg:gap-5 lg:mx-20 mt-12 ">
+                <div className="bxs lg:flex  md:flex w-full h-28 border-2 justify-center items-center rounded-2xl border-black bg-[#505CC3]">
                     <img src={education} alt="" className="w-20 h-20 max-sm:mx-auto max-sm:mt-4 max-sm:w-12 max-sm:h-12" />
                     <h1 className="text-[#D9D9D9] max-sm:text-base max-sm:text-center max-sm:mt-2 text-2xl lg:ml-4 font-roboto-serif font-medium">Education</h1>
                 </div>
-                <div className="bxs lg:flex w-full h-28 border-2 justify-center items-center rounded-2xl border-black bg-[#505CC3]">
+                <div className="bxs lg:flex md:flex w-full h-28 border-2 justify-center items-center rounded-2xl border-black bg-[#505CC3]">
                     <img src={healthcare} alt="" className="w-20 h-20 max-sm:mx-auto max-sm:mt-4 max-sm:w-12 max-sm:h-12" />
                     <h1 className="text-[#D9D9D9] max-sm:text-base max-sm:text-center max-sm:mt-2 text-2xl ml-4 font-roboto-serif font-medium">HealthCare</h1>
                 </div>
-                <div className="bxs lg:flex w-full h-28 border-2 justify-center items-center rounded-2xl border-black bg-[#505CC3]">
+                <div className="bxs lg:flex md:flex w-full h-28 border-2 justify-center items-center rounded-2xl border-black bg-[#505CC3]">
                     <img src={beauty} alt="" className="w-20 h-20 max-sm:mx-auto max-sm:mt-4 max-sm:w-12 max-sm:h-12" />
                     <h1 className="text-[#D9D9D9] max-sm:text-base max-sm:text-center max-sm:mt-2 text-2xl ml-4 font-roboto-serif font-medium">Beauty</h1>
                 </div>
-                <div className="bxs lg:flex w-full h-28 border-2 justify-center items-center rounded-2xl border-black bg-[#505CC3]">
+                <div className="bxs lg:flex md:flex w-full h-28 border-2 justify-center items-center rounded-2xl border-black bg-[#505CC3]">
                     <img src={ecomm} alt="" className="w-20 h-20 max-sm:mx-auto max-sm:mt-4 max-sm:w-12 max-sm:h-12" />
                     <h1 className="text-[#D9D9D9] max-sm:text-base max-sm:text-center max-sm:mt-2 text-2xl ml-4 font-roboto-serif font-medium">Ecommerce</h1>
                 </div>
-                <div className="bxs lg:flex w-full h-28 border-2 justify-center items-center rounded-2xl border-black bg-[#505CC3]">
+                <div className="bxs lg:flex md:flex w-full h-28 border-2 justify-center items-center rounded-2xl border-black bg-[#505CC3]">
                     <img src={restaur} alt="" className="w-20 h-20 max-sm:mx-auto max-sm:mt-4 max-sm:w-12 max-sm:h-12" />
                     <h1 className="text-[#D9D9D9] max-sm:text-base max-sm:text-center max-sm:mt-2 text-2xl ml-4 font-roboto-serif font-medium">Restarent</h1>
                 </div>
-                <div className="bxs lg:flex w-full h-28 border-2 justify-center items-center rounded-2xl border-black bg-[#505CC3]">
+                <div className="bxs lg:flex md:flex w-full h-28 border-2 justify-center items-center rounded-2xl border-black bg-[#505CC3]">
                     <img src={grocery} alt="" className="w-20 h-20 max-sm:mx-auto max-sm:mt-4 max-sm:w-12 max-sm:h-12" />
                     <h1 className="text-[#D9D9D9] max-sm:text-base max-sm:text-center max-sm:mt-2 text-2xl ml-4 font-roboto-serif font-medium">Grocery</h1>
                 </div>
-                <div className="bxs lg:flex w-full h-28 border-2 justify-center items-center rounded-2xl border-black bg-[#505CC3]">
+                <div className="bxs lg:flex md:flex w-full h-28 border-2 justify-center items-center rounded-2xl border-black bg-[#505CC3]">
                     <img src={travell} alt="" className="w-20 h-20 max-sm:mx-auto max-sm:mt-4 max-sm:w-12 max-sm:h-12" />
                     <h1 className="text-[#D9D9D9] max-sm:text-base max-sm:text-center max-sm:mt-2 text-2xl ml-4 font-roboto-serif font-medium">Tour & Travells</h1>
                 </div>
-                <div className="bxs lg:flex w-full h-28 border-2 justify-center items-center rounded-2xl border-black bg-[#505CC3]">
+                <div className="bxs lg:flex md:flex w-full h-28 border-2 justify-center items-center rounded-2xl border-black bg-[#505CC3]">
                     <img src={realestate} alt="" className="w-20 h-20 max-sm:mx-auto max-sm:mt-4 max-sm:w-12 max-sm:h-12" />
                     <h1 className="text-[#D9D9D9] max-sm:text-base max-sm:text-center max-sm:mt-2 text-2xl ml-4 font-roboto-serif font-medium">RealEstate</h1>
                 </div>
-                <div className="bxs lg:flex w-full h-28 border-2 justify-center items-center rounded-2xl border-black bg-[#505CC3]">
+                <div className="bxs lg:flex md:flex w-full h-28 border-2 justify-center items-center rounded-2xl border-black bg-[#505CC3]">
                     <img src={taxi} alt="" className="w-20 h-20 max-sm:mx-auto max-sm:mt-4 max-sm:w-12 max-sm:h-12" />
                     <h1 className="text-[#D9D9D9] max-sm:text-base max-sm:text-center max-sm:mt-2 text-2xl ml-4 font-roboto-serif font-medium">Transport</h1>
                 </div>
-                <div className="bxs lg:flex w-full h-28 border-2 justify-center items-center rounded-2xl border-black bg-[#505CC3]">
+                <div className="bxs lg:flex md:flex w-full h-28 border-2 justify-center items-center rounded-2xl border-black bg-[#505CC3]">
                     <img src={finance} alt="" className="w-20 h-20 max-sm:mx-auto max-sm:mt-4 max-sm:w-12 max-sm:h-12" />
                     <h1 className="text-[#D9D9D9] max-sm:text-base max-sm:text-center max-sm:mt-2 text-2xl ml-4 font-roboto-serif font-medium">Finance</h1>
                 </div>
-                <div className="bxs lg:flex w-full h-28 border-2 justify-center items-center rounded-2xl border-black bg-[#505CC3]">
+                <div className="bxs lg:flex md:flex w-full h-28 border-2 justify-center items-center rounded-2xl border-black bg-[#505CC3]">
                     <img src={event} alt="" className="w-20 h-20 max-sm:mx-auto max-sm:mt-4 max-sm:w-12 max-sm:h-12" />
                     <h1 className="text-[#D9D9D9] max-sm:text-base max-sm:text-center max-sm:mt-2 text-2xl ml-4 font-roboto-serif font-medium">Event</h1>
                 </div>
-                <div className="bxs lg:flex w-full h-28 border-2 justify-center items-center rounded-2xl border-black bg-[#505CC3]">
+                <div className="bxs lg:flex md:flex w-full h-28 border-2 justify-center items-center rounded-2xl border-black bg-[#505CC3]">
                     <img src={ondemand} alt="" className="w-20 h-20 max-sm:mx-auto max-sm:mt-4 max-sm:w-12 max-sm:h-12" />
                     <h1 className="text-[#D9D9D9] max-sm:text-base max-sm:text-center max-sm:mt-2 text-2xl ml-4 font-roboto-serif font-medium">On Demand</h1>
                 </div>
@@ -493,12 +497,12 @@ function Home () {
         {/* client satisfaction section */}
         <div className="cs max-sm:h-auto lg:h-[600px] max-sm:w-[100%] bg-[#FFFFFF] max-sm:px-4 lg:px-20 pt-5">
             <div className="grid lg:grid-cols-2  max-sm:pt-10 lg:pt-20 ">
-                <div className="l-cs pt-7 max-sm:text-center w-[100%] h-auto">
+                <div className="l-cs pt-7 md:text-center max-sm:text-center w-[100%] h-auto">
                     <h3 className="text-2xl  max-sm:text-base font-roboto-serif text-[#0D4E57] ">WHAT OUR CLIENTS SAY ABOUT xxxxx</h3>
                     <h1 className="text-[40px] max-sm:text-center max-sm:text-2xl mt-5 leading-snug font-roboto-serif text-[#AE7C36] font-medium"  >Over 10+ Satisfied <br /> Clients and Growing</h1>
 
                     <p className="text-[#263156] font-roboto-serif max-sm:text-xl max-sm:mt-7 lg:mt-10 text-xl">  Read More Reviews</p>
-                    <div className="flex max-sm:justify-center max-sm:items-center gap-2 mt-8 ">
+                    <div className="flex max-sm:justify-center max-sm:items-center md:justify-center md:items-center gap-2 mt-8 ">
                         <div className="bx max-sm:w-24 max-sm:h-16 w-36 h-24 lg:bg-[#D9D9D9] ">
                             <img src={review1} alt="" className="m-auto max-sm:mt-1 max-sm:p-2 mt-3" />
                         </div>
@@ -510,10 +514,10 @@ function Home () {
                         </div>
                     </div>
                 </div>
-                <div className="r-cs max-sm:mt-8  ">
+                <div className="r-cs max-sm:mt-8 md:mt-10  ">
                     <div className="imgs ">
-                     <img src={reviewImg1} alt="" className="lg:ml-40 max-sm:w-[75%] max-sm:mx-auto max-sm:h-auto "/>
-                     <img src={reviewImg2} alt=""  className="lg:-mt-72 max-sm:w-[75%] max-sm:mx-auto max-sm:mt-4 max-sm:h-auto max-sm:pb-10" />
+                     <img src={reviewImg1} alt="" className="lg:ml-40 max-sm:w-[75%] md:mx-auto max-sm:mx-auto max-sm:h-auto "/>
+                     <img src={reviewImg2} alt=""  className="lg:-mt-72 max-sm:w-[75%] md:mx-auto max-sm:mx-auto md:mt-5 md:pb-7 max-sm:mt-4 max-sm:h-auto max-sm:pb-10" />
 
                     </div>
                 </div>
