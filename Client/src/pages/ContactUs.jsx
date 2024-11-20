@@ -30,9 +30,9 @@ function ContactUs() {
         </div>
       </div>
 
-      {/* Form Section */}
+    
       <div className="dd flex flex-col lg:flex-row gap-y-4 lg:gap-y-0 gap-x-4 mt-5 pb-3">
-        {/* Contact Form */}
+        
         <div className="bx w-full lg:w-[624px] h-auto border-2 p-3 rounded-br-[32px] rounded-lg">
           <h2 className="font-roboto font-normal text-2xl md:text-4xl ml-5 text-[#0C3461]">
             Have a Question? Write A Message
@@ -64,7 +64,7 @@ function ContactUs() {
             <img src={Email} alt="" className="h-16 w-16 md:h-[80px] md:w-[80px] mr-4" />
             <div>
               <h2 className="text-2xl md:text-3xl text-[#000000] font-roboto-serif">EMAIL</h2>
-              <p className="mt-1 text-[#302F68] font-roboto text-xl md:text-2xl">Omhoge@Gmail.com</p>
+              <p className="mt-1 text-[#302F68] font-roboto text-xl sm:text-lg md:text-2xl">Omhoge@Gmail.com</p>
             </div>
           </div>
 
