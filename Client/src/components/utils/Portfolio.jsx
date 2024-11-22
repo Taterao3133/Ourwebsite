@@ -9,7 +9,7 @@ const CircularRotatingAccordion = () => {
   }, []);
 
   return (
-    <div className=" max-sm:hidden md:flex">
+    <div className=" max-sm:hidden  md:flex">
     <div className="relative md:h-[500px] md:w-[500px] ml-60 mt-10">
       {/* Outer Circle (Dotted Line) */}
       <div className="absolute inset-0 border border-dashed border-gray-500 rounded-full circle-dashed">

@@ -174,7 +174,7 @@ function AboutUs() {
                 
             </div>
         </div>
-        <Portfolio/>
+        {/* <Portfolio/> */}
         {/* office detail section */}
         <div className="o-d w-full h-auto bg-[#FFFFFF]  text-center pb-8 ">
             <h2 className="text-[#2B2D3E]  text-xl max-sm:text-base font-roboto-serif mt-14"> OUR LOCATION</h2>
