@@ -22,7 +22,7 @@ function AboutUs() {
   return (
    <div className="abt overflow-hidden">
     <div className="about-sec  max-sm:h-auto lg:h-[600px] max-sm:justify-center max-sm:items-center w-full  lg:px-20 bg-gradient-to-b from-[#FFFFFF] to-[#e3fbd4]">
-      <div className="flex mt-20  max-sm:mx-4 space-x-3">
+      <div className="flex mt-20 md:mx-auto  max-sm:mx-4 space-x-3">
         <h2 className='text-[#E7A548]  text-lg max-sm:text-base font-roboto-serif font-medium'>Home </h2>
         <div className="flex">
 
@@ -30,59 +30,59 @@ function AboutUs() {
         <h4 className='text-[#E7A548] underline text-lg max-sm:text-base font-roboto-serif font-medium'>About Us</h4>
         </div>
       </div>
-      <div className="grid md:grid-cols-2 mt-6">
-        <div className="l-c pb-5 pt-3 pr-4">
-          <h1 className="font-roboto-serif max-sm:text-center text-[40px] max-sm:text-xl bg-clip-text text-transparent w-80 font-medium  bg-gradient-to-r from-[#F471FF] via-[#FA8166] to-[#FBCA84]">
+      <div className="grid lg:grid-cols-2 mt-6">
+        <div className="l-c pb-5 pt-3 pr-4 md:text-center">
+          <h1 className="font-roboto-serif max-sm:text-center md:mx-auto  text-[40px] md:text-4xl max-sm:text-xl bg-clip-text text-transparent w-80 font-medium  bg-gradient-to-r from-[#F471FF] via-[#FA8166] to-[#FBCA84]">
             About XXXXX
           </h1>
-          <p className="text-lg max-sm:text-base max-sm:text-center font-roboto-serif max-sm:px-4 lg:font-medium text-[#0C3461] mt-4">At XXXXX, we combine the agility and innovation of a startup with over 7 years of industry experience. 
+          <p className="text-lg md:text-base md:px-7 max-sm:text-base max-sm:text-center font-roboto-serif max-sm:px-4 lg:font-medium text-[#0C3461] mt-4">At XXXXX, we combine the agility and innovation of a startup with over 7 years of industry experience. 
             Founded with a vision for innovation and a passion for excellence, XXXXX emerged onto the scene in recent years,
              driven by the desire to redefine industry standards and push the boundaries of possibility. What began as a humble 
              endeavor has flourished into a dynamic force, propelled by a steadfast commitment to our core values of creativity, 
              integrity, and excellence</p>
 
-             <div className="bt flex  mt-7 max-sm:mx-auto w-56 max-sm:w-[50%] max-sm:h-auto max-sm:py-2  h-14 border-2 border-[#000000]  rounded-[40px]">
+             <div className="bt flex md:mx-auto  mt-7 max-sm:mx-auto w-56 max-sm:w-[50%] max-sm:h-auto max-sm:py-2  h-14 border-2 border-[#000000]  rounded-[40px]">
                 <button className='text-lg max-sm:text-base text-[#000000] font-medium font-roboto-serif my-auto mx-auto flex'>Contact Us <FaGreaterThan  className=" mt-[4px] ml-2 text-[#000000]"/>  </button>
               </div>
 
         </div>
-        <div className="r-c max-sm:justify-center max-sm:items-center max-sm:mt-7 max-sm:pb-10">
+        <div className="r-c mx-auto  md:pb-8 max-sm:justify-center max-sm:items-center max-sm:mt-7 max-sm:pb-10">
           <img src={aboutImg} alt="" className=" max-sm:mx-auto  max-sm:w-[75%] lg:w-full" />
           
         </div>
       </div>
 
     </div>
-      <div className="bg-gradient-to-b from-[#FFFFFF] to-[#e4b94c1a] w-full h-auto pb-10 lg:px-20 lg:space-x-7 max-sm:px-4 lg:grid lg:grid-cols-2">
-        <div className="l-c  mt-20 lg:pr-6">
-          <h1 className="text-[40px] max-sm:text-2xl max-sm:text-center font-roboto-serif text-[#E13535] font-medium">India’s Top App Development & Digital Marketing Company working with talents on delivering unique ideas.</h1>
-          <div className="flex max-sm:justify-center max-sm:items-center max-sm:mt-8 lg:mt-16 space-x-6">
+      <div className="bg-gradient-to-b md:px-8 from-[#FFFFFF] to-[#e4b94c1a] w-full h-auto pb-10 lg:px-20 lg:space-x-7 max-sm:px-4 lg:grid lg:grid-cols-2">
+        <div className="l-c   mt-20 lg:pr-6">
+          <h1 className="text-[40px] md:text-3xl max-sm:text-2xl max-sm:text-center md:text-center font-roboto-serif text-[#E13535] font-medium">India’s Top App Development & Digital Marketing Company working with talents on delivering unique ideas.</h1>
+          <div className="flex md:mt-10 max-sm:justify-center max-sm:items-center max-sm:mt-8 lg:mt-16 space-x-6">
             <img src={ourVision} alt=""  className="max-sm:w-28 max-sm:h-auto"/>
             <p className="text-[#E13535] mt-7 text-2xl max-sm:text-lg font-roboto-serif font-medium"> Our Vision</p>
           </div>
-          <p className="text-lg max-sm:text-base  max-sm:text-center font-roboto-serif text-[#302F68] lg:pr-6 mt-6">"To be a leading innovator in the digital solutions industry, empowering businesses
+          <p className="text-lg max-sm:text-base md:text-base  max-sm:text-center font-roboto-serif text-[#302F68] lg:pr-6 mt-6">"To be a leading innovator in the digital solutions industry, empowering businesses
             and individuals with cutting-edge technology that drives growth, efficiency, and creativity."</p>
 
         </div>
-        <div className="r-c max-sm:mt-10 max-sm:text-center lg:mt-20">
-          <p className="text-lg max-sm:hidden max-sm:text-base font-roboto-serif text-[#302F68]">At XXXXX, the intersection of innovation and experience is where magic happens. Join us on our journey as we continue to push the boundaries of what's possible and shape the future of technology, one groundbreaking idea at a time.
+        <div className="r-c max-sm:mt-10 md:mt-5 max-sm:text-center lg:mt-20">
+          <p className="text-lg max-sm:hidden max-sm:text-base md:text-base font-roboto-serif text-[#302F68]">At XXXXX, the intersection of innovation and experience is where magic happens. Join us on our journey as we continue to push the boundaries of what's possible and shape the future of technology, one groundbreaking idea at a time.
 
             With over seven years of industry experience under our belt, we bring a wealth of knowledge, expertise, and insights to every project we undertake.
             Our track record speaks for itself, 
             as we've consistently exceeded expectations and forged lasting partnerships built on trust, transparency, and results
             </p>
-          <div className="flex  max-sm:justify-center max-sm:items-center space-x-6 lg:mt-16">
+          <div className="flex  md:mt-8 max-sm:justify-center max-sm:items-center space-x-6 lg:mt-16">
             <img src={ourMission} alt="" className=" max-sm:w-28 max-sm:h-auto" />
-            <p className="text-2xl max-sm:text-lg text-[#E13535] mt-7 font-roboto-serif font-medium">Our Mission</p>
+            <p className="text-2xl max-sm:text-lg  text-[#E13535] mt-7 font-roboto-serif font-medium">Our Mission</p>
           </div>
-          <p className="text-lg max-sm:text-base max-sm:text-center font-roboto-serif text-[#302F68] mt-6">At XXXXX, we are dedicated to delivering top-tier apps, applications, and websites that exceed client expectations. Leveraging our 7 years of expertise, we strive to create intuitive, user-friendly digital solutions that enhance productivity and engagement. Our mission is to foster 
+          <p className="text-lg max-sm:text-base md:text-base max-sm:text-center font-roboto-serif text-[#302F68] mt-6">At XXXXX, we are dedicated to delivering top-tier apps, applications, and websites that exceed client expectations. Leveraging our 7 years of expertise, we strive to create intuitive, user-friendly digital solutions that enhance productivity and engagement. Our mission is to foster 
             long-term partnerships by consistently delivering high-quality, reliable, and innovative technology that transforms ideas into reality."</p>
         </div>
       </div>
       {/*  */}
       <div className="cmp-details pb-10 w-full h-auto grid lg:grid-cols-2 max-sm:text-center  bg-[#E0CDE7]">
-            <div className="l-cmp-details max-sm:mx-4 xl:ml-20 mt-9 h-auto  ">
-                <h3 className="font-roboto-serif text-[#000000] font-medium max-sm:text-2xl lg:text-4xl"> <span>XXXXX </span> Websites and App Development Company</h3>
+            <div className="l-cmp-details max-sm:mx-4 xl:ml-20 mt-9 md:px-8 h-auto  ">
+                <h3 className="font-roboto-serif md:text-center md:text-3xl text-[#000000] font-medium max-sm:text-2xl lg:text-4xl"> <span>XXXXX </span> Websites and App Development Company</h3>
                 <p className="lg:text-lg max-sm:text-base font-roboto-serif text-[#302F68] mt-7">At XXXXX, we take pride in being a top-rated Websites and mobile app development company. Our team brings together creativity 
                     and extensive experience to deliver cutting-edge Websites and mobile app solutions. Located in India, we have established 
                     ourselves as a leading force in the industry.</p>
@@ -93,29 +93,29 @@ function AboutUs() {
                 <p className="font-roboto-serif mt-5 text-[#302F68] font-medium max-sm:text-base text-lg">At XXXXX, we don't just create Websites, we craft exceptional user experiences that drive success.
                      Join us on your journey to Website And Mobile App excellence</p>
 
-                <div className="bt flex  max-sm:mx-auto mt-7 max-sm:w-[65%] max-sm:h-12  w-64  h-16 border-2 border-white bg-[#3F36CD]  rounded-[40px]">
+                <div className="bt flex md:mx-auto  max-sm:mx-auto mt-7 max-sm:w-[65%] max-sm:h-12  w-64  h-16 border-2 border-white bg-[#3F36CD]  rounded-[40px]">
                     <button className='text-xl max-sm:text-base text-white font-medium font-roboto my-auto mx-auto  flex'>REQUEST A QUOTE <FaGreaterThan className=" mt-[4px] ml-2 text-white"/>  </button>
                     
                 </div>
             </div>
-            <div className="r-cmp-details xl:mx-20 mt-11 max-md:gap-y-5 w-full  lg:gap-x-2 h-auto max-sm:justify-center max-sm:items-center max-sm:text-center grid lg:grid-cols-2">
-                <div className="bx w-[80%] max-sm:w-[100%] max-sm:h-full pb-3 h-[87%] text-center shadow-xl border-b-4 border-[#6DDDD6] rounded-bl-[80px] rounded-tl-2xl rounded-tr-2xl rounded-br-md bg-[#B3EFEB]">
-                    <img src={aboutexpicon} alt="" className="mx-auto p-3 " />
+            <div className="r-cmp-details xl:mx-20 mt-11 max-md:gap-y-5 w-full md:gap-y-8  lg:gap-x-2 h-auto max-sm:justify-center max-sm:items-center max-sm:text-center grid lg:grid-cols-2">
+                <div className="bx  w-[80%] md:mx-auto max-sm:w-[100%] max-sm:h-full pb-3 md:h-auto h-[87%] text-center shadow-xl border-b-4 border-[#6DDDD6] rounded-bl-[80px] rounded-tl-2xl rounded-tr-2xl rounded-br-md bg-[#B3EFEB]">
+                    <img src={aboutexpicon} alt="" className="mx-auto md:pt-3 p-3 " />
                     <p className="text-[#0D4E57] text-3xl max-sm:text-lg font-bold ">2+</p>
                     <h4 className="font-roboto-serif text-[#0D4E57] mt-1 font-semibold max-sm:text-base text-xl">Years <br /> Experience</h4>
                 </div>
-                <div className="bx bx max-sm:w-[100%] max-sm:h-full w-[80%] pb-3 h-[87%]  text-center shadow-xl border-b-4 border-[#EAA2A2] rounded-bl-[80px] rounded-tl-2xl rounded-tr-2xl rounded-br-md bg-[#EAA2A2]">
-                    <img src={aboutwebicon} alt="" className="mx-auto p-3 " />
+                <div className="bx bx max-sm:w-[100%] md:mx-auto max-sm:h-full w-[80%] pb-3 md:h-auto h-[87%]  text-center shadow-xl border-b-4 border-[#EAA2A2] rounded-bl-[80px] rounded-tl-2xl rounded-tr-2xl rounded-br-md bg-[#EAA2A2]">
+                    <img src={aboutwebicon} alt="" className="mx-auto md:pt-3 p-3 " />
                     <p className="text-[#0D4E57] text-3xl font-bold max-sm:text-lg ">2+</p>
                     <h4 className="font-roboto-serif text-[#0D4E57] mt-1 max-sm:text-base font-semibold text-xl">Web & Apps <br /> Developed</h4>
                 </div>
-                <div className="bx bx max-sm:w-[100%] max-sm:h-full w-[80%] pb-3 h-[87%] text-center shadow-xl border-b-4 border-[#EC91E3] rounded-bl-[80px] rounded-tl-2xl rounded-tr-2xl rounded-br-md bg-[#E9A4E2]">
-                    <img src={aboutproicon} alt="" className="mx-auto p-3 " />
+                <div className="bx bx max-sm:w-[100%] md:mx-auto max-sm:h-full w-[80%] pb-3 md:h-auto h-[87%] text-center shadow-xl border-b-4 border-[#EC91E3] rounded-bl-[80px] rounded-tl-2xl rounded-tr-2xl rounded-br-md bg-[#E9A4E2]">
+                    <img src={aboutproicon} alt="" className="mx-auto md:pt-3 p-3 " />
                     <p className="text-[#0D4E57] text-3xl font-bold  max-sm:text-lg ">100%</p>
                     <h4 className="font-roboto-serif text-[#0D4E57] mt-1 max-sm:text-base font-semibold text-xl">Projects <br /> Delivered</h4>
                 </div>
-                <div className="bx bx max-sm:w-[100%] max-sm:h-full w-[80%] pb-3 h-[87%] text-center shadow-xl border-b-4 border-[#93B2E0] rounded-bl-[80px] rounded-tl-2xl rounded-tr-2xl rounded-br-md bg-[#9BB4D9]">
-                    <img src={aboutclieicon} alt="" className="mx-auto p-3  " />
+                <div className="bx bx max-sm:w-[100%] md:mx-auto max-sm:h-full w-[80%] pb-3 md:h-auto h-[87%] text-center shadow-xl border-b-4 border-[#93B2E0] rounded-bl-[80px] rounded-tl-2xl rounded-tr-2xl rounded-br-md bg-[#9BB4D9]">
+                    <img src={aboutclieicon} alt="" className="mx-auto md:pt-3 p-3  " />
                     <p className="text-[#0D4E57] text-3xl font-bold max-sm:text-lg">100%</p>
                     <h4 className="font-roboto-serif text-[#0D4E57] mt-1 font-semibold max-sm:text-base text-xl">Clients <br /> Satisfaction</h4>
                 </div>
