@@ -5,7 +5,7 @@ import ourVision from '../images/ourVision.svg'
 import ourMission from '../images/ourMission.svg'
 import aboutexpicon from '../images/about-expicon.svg'
 import aboutwebicon from '../images/about-webicon.svg'
-import aboutproicon from '../images/about-proicon.svg'
+import aboutproicon from '../images/about-proicon.png'
 import aboutclieicon from '../images/about-clieicon.svg'
 import aboutInn from '../images/about-innov.svg'
 import aboutProcess from '../images/about-process.svg'
@@ -13,7 +13,7 @@ import aboutAppro from '../images/about-approch.svg'
 import aboutCost from '../images/about-cost.svg'
 import callIcon from '../images/call-icon.svg'
 import charminarImg from '../images/charminarImg.svg'
-import Portfolio from "../components/utils/Portfolio";
+// import Portfolio from "../components/utils/Portfolio";
 
 
 

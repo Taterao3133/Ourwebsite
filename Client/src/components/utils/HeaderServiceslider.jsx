@@ -7,17 +7,17 @@ import CWD from '../../images/CWD-service.svg'
 import EWD from '../../images/EWD-service.svg'
 import G from '../../images/G-service.svg'
 import IA from '../../images/IA-service.svg'
-import ID1 from '../../images/ID-service.svg'
-import LP from '../../images/LP-service.svg'
+import ID1 from '../../images/ID-service.png'
+import LP from '../../images/LP-service.png'
 import P from '../../images/P-service.svg'
 import MAD from '../../images/MAD-service.svg'
-import R from '../../images/R-service.svg'
+import R from '../../images/R-service.png'
 import RWD from '../../images/RWD-service.png'
 import VD from '../../images/VD-service.svg'
 import W from '../../images/W-service.svg'
 import WM from '../../images/WM-service.svg'
 import WT from '../../images/WT-service.svg'
-import AD from '../../images/AD-service.svg'
+
 
 function HeaderServiceslider({ isServicesHovered , setIsServicesHovered}) {
 
