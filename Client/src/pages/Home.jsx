@@ -58,7 +58,7 @@ function Home () {
     const lines = Array.from({ length: 100 }).map((_, index) => (
         <div key={index} className="border-l border-[#4F5D8133]"></div>
       ));
-      const [emblaRef] = useEmblaCarousel({ loop: true });
+      const [fs] = useEmblaCarousel({ loop: true });
 
   return (
     <div className='root-home scroll-smooth overflow-hidden'>
