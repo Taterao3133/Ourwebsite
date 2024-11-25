@@ -50,6 +50,7 @@ import "swiper/css/pagination";
 import "swiper/css/navigation";
 
 import useEmblaCarousel  from "embla-carousel-react";
+import { useEffect } from "react";
 
 
 
@@ -58,7 +59,20 @@ function Home () {
     const lines = Array.from({ length: 100 }).map((_, index) => (
         <div key={index} className="border-l border-[#4F5D8133]"></div>
       ));
-      const [fs] = useEmblaCarousel({ loop: true });
+
+      const [fsRef, fs] = useEmblaCarousel({ loop: true });
+      useEffect(() => {
+        if (!fs) return;
+    
+        // Automatically move to the next slide every 3 seconds
+        const interval = setInterval(() => {
+            fs.scrollNext();
+        }, 3000);
+    
+        // Cleanup on unmount
+        return () => clearInterval(interval);
+    }, [fs]);
+    
 
   return (
     <div className='root-home scroll-smooth overflow-hidden'>
@@ -104,7 +118,7 @@ function Home () {
                 <SwiperSlide>
                     <div
                         className="cr-content max-sm:w-[120px] max-sm:text-center max-sm:h-[120px] w-[152px] h-[152px] pt-[1px] pl-[1px] rounded-full relative"
-                        style={{ boxShadow: '0 0 4px 4px rgba(255, 255, 255, 1)' }}
+                        style={{ boxShadow: '0 0 4px 4px rgba(255, 255, 255, 1)' }} ref={fsRef}
                     >
                         <div className="inr w-[150px] h-[150px] max-sm:w-[119px] max-sm:h-[119px] rounded-full border-2 border-[#f4f3f2] bg-transparent">
                             <h3 className="font-roboto-serif text-center mt-2 font-semibold max-sm:text-base text-lg text-[#F2F2F2] underline underline-offset-4">
