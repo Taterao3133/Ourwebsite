@@ -64,12 +64,12 @@ function Home () {
       useEffect(() => {
         if (!fs) return;
     
-        // Automatically move to the next slide every 3 seconds
+        
         const interval = setInterval(() => {
             fs.scrollNext();
         }, 3000);
     
-        // Cleanup on unmount
+       
         return () => clearInterval(interval);
     }, [fs]);
     
@@ -238,24 +238,25 @@ function Home () {
                     
                 </div>
             </div>
-            <div className="r-cmp-details xl:mx-20 max-sm:mx-4 mt-11 md:mx-4 md:gap-8  lg:gap-x-2 h-auto  grid grid-cols-2">
+            <div className="r-cmp-details xl:mx-20 max-sm:mx-4 mt-11 md:mx-4 md:gap-8  max-sm:gap-x-4 lg:gap-x-2 h-auto  grid grid-cols-2">
                 <div className="bx  w-[80%] max-sm:w-[100%] pb-3 md:w-full md:h-auto h-[87%] max-sm:h-[95%] text-center shadow-xl border-b-4 border-[#6DDDD6] rounded-bl-[80px] rounded-tl-2xl rounded-tr-2xl rounded-br-md bg-[#B3EFEB]">
-                    <img src={aboutexpicon} alt="" className="mx-auto p-3 max-sm:w-[70%] max-sm:h-[60%]  " />
-                    <p className="text-[#0D4E57] text-3xl font-bold max-sm:text-2xl ">2+</p>
-                    <h4 className="font-roboto-serif text-[#0D4E57] mt-1 font-semibold max-sm:text-[17px] text-xl">Years <br /> Experience</h4>
+                    <img src={aboutexpicon} alt="" className="mx-auto p-3 max-sm:w-[60%] max-sm:h-[60%]  " />
+                    <p className="text-[#0D4E57] text-3xl font-bold max-sm:text-[14px] ">2+</p>
+                    <h4 className="font-roboto-serif text-[#0D4E57] mt-1 max-sm:-mt-2 font-semibold max-sm:text-[14px] text-xl">Years </h4>
+                    <h4 className="font-roboto-serif text-[#0D4E57]  max-sm:-mt-2 font-semibold max-sm:text-[14px] text-xl">Experience</h4>
                 </div>
                 <div className="bx bx w-[80%] max-sm:w-[100%] pb-3 h-[87%] md:w-full md:h-auto max-sm:h-[95%]  text-center shadow-xl border-b-4 border-[#EAA2A2] rounded-bl-[80px] rounded-tl-2xl rounded-tr-2xl rounded-br-md bg-[#EAA2A2]">
-                    <img src={aboutwebicon} alt="" className="mx-auto p-3 max-sm:w-[70%] max-sm:h-[60%] " />
+                    <img src={aboutwebicon} alt="" className="mx-auto p-3 max-sm:w-[60%] max-sm:h-[60%] " />
                     <p className="text-[#0D4E57] text-3xl font-bold max-sm:text-2xl ">2+</p>
                     <h4 className="font-roboto-serif text-[#0D4E57] mt-1 font-semibold max-sm:text-[17px] text-xl">Web & Apps <br /> Developed</h4>
                 </div>
                 <div className="bx bx w-[80%] max-sm:w-[100%] pb-3 h-[87%] md:w-full md:h-auto max-sm:h-[95%] text-center shadow-xl border-b-4 border-[#EC91E3] rounded-bl-[80px] rounded-tl-2xl rounded-tr-2xl rounded-br-md bg-[#E9A4E2]">
-                    <img src={aboutproicon} alt="" className="mx-auto p-3 max-sm:w-[70%] max-sm:h-[60%] " />
+                    <img src={aboutproicon} alt="" className="mx-auto p-3 max-sm:w-[60%] max-sm:h-[60%] " />
                     <p className="text-[#0D4E57] text-3xl font-bold max-sm:text-2xl ">100%</p>
                     <h4 className="font-roboto-serif text-[#0D4E57] mt-1 font-semibold max-sm:text-[17px] text-xl">Projects <br /> Delivered</h4>
                 </div>
                 <div className="bx bx w-[80%]max-sm:w-[100%] pb-3 h-[87%]   md:w-full md:h-auto max-sm:h-[95%] text-center shadow-xl border-b-4 border-[#93B2E0] rounded-bl-[80px] rounded-tl-2xl rounded-tr-2xl rounded-br-md bg-[#9BB4D9]">
-                    <img src={aboutclieicon} alt="" className="mx-auto p-3  max-sm:w-[70%] max-sm:h-[60%] " />
+                    <img src={aboutclieicon} alt="" className="mx-auto p-3  max-sm:w-[60%] max-sm:h-[60%] " />
                     <p className="text-[#0D4E57] text-3xl font-bold  max-sm:text-2xl">100%</p>
                     <h4 className="font-roboto-serif text-[#0D4E57] mt-1 font-semibold max-sm:text-[17px] text-xl">Clients <br /> Satisfaction</h4>
                 </div>
