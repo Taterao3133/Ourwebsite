@@ -98,7 +98,7 @@ function AboutUs() {
                     
                 </div>
             </div>
-            <div className="r-cmp-details xl:mx-20 mt-11 max-md:gap-y-5 w-full md:gap-y-8  lg:gap-x-2 h-auto max-sm:justify-center max-sm:items-center max-sm:text-center grid lg:grid-cols-2">
+            <div className="r-cmp-details xl:mx-20 mt-11 max-md:gap-y-5 w-full md:gap-y-8 max-sm:grid-cols-1 max-sm:px-8  lg:gap-x-2 h-auto max-sm:justify-center max-sm:items-center max-sm:text-center grid lg:grid-cols-2">
                 <div className="bx  w-[80%] md:mx-auto max-sm:w-[100%] max-sm:h-full pb-3 md:h-auto h-[87%] text-center shadow-xl border-b-4 border-[#6DDDD6] rounded-bl-[80px] rounded-tl-2xl rounded-tr-2xl rounded-br-md bg-[#B3EFEB]">
                     <img src={aboutexpicon} alt="" className="mx-auto md:pt-3 p-3 " />
                     <p className="text-[#0D4E57] text-3xl max-sm:text-lg font-bold ">2+</p>
