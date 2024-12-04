@@ -183,8 +183,13 @@ function HeaderServiceslider({ isServicesHovered , setIsServicesHovered}) {
              </div>
              
           </div>
+          {/* <header class="bg-white shadow-md"> */}
+  
+
       </div>
   );
 }
 
 export default HeaderServiceslider;
+
+

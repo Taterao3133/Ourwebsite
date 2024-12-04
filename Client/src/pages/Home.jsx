@@ -377,7 +377,7 @@ function Home () {
                         recognized as a premier choice among web and app development companies. Explore what sets us apart</p>
 
                     <div className="c-in flex max-sm:mt-10 mt-8">
-                        <img src={choosespm} alt="" />
+                        <img src={choosespm} alt="" className=" max-sm:w-[80px] max-sm:h-[80px]"  />
                         <div className="c-intxt ml-2">
                             <h3 className="font-roboto-serif text-2xl max-sm:text-xl font-medium">Streamlined Project Management</h3>
                             <p className="text-lg text-[#302F68] max-sm:text-base font-roboto-serif mt-3">Efficiently navigate your projects with XXXXX streamlined management. 
@@ -397,7 +397,7 @@ function Home () {
                  <div className="r-c ">
                     <img src={oursection} alt=""  className="ml-20 mt-10 max-sm:hidden"/>
                     <div className="c-in flex max-sm:ml-0 md:ml-0 ml-10 mt-10">
-                        <img src={choosecpt} alt="" />
+                        <img src={choosecpt} alt="" className=" max-sm:w-[80px] max-sm:h-[80px]" />
                         <div className="c-intxt ml-2  ">
                             <h3 className="font-roboto-serif text-2xl max-sm:text-xl font-medium">Completion of Project in Given Time</h3>
                             <p className="text-lg text-[#302F68] max-sm:text-base font-roboto-serif mt-3">We guarantee timely project completion at XXXXX, delivering on our promises and meeting your deadlines.</p>

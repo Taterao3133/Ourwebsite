@@ -53,6 +53,7 @@ function Header() {
             SERVICES +
           </p>
           <p className="text-lg  font-roboto  font-semibold text-[#090B4F] tracking-wide"><Link to='about'>ABOUT US</Link></p>
+          
           <p className="text-lg font-roboto  font-semibold text-[#090B4F] tracking-wide"><Link to='/career'>CAREERS</Link></p>
           <img src={callIcon} alt="" className={`  p-2 bg-blue-700 rounded-[90%] ${isSticky ? 'h-14 w-14 ':' h-16 w-16'}`}/>
           <div className="bt flex w-64  h-14 border-2 border-white bg-[#3F36CD]  rounded-[40px]">
