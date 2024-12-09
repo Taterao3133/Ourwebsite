@@ -440,9 +440,10 @@ function Home () {
             </div>
 
         </div>
-        <div className="quote-sec items-center gap-8 justify-center md:pb-5   lg:flex h-40">
+        <div className="quote-sec items-center  justify-center md:pb-5   lg:flex h-40">
             <h2 className="text-[40px] max-sm:text-[25px] md:pt-5 md:text-center max-sm:text-center max-sm:mt-10  text-[#108ABF] font-roboto-serif font-medium">We Promise. We Deliver.</h2>
-            <div className="bt flex  max-sm:w-[60%] w-64 md:mx-auto md:mt-4   h-14 border-2 border-white bg-[#3F36CD] max-sm:mt-5 max-sm:mx-auto  rounded-[40px]">
+            
+            <div className="bt flex lg:mx-0 max-sm:w-[60%] w-64 md:mx-auto md:mt-4   h-14 border-2 border-white bg-[#3F36CD] max-sm:mt-5 max-sm:mx-auto  rounded-[40px]">
                 <button className='text-xl max-sm:text-base  text-white font-medium font-roboto my-auto mx-auto  flex'>REQUEST A QUOTE <FaGreaterThan className=" mt-[4px] ml-2 text-white"/>  </button> 
             </div>
 

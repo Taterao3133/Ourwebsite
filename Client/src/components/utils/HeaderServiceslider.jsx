@@ -1,4 +1,4 @@
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import CAD from '../../images/header-service-CAD.svg'
 import AAD from '../../images/AAD-service.svg'
 import SM from '../../images/SM-service.png'
@@ -20,16 +20,17 @@ import WT from '../../images/WT-service.svg'
 
 
 function HeaderServiceslider({ isServicesHovered , setIsServicesHovered}) {
+  const [isSticky, setIsSticky] = useState(false);
 
     useEffect(() => {
-        const handleScroll = () => {
-          if (window.scrollY > 0) {
-    
-            // setIsSticky(true);
-          } else {
-            // setIsSticky(false);
-          }
-        };
+      const handleScroll = () => {
+        if (window.scrollY > 0) {
+  
+          setIsSticky(true);
+        } else {
+          setIsSticky(false);
+        }
+      };
     
         window.addEventListener('scroll', handleScroll);
         return () => {
@@ -39,7 +40,7 @@ function HeaderServiceslider({ isServicesHovered , setIsServicesHovered}) {
 
   return (
       <div 
-          className={`serviceHover fixed top-[80px] left-0 w-full h-auto transition-all duration-500 ease-in-out ${isServicesHovered ? 'opacity-100 z-50 ' : 'opacity-0 pointer-events-none top-14'} z-40`}
+          className={`serviceHover fixed top-[80px] left-0 w-full h-auto transition-all duration-500 ease-in-out ${isSticky ? 'top-[64px]': 'top-14'} ${isServicesHovered ? 'opacity-100 z-50 top-14 ' : '  left-auto opacity-0 pointer-events-none top-10'} z-40`}
           onMouseEnter={() => setIsServicesHovered(true)}  // 
             onMouseLeave={() => setIsServicesHovered(false)} // 
           >
