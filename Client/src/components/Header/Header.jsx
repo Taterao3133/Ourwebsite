@@ -41,7 +41,7 @@ function Header() {
           <div className="logo">
             tech solutions
           </div>
-
+{/*  */}
         </div>
         <div className="hidden lg:flex">
         <div className="r-c flex space-x-7 items-center ">
