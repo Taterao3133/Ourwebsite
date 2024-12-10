@@ -43,14 +43,14 @@ import callIcon from '../images/call-icon.svg'
 import charminarImg from '../images/charminarImg.svg'
 import CarAnimation from "../components/utils/CarAnimation";
 
-import { Swiper, SwiperSlide } from "swiper/react";
-import { Pagination, Navigation } from "swiper/modules";
+// import { Swiper, SwiperSlide } from "swiper/react";
+// import { Pagination, Navigation } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
 
-import useEmblaCarousel  from "embla-carousel-react";
-import { useEffect } from "react";
+// import useEmblaCarousel  from "embla-carousel-react";
+// import { useEffect } from "react";
 
 
 
@@ -60,18 +60,18 @@ function Home () {
         <div key={index} className="border-l border-[#4F5D8133]"></div>
       ));
 
-      const [fsRef, fs] = useEmblaCarousel({ loop: true });
-      useEffect(() => {
-        if (!fs) return;
+    //   const [fsRef, fs] = useEmblaCarousel({ loop: true });
+    //   useEffect(() => {
+    //     if (!fs) return;
     
         
-        const interval = setInterval(() => {
-            fs.scrollNext();
-        }, 3000);
+    //     const interval = setInterval(() => {
+    //         fs.scrollNext();
+    //     }, 3000);
     
        
-        return () => clearInterval(interval);
-    }, [fs]);
+    //     return () => clearInterval(interval);
+    // }, [fs]);
     
 
   return (
