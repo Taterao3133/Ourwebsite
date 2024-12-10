@@ -40,7 +40,7 @@ function HeaderServiceslider({ isServicesHovered , setIsServicesHovered}) {
 
   return (
       <div 
-          className={`serviceHover fixed top-[80px] left-0 w-full h-auto transition-all duration-500 ease-in-out ${isSticky ? 'top-[64px]': 'top-14'} ${isServicesHovered ? 'opacity-100 z-50 top-14 ' : '  left-auto opacity-0 pointer-events-none top-10'} z-40`}
+          className={`serviceHover fixed top-[80px] left-0 w-full h-auto transition-all duration-500 ease-in-out ${isSticky ? 'top-[63px]': 'top-14'} ${isServicesHovered ? 'opacity-100 z-50 top-10 ' : '  left-auto opacity-0 pointer-events-none -top-5'} z-40`}
           onMouseEnter={() => setIsServicesHovered(true)}  // 
             onMouseLeave={() => setIsServicesHovered(false)} // 
           >

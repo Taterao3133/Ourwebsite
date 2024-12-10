@@ -19,6 +19,12 @@ module.exports = {
       '100': 'repeat(100, minmax(0, 1fr))',
     },
     keyframes: {
+      shake: {
+        '0%, 100%': { transform: 'translateX(0)' },
+        '25%': { transform: 'translateX(-2px)' },
+        '50%': { transform: 'translateX(2px)' },
+        '75%': { transform: 'translateX(-2px)' },
+      },
         
       moveCar: {
         '0%': { transform: 'translateX(-100%)' },
@@ -30,7 +36,11 @@ module.exports = {
         '100%': { opacity: '0', transform: 'translateX(20px) translateY(-30px) scale(1)' },
       },
     },
+    animation1: {
+      shake: 'shake 0.5s ease-in-out',
+    },
     animation: {
+      shake: 'shake 0.5s ease-in-out',
       'text-travel': 'text-travel 5s linear infinite',
         // 'text-travel-middle': 'text-travel-middle 12s linear infinite',
         // 'text-travel-inner': 'text-travel-inner 12s linear infinite',

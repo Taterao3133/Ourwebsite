@@ -35,7 +35,7 @@ function Header() {
 
   return (
     <>   
-     <div className={`header w-full  transition-all lg:duration-700 md:duration-350 ease-in-out ${isSticky ? 'fixed top-0 left-0 bg-[#f9f8f8]  border-none h-16 pt-2 lg:pt-1 shadow-lg z-50' : 'lg:h-20 h-16 text-white pt-2 bg-[#35359d] lg:pt-2 py-auto border-b-[1px] border-[#7285bf] lg:z-30'}`}>
+     <div className={`header w-full  transition-all lg:duration-700 md:duration-350 ease-in-out ${isSticky ? 'fixed top-0 left-0 bg-[#f9f8f8]  border-none h-16 pt-2   lg:pt-1 shadow-lg z-50' : 'lg:h-20 h-16 text-white pt-2 bg-[#35359d] lg:pt-2 py-auto border-b-[1px] border-[#7285bf] lg:z-30'}`}>
       <div className='h-c justify-between flex   transition-all duration-700 ease-in-out max-sm:mx-9 md:px-16  lg:px-20'>
         <div className="l-c">
           <div className="logo">
@@ -44,20 +44,25 @@ function Header() {
 {/*  */}
         </div>
         <div className="hidden lg:flex">
-        <div className="r-c flex space-x-7 items-center ">
-        <p 
-            className={`text-base cursor-pointer font-roboto  font-semibold text-[#090B4F] tracking-wide ${isSticky ? ' ':' text-[#fff]'}`} 
-            onMouseEnter={() => setIsServicesHovered(true)} 
-            onMouseLeave={() => setIsServicesHovered(false)}
+        <div className="r-c flex lg:space-x-3 xl:space-x-7  items-center ">
+          <div  className={`hovers  ${isSticky ? 'py-2' :'py-5'} `}
+                      onMouseEnter={() => setIsServicesHovered(true)} 
+                      onMouseLeave={() => setIsServicesHovered(false)}
+           >
+          <p 
+            className={`text-base cursor-pointer font-roboto hover:text-[#ce6ad0]  hover:underline-offset-4 hover:underline  font-semibold text-[#090B4F] tracking-wide ${isSticky ? ' ':' text-[#fff]'}  ${location.pathname === '' ? 'text-[#ce6ad0] underline-offset-4 underline ' : ''} `} 
+  
           >
             SERVICES +
           </p>
-          <p className={`text-base font-roboto  font-semibold text-[#090B4F] tracking-wide ${isSticky ? ' ':' text-[#fff]'}`}><Link to='about'>ABOUT US</Link></p>
+          </div>
+       
+          <p className={`text-base font-roboto  font-semibold hover:text-[#ce6ad0]  hover:underline-offset-4 hover:underline text-[#090B4F] tracking-wide ${isSticky ? ' ':' text-[#fff]'}  ${location.pathname === '/about' ? 'text-[#ce6ad0] underline-offset-4 underline ' : ''}`}><Link to='about'>ABOUT US</Link></p>
           
-          <p className={`text-base font-roboto  font-semibold text-[#090B4F] tracking-wide ${isSticky ? ' ':' text-[#fff]'}`}><Link to='/career'>CAREERS</Link></p>
-          <img src={callIcon} alt="" className={`  p-2 bg-blue-700 rounded-[90%] ${isSticky ? 'h-12 w-12 ':' h-12 w-12'}`}/>
-          <div className="bt flex w-56  h-14 border-2 border-white bg-[#3F36CD]  rounded-[40px]">
-              <button className='text-[17px] text-white bg-[#3F36CD] font-medium font-roboto my-auto mx-auto flex'>REQUEST A QUOTE <FaGreaterThan className=" mt-[4px] ml-2 text-white"/>  </button>    
+          <p className={`text-base font-roboto  font-semibold hover:text-[#ce6ad0]  hover:underline-offset-4 hover:underline text-[#090B4F] tracking-wide ${isSticky ? ' ':' text-[#fff]'}  ${location.pathname === '/career' ? 'text-[#ce6ad0] underline-offset-4 underline ' : ''}`}><Link to='/career'>CAREERS</Link></p>
+          <img src={callIcon} alt="" className={`  p-2 bg-[#b857c7] shadow-lg  hover:h-14 hover:w-14 drop-shadow-lg rounded-[90%] ${isSticky ? 'h-12  w-12 ':' h-12 w-12'}`}/>
+          <div className="bt flex w-56  h-14 border-2 border-white bg-[#3434A1] drop-shadow-lg  rounded-[40px]">
+              <button className='text-[17px] text-white bg-[#3434A1] font-medium font-roboto my-auto hover:text-red-600  mx-auto hover:animate-shake flex '>REQUEST A QUOTE <FaGreaterThan className=" mt-[4px] ml-2 text-white"/>  </button>    
           </div>
 
           </div>

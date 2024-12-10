@@ -76,17 +76,18 @@ function Home () {
 
   return (
     <div className='root-home scroll-smooth overflow-hidden'>
-        <div className="hero-section bg-[#3434A1] w-full xl:h-auto xl:pb-4 md:text-center md:px-7  max-sm:h-auto lg:h-[800px]   lg:grid lg:grid-cols-2">
+        <div className="hero-section bg-[#3434A1] w-full xl:h-auto lg:h-auto xl:pb-4 md:text-center md:px-7  max-sm:h-auto lg:pb-10   lg:grid lg:grid-cols-2">
             <div className="r-content xl:mt-24 md:pt-10 max-sm:pt-10  xl:ml-20">
                <div className="text max-sm:text-center max-sm:px-8 ">
-                    <h2 className='custom-gradient-text max-sm:hidden text-[44px] xl:text-[40px] tracking-wide font-roboto-serif font-bold  '>
+                    <h2 className='custom-gradient-text max-sm:hidden text-[44px] lg:text-[40px] xl:text-[40px] tracking-wide font-roboto-serif font-bold  '>
                         Together, we bring your vision to life with solutions that drive success.   
                     </h2>
                     <h2 className='custom-gradient-text md:hidden text-[44px] max-sm:text-3xl xl:text-[40px] tracking-wide font-roboto-serif font-bold  '>
                         We bring your vision to life with solutions.   
                     </h2>
 
-                    <h4 className='text-[24px] max-sm:text-lg max-sm:mt-4  xl:text-xl xl:mt-8 mt-10 font-medium font-roboto-serif text-[#E7A548]'>Success in the software business lies in creating innovative
+                    <h4 className='text-[24px] max-sm:text-lg max-sm:mt-4 lg:mt-6  lg:text-lg xl:text-xl xl:mt-8 mt-10 font-medium font-roboto-serif text-[#E7A548]'>
+                        Success in the software business lies in creating innovative
                         solutions that solve real problems and drive lasting change
                     </h4>
                 </div> 
@@ -94,81 +95,12 @@ function Home () {
                     <button className='text-xl max-sm:text-base max-sm:px-8 text-white font-medium font-roboto my-auto mx-auto flex'>GET STARTS <FaGreaterThan className=" mt-[4px] ml-2 text-white"/>  </button>
                     
                 </div>
-                <div className="our-amb md:mx-9 max-sm:mt-10 max-sm:mx-10 mt-10 max-sm:text-center">
-                    <h2 className="font-roboto font-medium md:text-center text-white max-sm:text-[17px] text-2xl tracking-wide">OUR AMBITION</h2>
-
-                    <Swiper
-                spaceBetween={14} 
-                slidesPerView={3} 
-                breakpoints={{
-                    200:{
-                        slidesPerView:2,
-                    },
-                    640: {
-                        slidesPerView: 3,
-                    },
-
-                   
-                }}
-                pagination={{ clickable: true }}
-                navigation={false}
-                modules={[Pagination, Navigation]}
-                className="mt-3 md:mt-4 md:ml-20 "
-            >
-                <SwiperSlide>
-                    <div
-                        className="cr-content max-sm:w-[120px] max-sm:text-center max-sm:h-[120px] w-[152px] h-[152px] pt-[1px] pl-[1px] rounded-full relative"
-                        style={{ boxShadow: '0 0 4px 4px rgba(255, 255, 255, 1)' }} ref={fsRef}
-                    >
-                        <div className="inr w-[150px] h-[150px] max-sm:w-[119px] max-sm:h-[119px] rounded-full border-2 border-[#f4f3f2] bg-transparent">
-                            <h3 className="font-roboto-serif text-center mt-2 font-semibold max-sm:text-base text-lg text-[#F2F2F2] underline underline-offset-4">
-                                Scalable Architecture
-                            </h3>
-                            <p className="font-roboto-serif font-medium max-sm:text-xs text-base text-center text-[#D9DFE3] -mt-1 p-3 leading-tight">
-                                Built to expand as you do
-                            </p>
-                        </div>
-                    </div>
-                </SwiperSlide>
-
-                <SwiperSlide>
-                    <div
-                        className="cr-content max-sm:w-[120px] max-sm:text-center max-sm:h-[120px] w-[152px] h-[152px] pt-[1px] pl-[1px] rounded-full relative"
-                        style={{ boxShadow: '0 0 4px 4px rgba(255, 255, 255, 1)' }}
-                    >
-                        <div className="inr w-[150px] h-[150px] max-sm:w-[119px] max-sm:h-[119px] rounded-full border-2 border-[#f4f3f2] bg-transparent">
-                            <h3 className="font-roboto-serif text-center mt-3 font-semibold max-sm:text-base text-lg text-[#F2F2F2] underline underline-offset-4">
-                                Innovative Ideas
-                            </h3>
-                            <p className="font-roboto-serif font-medium max-sm:text-xs text-base text-center text-[#D9DFE3] -mt-1 p-3 leading-tight">
-                                Fresh concepts that stand out
-                            </p>
-                        </div>
-                    </div>
-                </SwiperSlide>
-
-                <SwiperSlide>
-                    <div
-                        className="cr-content max-sm:w-[120px] max-sm:text-center max-sm:h-[120px] w-[152px] h-[152px] pt-[1px] pl-[1px] rounded-full relative"
-                        style={{ boxShadow: '0 0 4px 4px rgba(255, 255, 255, 1)' }}
-                    >
-                        <div className="inr w-[150px] h-[150px] max-sm:w-[119px] max-sm:h-[119px] rounded-full border-2 border-[#f4f3f2] bg-transparent">
-                            <h3 className="font-roboto-serif text-center mt-2 font-semibold max-sm:text-base text-lg text-[#F2F2F2] underline underline-offset-4">
-                                Client Approach
-                            </h3>
-                            <p className="font-roboto-serif font-medium max-sm:text-xs text-base text-center text-[#D9DFE3] max-sm:-mt-1 mt-2 p-3 leading-tight">
-                                Your needs are our priority
-                            </p>
-                        </div>
-                    </div>
-                </SwiperSlide>
-            </Swiper>
-                </div>
+                
            </div>
-            <div className="l-content max-sm:pb-14 md:pb-7">
-                <div className="laptop-icn flex xl:mt-1 ml-10 ">
-                <img src={homelaptop1} alt="" className="w-[70%] max-sm:w-[80%] max-sm:h-40 h-80 max-sm:mt-10  mt-24" />
-                <img src={homemobile} alt="" className="-ml-40 mt-48 xl:w-[25%] max-sm:w-[25%] max-sm:mt-24 max-sm:-ml-[80px]" />
+            <div className="l-content max-sm:pb-14  md:pb-7"> 
+                <div className="laptop-icn flex xl:mt-1 ml-10  md:justify-center md:items-center  ">
+                <img src={homelaptop1} alt="" className="w-[70%] max-sm:w-[80%] max-sm:h-40 md:h-80 lg:h-56  xl:h-80 max-sm:mt-10 md:mt-10  mt-24" />
+                <img src={homemobile} alt="" className="xl:-ml-32 md:-ml-40 md:mt-56 md:h-auto md:w-[20%] mt-48 xl:w-[25%] lg:w-[23%] lg:-ml-20  max-sm:w-[25%] max-sm:mt-24 max-sm:-ml-[80px]" />
                 
                 </div>
 
@@ -176,6 +108,60 @@ function Home () {
             </div>
           
         </div>
+
+        {/* nn */}
+
+        <div className="our-amb bg-[#3434A1] md:px-10 md:h-auto px-10 max-sm:mt-10 max-sm:mx-10 pt-10 pb-5 max-sm:text-center">
+            <h2 className="font-roboto font-medium md:text-center text-white max-sm:text-[17px] text-2xl tracking-wide">
+                OUR AMBITION
+            </h2>
+
+            <div className="mt-3 md:mt-4 md:pt-10 mx-auto flex flex-wrap justify-center gap-x-24">
+                <div
+                className="cr-content max-sm:w-[120px] max-sm:text-center max-sm:h-[120px] w-[152px] h-[152px] pt-[1px] pl-[1px] rounded-[30%] relative"
+                style={{ boxShadow: '0 0 4px 4px rgba(255, 255, 255, 1)' }}
+                >
+                <div className="inr w-[150px] h-[150px] max-sm:w-[119px] max-sm:h-[119px] rounded-full border-2 bg-transparent">
+                    <h3 className="font-roboto-serif text-center mt-2 font-semibold max-sm:text-base text-lg text-[#F2F2F2] underline underline-offset-4">
+                    Scalable Architecture
+                    </h3>
+                    <p className="font-roboto-serif font-medium max-sm:text-xs text-base text-center text-[#D9DFE3] -mt-1 p-3 leading-tight">
+                    Built to expand as you do
+                    </p>
+                </div>
+                </div>
+
+                <div
+                className="cr-content max-sm:w-[120px] max-sm:text-center max-sm:h-[120px] w-[152px] h-[152px] pt-[1px] pl-[1px] rounded-[30%] relative"
+                style={{ boxShadow: '0 0 4px 4px rgba(255, 255, 255, 1)' }}
+                >
+                <div className="inr w-[150px] h-[150px] max-sm:w-[119px] max-sm:h-[119px] rounded-full border-2 border-[#f4f3f2] bg-transparent">
+                    <h3 className="font-roboto-serif text-center mt-3 font-semibold max-sm:text-base text-lg text-[#F2F2F2] underline underline-offset-4">
+                    Innovative Ideas
+                    </h3>
+                    <p className="font-roboto-serif font-medium max-sm:text-xs text-base text-center text-[#D9DFE3] -mt-1 p-3 leading-tight">
+                    Fresh concepts that stand out
+                    </p>
+                </div>
+                </div>
+
+                <div
+                className="cr-content max-sm:w-[120px] max-sm:text-center max-sm:h-[120px] w-[152px] h-[152px] pt-[1px] pl-[1px] rounded-[30%] relative"
+                style={{ boxShadow: '0 0 4px 4px rgba(255, 255, 255, 1)' }}
+                >
+                <div className="inr w-[150px] h-[150px] max-sm:w-[119px] max-sm:h-[119px] rounded-full border-2 border-[#f4f3f2] bg-transparent">
+                    <h3 className="font-roboto-serif text-center mt-2 font-semibold max-sm:text-base text-lg text-[#F2F2F2] underline underline-offset-4">
+                    Client Approach
+                    </h3>
+                    <p className="font-roboto-serif font-medium max-sm:text-xs text-base text-center text-[#D9DFE3] max-sm:-mt-1 mt-2 p-3 leading-tight">
+                    Your needs are our priority
+                    </p>
+                </div>
+                </div>
+            </div>
+         </div>
+
+
         {/* client icons sections */}
         <div className="slidersh w-full  max-sm:h-16 xl:h-28 bg-[#bed9ed] ">
         {/* <div className="clients-wicon xl:px-20 flex max-sm:space-x-7 space-x-48 justify-center items-center " ref={emblaRef}> */}
@@ -220,17 +206,17 @@ function Home () {
         {/* </div> */}
         </div>
         {/* company details */}
-        <div className="cmp-details pb-10 w-full h-auto lg:grid lg:grid-cols-2 max-sm:bg-[rgb(255,255,255)] bg-[#E0CDE7]">
-            <div className="l-cmp-details md:px-5 xl:ml-20 max-sm:px-5 md:pt-14 md:text-center max-sm:text-center  max-sm:mt-0 max-sm:pt-14 lg:mt-9 h-auto  ">
-                <h3 className="font-roboto-serif text-[#000000] font-medium max-sm:text-2xl text-4xl"> <span className="text-red-300">XXXXX </span> Websites and App Development Company</h3>
-                <p className="text-lg max-sm:text-base font-roboto-serif text-[#302F68] mt-7">At XXXXX, we take pride in being a top-rated Websites and mobile app development company. Our team brings together creativity 
+        <div className="cmp-details pb-10 w-full h-auto lg:grid lg:grid-cols-2 max-sm:bg-[rgb(255,255,255)] bg-[rgb(255,255,255)]">
+            <div className="l-cmp-details md:px-5 xl:ml-20 max-sm:px-5 md:pt-14 md:text-center max-sm:text-center lg:text-left  max-sm:mt-0 max-sm:pt-14 lg:mt-9 h-auto  ">
+                <h3 className="font-roboto-serif text-[#000000] font-medium max-sm:text-2xl text-4xl"> <span className="text-[#e91e63]">XXXXX </span> Websites and App Development Company</h3>
+                <p className="text-[17px] max-sm:text-base font-roboto-serif text-[#302F68] mt-7">At XXXXX, we take pride in being a top-rated Websites and mobile app development company. Our team brings together creativity 
                     and extensive experience to deliver cutting-edge Websites and mobile app solutions. Located in India, we have established 
                     ourselves as a leading force in the industry.</p>
-                <p className="text-lg max-sm:text-base font-roboto-serif text-[#302F68] max-sm:mt-3 mt-6">XXXXX is your go-to destination for cutting-edge websites and mobile app development solutions in Hyderabad, India. 
+                <p className="text-[17px] max-sm:text-base font-roboto-serif text-[#302F68] max-sm:mt-3 mt-6">XXXXX is your go-to destination for cutting-edge websites and mobile app development solutions in Hyderabad, India. 
                     Renowned as a top-rated company, we pride ourselves on being the creative powerhouse behind numerous successful 
                     Websites and mobile applications</p>
 
-                <p className="font-roboto-serif max-sm:mt-3 mt-5 text-[#302F68] font-medium max-sm:text-base text-lg">At XXXXX, we don't just create Websites, we craft exceptional user experiences that drive success.
+                <p className="font-roboto-serif max-sm:mt-3 mt-5 text-[#302F68] font-medium max-sm:text-base text-[17px">At XXXXX, we don't just create Websites, we craft exceptional user experiences that drive success.
                      Join us on your journey to Website And Mobile App excellence</p>
 
                 <div className="bt flex  max-sm:mt-10 mt-7  md:mx-auto max-sm:mx-auto w-64  max-sm:w-[70%] max-sm:h-14 h-16 border-2 border-white bg-[#3F36CD]  rounded-[40px]">
@@ -238,8 +224,8 @@ function Home () {
                     
                 </div>
             </div>
-            <div className="r-cmp-details xl:mx-20 max-sm:mx-4 mt-11 md:mx-4 md:gap-8  max-sm:gap-x-4 lg:gap-x-2 h-auto  grid grid-cols-2">
-                <div className="bx  w-[80%] max-sm:w-[100%] pb-3 md:w-full md:h-auto h-[87%] max-sm:h-[95%] text-center shadow-xl border-b-4 border-[#6DDDD6] rounded-bl-[80px] rounded-tl-2xl rounded-tr-2xl rounded-br-md bg-[#B3EFEB]">
+            <div className="r-cmp-details xl:mx-20 max-sm:mx-4 mt-11 lg:mt-28 lg:pb-10 md:mx-4 md:gap-8  max-sm:gap-x-4 lg:gap-x-2 h-auto  grid grid-cols-3">
+                <div className="bx  w-[80%] max-sm:w-[100%] pb-3 md:w-full md:h-auto lg:h-[90%] xl:h-[87%] max-sm:h-[95%] text-center shadow-xl border-b-4 border-[#6DDDD6] rounded-bl-[80px] rounded-tl-2xl rounded-tr-2xl rounded-br-md bg-[#B3EFEB]">
                     <img src={aboutexpicon} alt="" className="mx-auto p-3 max-sm:w-[60%] max-sm:h-[60%]  " />
                     <p className="text-[#0D4E57] text-3xl font-bold max-sm:text-[14px] max-sm:ml-2 ">2+</p>
                     <h4 className="font-roboto-serif text-[#0D4E57] mt-1 max-sm:-mt-2 max-sm:ml-2 font-semibold max-sm:text-[14px] text-xl">Years </h4>
@@ -251,7 +237,7 @@ function Home () {
                     <h4 className="font-roboto-serif text-[#0D4E57] max-sm:ml-2  max-sm:-mt-2 mt-1 font-semibold max-sm:text-[14px] text-xl">Web & Apps</h4>
                     <h4 className="font-roboto-serif text-[#0D4E57]  max-sm:-mt-2 font-semibold max-sm:ml-2 max-sm:text-[14px] text-xl">Developed</h4>
                 </div>
-                <div className="bx bx w-[80%] max-sm:w-[100%] pb-3 h-[87%] md:w-full md:h-auto max-sm:h-[95%] text-center shadow-xl border-b-4 border-[#EC91E3] rounded-bl-[80px] rounded-tl-2xl rounded-tr-2xl rounded-br-md bg-[#E9A4E2]">
+                <div className="bx bx w-[80%] max-sm:w-[100%] pb-3 lg:h-[75%] xl:h-[87%] md:w-full md:h-auto max-sm:h-[95%] text-center shadow-xl border-b-4 border-[#EC91E3] rounded-bl-[80px] rounded-tl-2xl rounded-tr-2xl rounded-br-md bg-[#E9A4E2]">
                     <img src={aboutproicon} alt="" className="mx-auto p-3 max-sm:w-[60%] max-sm:h-[60%] " />
                     <p className="text-[#0D4E57] text-3xl font-bold max-sm:ml-2  max-sm:text-[14px] ">100%</p>
                     <h4 className="font-roboto-serif text-[#0D4E57] mt-1 max-sm:ml-2  max-sm:-mt-2 font-semibold max-sm:text-[14px] text-xl">Projects</h4>
