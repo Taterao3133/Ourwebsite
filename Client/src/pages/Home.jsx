@@ -224,20 +224,20 @@ function Home () {
                     
                 </div>
             </div>
-            <div className="r-cmp-details xl:mx-20 max-sm:mx-4 mt-11 lg:mt-28 lg:pb-10 md:mx-4 md:gap-8  max-sm:gap-x-4 lg:gap-x-2 h-auto  grid grid-cols-3">
+            <div className="r-cmp-details xl:mx-20 max-sm:mx-4 mt-11 lg:mt-28 lg:pb-10 md:mx-4 md:gap-8  max-sm:gap-x-4 lg:gap-x-2 h-auto  grid grid-cols-2">
                 <div className="bx  w-[80%] max-sm:w-[100%] pb-3 md:w-full md:h-auto lg:h-[90%] xl:h-[87%] max-sm:h-[95%] text-center shadow-xl border-b-4 border-[#6DDDD6] rounded-bl-[80px] rounded-tl-2xl rounded-tr-2xl rounded-br-md bg-[#B3EFEB]">
                     <img src={aboutexpicon} alt="" className="mx-auto p-3 max-sm:w-[60%] max-sm:h-[60%]  " />
                     <p className="text-[#0D4E57] text-3xl font-bold max-sm:text-[14px] max-sm:ml-2 ">2+</p>
                     <h4 className="font-roboto-serif text-[#0D4E57] mt-1 max-sm:-mt-2 max-sm:ml-2 font-semibold max-sm:text-[14px] text-xl">Years </h4>
                     <h4 className="font-roboto-serif text-[#0D4E57]  max-sm:-mt-2 font-semibold max-sm:ml-2 max-sm:text-[14px] text-xl">Experience</h4>
                 </div>
-                <div className="bx bx w-[80%] max-sm:w-[100%] pb-3 h-[87%] md:w-full md:h-auto max-sm:h-[95%]  text-center shadow-xl border-b-4 border-[#EAA2A2] rounded-bl-[80px] rounded-tl-2xl rounded-tr-2xl rounded-br-md bg-[#EAA2A2]">
+                <div className="bx bx w-[80%] max-sm:w-[100%] pb-3 lg:[90%] xl:h-[87%] md:w-full md:h-auto max-sm:h-[95%]  text-center shadow-xl border-b-4 border-[#EAA2A2] rounded-bl-[80px] rounded-tl-2xl rounded-tr-2xl rounded-br-md bg-[#EAA2A2]">
                     <img src={aboutwebicon} alt="" className="mx-auto p-3 max-sm:w-[60%] max-sm:h-[60%] " />
                     <p className="text-[#0D4E57] text-3xl font-bold max-sm:ml-2 max-sm:text-[14px] ">2+</p>
                     <h4 className="font-roboto-serif text-[#0D4E57] max-sm:ml-2  max-sm:-mt-2 mt-1 font-semibold max-sm:text-[14px] text-xl">Web & Apps</h4>
                     <h4 className="font-roboto-serif text-[#0D4E57]  max-sm:-mt-2 font-semibold max-sm:ml-2 max-sm:text-[14px] text-xl">Developed</h4>
                 </div>
-                <div className="bx bx w-[80%] max-sm:w-[100%] pb-3 lg:h-[75%] xl:h-[87%] md:w-full md:h-auto max-sm:h-[95%] text-center shadow-xl border-b-4 border-[#EC91E3] rounded-bl-[80px] rounded-tl-2xl rounded-tr-2xl rounded-br-md bg-[#E9A4E2]">
+                <div className="bx bx w-[80%] max-sm:w-[100%] pb-3 lg:h-[87%] xl:h-[87%] md:w-full md:h-auto max-sm:h-[95%] text-center shadow-xl border-b-4 border-[#EC91E3] rounded-bl-[80px] rounded-tl-2xl rounded-tr-2xl rounded-br-md bg-[#E9A4E2]">
                     <img src={aboutproicon} alt="" className="mx-auto p-3 max-sm:w-[60%] max-sm:h-[60%] " />
                     <p className="text-[#0D4E57] text-3xl font-bold max-sm:ml-2  max-sm:text-[14px] ">100%</p>
                     <h4 className="font-roboto-serif text-[#0D4E57] mt-1 max-sm:ml-2  max-sm:-mt-2 font-semibold max-sm:text-[14px] text-xl">Projects</h4>
