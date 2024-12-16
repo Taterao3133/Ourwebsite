@@ -52,14 +52,14 @@ function PortfolioSlider() {
             {slides.map((slide, index) => (
                 <div key={index} className="d grid lg:grid-cols-2 min-w-full h-[430px]">
                 <div className="l-c">
-                  <h2 className="text-[40px] max-sm:hidden text-[#AE7C36] font-roboto-serif font-medium md:mt-6 mt-16 text-center">
+                  <h2 className="xl:text-[40px] lg:text-[37px]  max-sm:hidden text-[#AE7C36] font-roboto-serif font-medium md:mt-6  lg:mt-20 xl:mt-16 text-center">
                     {slide.title}
                   </h2>
-                  <p className="text-xl max-sm:hidden md:hidden text-[#302F68] font-roboto-serif mt-10 pl-11">
+                  <p className="text-lg max-lg:hidden text-[#302F68] font-roboto-serif  mt-10 pl-11">
                     {slide.description}
                   </p>
                   </div>
-                <div className="r-c lg:mt-16 md:mt-3 md:ml-5">
+                <div className="r-c lg:mt-20 md:mt-3  md:ml-5">
                   <img src={slide.image} alt={slide.title} className='md:w-[80%] md:h-auto md:mx-auto' />
                 </div>
                  
