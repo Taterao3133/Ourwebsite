@@ -50,7 +50,7 @@ function Header() {
                       onMouseLeave={() => setIsServicesHovered(false)}
            >
           <p 
-            className={`text-base cursor-pointer font-roboto hover:text-[#ce6ad0]  hover:underline-offset-4 hover:underline  font-semibold text-[#090B4F] tracking-wide ${isSticky ? ' ':' text-[#fff]'}  ${location.pathname === '' ? 'text-[#ce6ad0] underline-offset-4 underline ' : ''} `} 
+            className={`text-base  cursor-pointer font-roboto hover:text-[#ce6ad0]  hover:underline-offset-4 hover:underline  font-semibold text-[#090B4F] tracking-wide ${isSticky ? ' ':' text-[#fff]'}  ${location.pathname === '' ? 'text-[#ce6ad0] underline-offset-4 underline ' : ''} `} 
   
           >
             SERVICES +

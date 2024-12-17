@@ -40,10 +40,12 @@ function HeaderServiceslider({ isServicesHovered , setIsServicesHovered}) {
 
   return (
       <div 
-          className={`serviceHover fixed top-[80px] left-0 w-full h-auto transition-all duration-500 ease-in-out ${isSticky ? 'top-[63px]': 'top-14'} ${isServicesHovered ? 'opacity-100 z-50 top-10 ' : '  left-auto opacity-0 pointer-events-none -top-4'} z-40`}
-          onMouseEnter={() => setIsServicesHovered(true)}  // 
-            onMouseLeave={() => setIsServicesHovered(false)} // 
-          >
+      className={`serviceHover fixed left-0 w-full h-auto transition-all duration-500 ease-in-out 
+        ${isSticky ? 'top-[63px]' : 'top-[75px]'} 
+        ${isServicesHovered ? 'opacity-100 z-50 top-[64px]' : 'opacity-0 pointer-events-none -top-4'} z-40`}
+      onMouseEnter={() => setIsServicesHovered(true)}
+      onMouseLeave={() => setIsServicesHovered(false)}
+      >      
           <div className="bx w-[100%] h-auto pb-5 border-2 pt-5 lg:px-14 xl:px-24  rounded-bl-md rounded-br-md mx-auto bg-[#FFFFFF]">
              <div className="col">
               <div className="c flex  h-auto lg:gap-x-10 xl:gap-x-12">
@@ -56,25 +58,25 @@ function HeaderServiceslider({ isServicesHovered , setIsServicesHovered}) {
                     <div className="icons">
                       <img src={CAD} alt="" />
                     </div>
-                    <p className="mt-2 ml-2 text-[#302F68] cursor-pointer">Custom App Development</p>
+                    <p className="mt-2 ml-2 text-[#302F68]  hover:text-[#ce6ad0] cursor-pointer">Custom App Development</p>
                   </div>
                   <div className="flex">
                     <div className="icons">
                       <img src={CPAD} alt="" />
                     </div>
-                    <p className="ml-2  text-[#302F68] cursor-pointer">Cross-Platform App <br /> Development </p>
+                    <p className="ml-2  text-[#302F68] hover:text-[#ce6ad0] cursor-pointer">Cross-Platform App <br /> Development </p>
                   </div>
                   <div className="flex">
                     <div className="icons">
                       <img src={AAD} alt="" />
                     </div>
-                    <p className="mt-2 ml-2 text-[#302F68] cursor-pointer">Android App Development</p>
+                    <p className="mt-2 ml-2 text-[#302F68] hover:text-[#ce6ad0] cursor-pointer">Android App Development</p>
                   </div>
                   <div className="flex">
                     <div className="icons">
                       <img src={MAD} alt="" />
                     </div>
-                    <p className="mt-2 ml-2 text-[#302F68] cursor-pointer">Mobile App Designing</p>
+                    <p className="mt-2 ml-2 text-[#302F68] hover:text-[#ce6ad0] cursor-pointer">Mobile App Designing</p>
                   </div>
                 </div>
 
@@ -86,37 +88,37 @@ function HeaderServiceslider({ isServicesHovered , setIsServicesHovered}) {
                     <div className="icons">
                       <img src={CWD} alt="" />
                     </div>
-                    <p className="ml-2 text-[#302F68] cursor-pointer ">Custom Website <br /> Development</p>
+                    <p className="ml-2 text-[#302F68] hover:text-[#ce6ad0] cursor-pointer ">Custom Website <br /> Development</p>
                   </div>
                   <div className="flex">
                     <div className="icons">
                       <img src={EWD} alt="" />
                     </div>
-                    <p className="ml-2 text-[#302F68] cursor-pointer ">E-commerce Website <br /> Development</p>
+                    <p className="ml-2 text-[#302F68] hover:text-[#ce6ad0] cursor-pointer ">E-commerce Website <br /> Development</p>
                   </div>
                   <div className="flex">
                     <div className="icons">
                       <img src={RWD} alt="" />
                     </div>
-                    <p className="mt-2 ml-2 text-[#302F68] cursor-pointer ">Responsive Web Design  </p>
+                    <p className="mt-2 ml-2 text-[#302F68] hover:text-[#ce6ad0] cursor-pointer ">Responsive Web Design  </p>
                   </div>
                   <div className="flex">
                     <div className="icons">
                       <img src={WT} alt="" />
                     </div>
-                    <p className="mt-2 ml-2 text-[#302F68] cursor-pointer ">Website Testing</p>
+                    <p className="mt-2 ml-2 text-[#302F68] hover:text-[#ce6ad0] cursor-pointer ">Website Testing</p>
                   </div>
                   <div className="flex">
                     <div className="icons">
                       <img src={WM} alt="" />
                     </div>
-                    <p className="mt-2 ml-2 text-[#302F68] cursor-pointer ">Website Maintenance</p>
+                    <p className="mt-2 ml-2 text-[#302F68] hover:text-[#ce6ad0] cursor-pointer ">Website Maintenance</p>
                   </div>
                   <div className="flex">
                     <div className="icons">
                       <img src={LP} alt="" />
                     </div>
-                    <p className="mt-2 ml-2 text-[#302F68] cursor-pointer ">Landing Pages</p>
+                    <p className="mt-2 ml-2 text-[#302F68] hover:text-[#ce6ad0] cursor-pointer ">Landing Pages</p>
                   </div>
                 </div>
 
@@ -128,37 +130,37 @@ function HeaderServiceslider({ isServicesHovered , setIsServicesHovered}) {
                     <div className="icons">
                       <img src={R} alt="" />
                     </div>
-                    <p className="mt-2 ml-2 text-[#302F68]">Research</p>
+                    <p className="mt-2 ml-2 text-[#302F68] cursor-pointer hover:text-[#ce6ad0]">Research</p>
                   </div>
                   <div className="flex">
                     <div className="icons">
                       <img src={W} alt="" />
                     </div>
-                    <p className="mt-2 ml-2 text-[#302F68]">Wireframing</p>
+                    <p className="mt-2 ml-2 text-[#302F68] cursor-pointer hover:text-[#ce6ad0]">Wireframing</p>
                   </div>
                   <div className="flex">
                     <div className="icons">
                       <img src={P} alt="" />
                     </div>
-                    <p className="mt-2 ml-2 text-[#302F68]">Prototyping</p>
+                    <p className="mt-2 ml-2 text-[#302F68] cursor-pointer hover:text-[#ce6ad0]">Prototyping</p>
                   </div>
                   <div className="flex">
                     <div className="icons">
                       <img src={VD} alt="" />
                     </div>
-                    <p className="mt-2 ml-2 text-[#302F68]">Visual Design</p>
+                    <p className="mt-2 ml-2 text-[#302F68] cursor-pointer hover:text-[#ce6ad0]">Visual Design</p>
                   </div>
                   <div className="flex">
                     <div className="icons">
                       <img src={ID1} alt="" />
                     </div>
-                    <p className="mt-2 ml-2 text-[#302F68]">Interaction Design</p>
+                    <p className="mt-2 ml-2 text-[#302F68] cursor-pointer hover:text-[#ce6ad0]">Interaction Design</p>
                   </div>
                   <div className="flex">
                     <div className="icons">
                       <img src={IA} alt="" />
                     </div>
-                    <p className=" ml-2 text-[#302F68]">Information Architecture</p>
+                    <p className=" ml-2 text-[#302F68]  cursor-pointerhover:text-[#ce6ad0]">Information Architecture</p>
                   </div>
                 </div>
                 {/* knk */}
@@ -171,13 +173,13 @@ function HeaderServiceslider({ isServicesHovered , setIsServicesHovered}) {
                     <div className="icons">
                       <img src={SM} alt="" />
                     </div>
-                    <p className="mt-2 ml-2 text-[#302F68] cursor-pointer">Social Media Marketing</p>
+                    <p className="mt-2 ml-2 text-[#302F68] hover:text-[#ce6ad0] cursor-pointer">Social Media Marketing</p>
                   </div>
                   <div className="flex">
                     <div className="icons">
                       <img src={G} alt="" />
                     </div>
-                    <p className="mt-2 ml-2 text-[#302F68] cursor-pointer ">Graphic Design</p>
+                    <p className="mt-2 ml-2 text-[#302F68] hover:text-[#ce6ad0] cursor-pointer ">Graphic Design</p>
                   </div>
                 </div> 
               </div>
