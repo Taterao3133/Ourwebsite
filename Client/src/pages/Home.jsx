@@ -225,25 +225,25 @@ function Home () {
                 </div>
             </div>
             <div className="r-cmp-details xl:mx-20 max-sm:mx-4 mt-11 lg:mt-28 lg:pb-10 md:mx-4 md:gap-8  max-sm:gap-x-4 lg:gap-x-2 h-auto  grid grid-cols-2">
-                <div className="bx  w-[80%] max-sm:w-[100%] pb-3 md:w-full md:h-auto lg:h-[90%] xl:h-[87%] max-sm:h-[95%] text-center shadow-xl border-b-4 border-[#6DDDD6] rounded-bl-[80px] rounded-tl-2xl rounded-tr-2xl rounded-br-md bg-[#B3EFEB]">
+                <div className="bx  w-[80%] max-sm:w-[100%] pb-3 md:w-full md:h-auto    max-sm:h-[95%] text-center shadow-xl border-b-4 border-[#6DDDD6] rounded-bl-[80px] rounded-tl-2xl rounded-tr-2xl rounded-br-md bg-[#B3EFEB]">
                     <img src={aboutexpicon} alt="" className="mx-auto p-3 max-sm:w-[60%] max-sm:h-[60%]  " />
                     <p className="text-[#0D4E57] text-3xl font-bold max-sm:text-[14px] max-sm:ml-2 ">2+</p>
                     <h4 className="font-roboto-serif text-[#0D4E57] mt-1 max-sm:-mt-2 max-sm:ml-2 font-semibold max-sm:text-[14px] text-xl">Years </h4>
                     <h4 className="font-roboto-serif text-[#0D4E57]  max-sm:-mt-2 font-semibold max-sm:ml-2 max-sm:text-[14px] text-xl">Experience</h4>
                 </div>
-                <div className="bx bx w-[80%] max-sm:w-[100%] pb-3 lg:[90%] xl:h-[87%] md:w-full md:h-auto max-sm:h-[95%]  text-center shadow-xl border-b-4 border-[#EAA2A2] rounded-bl-[80px] rounded-tl-2xl rounded-tr-2xl rounded-br-md bg-[#EAA2A2]">
+                <div className="bx bx w-[80%] max-sm:w-[100%] pb-3  md:w-full md:h-auto max-sm:h-[95%]  text-center shadow-xl border-b-4 border-[#EAA2A2] rounded-bl-[80px] rounded-tl-2xl rounded-tr-2xl rounded-br-md bg-[#EAA2A2]">
                     <img src={aboutwebicon} alt="" className="mx-auto p-3 max-sm:w-[60%] max-sm:h-[60%] " />
                     <p className="text-[#0D4E57] text-3xl font-bold max-sm:ml-2 max-sm:text-[14px] ">2+</p>
                     <h4 className="font-roboto-serif text-[#0D4E57] max-sm:ml-2  max-sm:-mt-2 mt-1 font-semibold max-sm:text-[14px] text-xl">Web & Apps</h4>
                     <h4 className="font-roboto-serif text-[#0D4E57]  max-sm:-mt-2 font-semibold max-sm:ml-2 max-sm:text-[14px] text-xl">Developed</h4>
                 </div>
-                <div className="bx bx w-[80%] max-sm:w-[100%] pb-3 lg:h-[87%] xl:h-[87%] md:w-full md:h-auto max-sm:h-[95%] text-center shadow-xl border-b-4 border-[#EC91E3] rounded-bl-[80px] rounded-tl-2xl rounded-tr-2xl rounded-br-md bg-[#E9A4E2]">
+                <div className="bx bx w-[80%] max-sm:w-[100%] pb-3   md:w-full md:h-auto max-sm:h-[95%] text-center shadow-xl border-b-4 border-[#EC91E3] rounded-bl-[80px] rounded-tl-2xl rounded-tr-2xl rounded-br-md bg-[#E9A4E2]">
                     <img src={aboutproicon} alt="" className="mx-auto p-3 max-sm:w-[60%] max-sm:h-[60%] " />
                     <p className="text-[#0D4E57] text-3xl font-bold max-sm:ml-2  max-sm:text-[14px] ">100%</p>
                     <h4 className="font-roboto-serif text-[#0D4E57] mt-1 max-sm:ml-2  max-sm:-mt-2 font-semibold max-sm:text-[14px] text-xl">Projects</h4>
                     <h4 className="font-roboto-serif text-[#0D4E57]  max-sm:-mt-2 font-semibold max-sm:ml-2 max-sm:text-[14px] text-xl">Delivered</h4>
                 </div>
-                <div className="bx bx w-[80%]max-sm:w-[100%] pb-3 h-[87%]   md:w-full md:h-auto max-sm:h-[95%] text-center shadow-xl border-b-4 border-[#93B2E0] rounded-bl-[80px] rounded-tl-2xl rounded-tr-2xl rounded-br-md bg-[#9BB4D9]">
+                <div className="bx bx w-[80%] max-sm:w-[100%] pb-3   md:w-full md:h-auto max-sm:h-[95%] text-center shadow-xl border-b-4 border-[#93B2E0] rounded-bl-[80px] rounded-tl-2xl rounded-tr-2xl rounded-br-md bg-[#9BB4D9]">
                     <img src={aboutclieicon} alt="" className="mx-auto p-3  max-sm:w-[60%] max-sm:h-[60%] " />
                     <p className="text-[#0D4E57] text-3xl font-bold max-sm:ml-2  max-sm:text-[14px]">100%</p>
                     <h4 className="font-roboto-serif text-[#0D4E57] max-sm:ml-2 mt-1  max-sm:-mt-2 font-semibold max-sm:text-[14px] text-xl">Clients</h4>
@@ -354,7 +354,7 @@ function Home () {
             <div className="absolute inset-0 grid grid-cols-100 h-full">
             {lines}
             </div>
-            <div className="relative md:text-center z-10">
+            <div className="relative md:text-center lg:text-left z-10">
                <h3 className="text-[#FD4755] max-sm:text-center max-sm:text-base text-xl max-sm:mx-4 lg:ml-8 md:ml-5 xl:ml-20 font-roboto-serif font-medium pt-10">Why Choose Us</h3>
                <div className="grid lg:grid-cols-2 max-sm:mx-4 lg:mx-8 md:mx-5 xl:mx-20">
                  <div className="l-c">
@@ -363,7 +363,7 @@ function Home () {
                         recognized as a premier choice among web and app development companies. Explore what sets us apart</p>
 
                     <div className="c-in flex max-sm:mt-10 mt-8">
-                        <img src={choosespm} alt="" className=" max-sm:w-[80px] max-xl:w-20 max-xl:h-20  max-sm:h-[80px]"  />
+                        <img src={choosespm} alt="" className=" max-sm:w-[80px] lg:w-20 lg:h-20  max-sm:h-[80px]"  />
                         <div className="c-intxt ml-2">
                             <h3 className="font-roboto-serif text-2xl max-sm:text-xl font-medium">Streamlined Project Management</h3>
                             <p className="text-lg text-[#302F68] max-sm:text-base font-roboto-serif mt-3">Efficiently navigate your projects with XXXXX streamlined management. 
@@ -382,9 +382,9 @@ function Home () {
 
                  <div className="r-c ">
                     <img src={oursection} alt=""  className="xl:ml-20 md:mx-auto lg:ml-5 mt-10 max-sm:hidden"/>
-                    <div className="c-in flex max-sm:ml-0 md:ml-0 ml-10 mt-10">
-                        <img src={choosecpt} alt="" className=" max-sm:w-[80px] max-xl:w-20 max-xl:h-20  max-sm:h-[80px]" />
-                        <div className="c-intxt ml-2  ">
+                    <div className="c-in flex max-sm:ml-0 md:ml-0 lg:ml-14 mt-10">
+                        <img src={choosecpt} alt="" className=" max-sm:w-[80px] lg:w-20 lg:h-20  max-sm:h-[80px]" />
+                        <div className="c-intxt ml-2   ">
                             <h3 className="font-roboto-serif text-2xl max-sm:text-xl font-medium">Completion of Project in Given Time</h3>
                             <p className="text-lg text-[#302F68] max-sm:text-base font-roboto-serif mt-3">We guarantee timely project completion at XXXXX, delivering on our promises and meeting your deadlines.</p>
                         </div>
@@ -500,14 +500,14 @@ function Home () {
         {/* portfolio */}
         <PortfolioSlider/>
         {/* client satisfaction section */}
-        <div className="cs max-sm:h-auto lg:h-[600px] max-sm:w-[100%] bg-[#FFFFFF] max-sm:px-4 lg:px-8 xl:px-20 pt-5">
+        <div className="cs max-sm:h-auto lg:h-auto lg:pb-10  max-sm:w-[100%] bg-[#FFFFFF] max-sm:px-4 lg:px-8 xl:px-20 pt-5">
             <div className="grid lg:grid-cols-2  max-sm:pt-10 lg:pt-20 ">
                 <div className="l-cs pt-7 md:text-center max-sm:text-center w-[100%] h-auto">
                     <h3 className="text-2xl  max-sm:text-base font-roboto-serif text-[#0D4E57] ">WHAT OUR CLIENTS SAY ABOUT xxxxx</h3>
                     <h1 className="text-[40px] max-sm:text-center max-sm:text-2xl mt-5 leading-snug font-roboto-serif text-[#AE7C36] font-medium"  >Over 10+ Satisfied <br /> Clients and Growing</h1>
 
                     <p className="text-[#263156] font-roboto-serif max-sm:text-xl max-sm:mt-7 lg:mt-10 text-xl">  Read More Reviews</p>
-                    <div className="flex max-sm:justify-center max-sm:items-center md:justify-center md:items-center gap-2 mt-8 ">
+                    <div className="flex max-sm:justify-center max-sm:items-center md:justify-center md:items-center gap-2 lg:mt-4 xl:mt-8 ">
                         <div className="bx max-sm:w-24 max-sm:h-16  w-36 h-24 lg:bg-[#D9D9D9] ">
                             <img src={review1} alt="" className="m-auto max-sm:mt-1 max-sm:p-2 mt-3" />
                         </div>
@@ -530,7 +530,7 @@ function Home () {
 
         </div>
         {/* work together section */}
-        <div className="w-sec bg-[#B9C5E3] w-full h-auto pb-5 xl:mt-20 justify-center text-center items-center">
+        <div className="w-sec bg-[#B9C5E3] w-full h-auto pb-5 justify-center text-center items-center">
             <h3 className="text-xl max-sm:text-base text-[#263156] font-roboto-serif pt-10">LET'S WORK TOGETHER</h3>
             <h1 className="font-roboto-serif font-medium max-sm:text-2xl text-[40px]  text-[#365E7D] mt-3">We Love to Listen to Your <br /> Requirements</h1>
             <div className="bt flex  mt-10  w-64  h-14 border-2 border-[#302F68] mx-auto  rounded-[40px]">

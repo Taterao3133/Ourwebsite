@@ -44,10 +44,10 @@ function HeaderServiceslider({ isServicesHovered , setIsServicesHovered}) {
           onMouseEnter={() => setIsServicesHovered(true)}  // 
             onMouseLeave={() => setIsServicesHovered(false)} // 
           >
-          <div className="bx w-[100%] h-auto pb-5 border-2 pt-5 px-7 xl:px-24  rounded-bl-md rounded-br-md mx-auto bg-[#FFFFFF]">
+          <div className="bx w-[100%] h-auto pb-5 border-2 pt-5 lg:px-14 xl:px-24  rounded-bl-md rounded-br-md mx-auto bg-[#FFFFFF]">
              <div className="col">
-              <div className="c flex  h-auto lg:gap-x-8 xl:gap-x-12">
-                <div className="lg:space-y-4 xl:space-y-8 max-xl:text-[15px] xl:text-[16px] font-roboto-serif font-medium">
+              <div className="c flex  h-auto lg:gap-x-10 xl:gap-x-12">
+                <div className="lg:space-y-5 xl:space-y-8 max-xl:text-[15px] xl:text-[16px] font-roboto-serif font-medium">
                   <div className="header-s"><h2 className=" font-roboto font-medium xl:text-xl max-xl:text-[17px]   text-center text-[#0C3461]">MOBILE APP DEVELOPMENT</h2>
                   <hr className="text-[#D9D9D9] w-full border-1"/>
 
@@ -78,7 +78,7 @@ function HeaderServiceslider({ isServicesHovered , setIsServicesHovered}) {
                   </div>
                 </div>
 
-                <div className=" lg:space-y-4 xl:space-y-8 h-auto max-xl:text-[15px] xl:text-[16px] font-roboto-serif font-medium">
+                <div className=" lg:space-y-5 xl:space-y-8 h-auto max-xl:text-[15px] xl:text-[16px] font-roboto-serif font-medium">
                   <div className="header-s"><h2 className="font-roboto font-medium xl:text-xl max-xl:text-[17px] text-center text-[#0C3461]">WEBSITE DEVELOPMENT</h2>
                   <hr className="text-[#D9D9D9] w-full border-1"/>
                   </div>
@@ -120,7 +120,7 @@ function HeaderServiceslider({ isServicesHovered , setIsServicesHovered}) {
                   </div>
                 </div>
 
-                <div className="lg:space-y-4 xl:space-y-8 max-xl:text-[15px] xl:text-[16px] font-roboto-serif font-medium">
+                <div className="lg:space-y-5 xl:space-y-8 max-xl:text-[15px] xl:text-[16px] font-roboto-serif font-medium">
                   <div className="header-s"><h2 className=" font-roboto font-medium xl:text-xl max-xl:text-[17px] text-center text-[#0C3461]">UI/UX DESIGNE SERVICES</h2>
                   <hr className="text-[#D9D9D9] w-full border-1"/>
                   </div>
@@ -163,7 +163,7 @@ function HeaderServiceslider({ isServicesHovered , setIsServicesHovered}) {
                 </div>
                 {/* knk */}
 
-                <div className="lg:space-y-4 xl:space-y-8 max-xl:text-[15px] xl:text-[16px] font-roboto-serif font-medium ">
+                <div className="lg:space-y-5 xl:space-y-8 max-xl:text-[15px] xl:text-[16px] font-roboto-serif font-medium ">
                   <div className="header-s"><h2 className=" font-roboto font-medium xl:text-xl max-xl:text-[17px] text-center text-[#0C3461]">DIGITAL MARKENTING SERVICES</h2>
                   <hr className="text-[#D9D9D9] w-full border-1"/>
                   </div>
