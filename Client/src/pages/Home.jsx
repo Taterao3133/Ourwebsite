@@ -290,10 +290,10 @@ function Home () {
                         or custom web applications, we transform your web vision into reality with skill and innovation.</p>
                 </div>
                 <div className="bxs max-sm:px-5 lg:pl-3 md:px-5 md:text-center xl:pl-10 lg:text-left w-full h-auto bg-[#FFFFFF] border-[1px] drop-shadow-xl rounded-lg rounded-bl-[90px] pb-10">
-                    <h3 className="text-[#0D4E57] pt-8 font-roboto-serif text-2xl lg:text-center font-semibold">Web Development</h3>
+                    <h3 className="text-[#0D4E57] pt-8 font-roboto-serif text-2xl lg:text-center font-semibold">App Development</h3>
                     <div className="flex xl:text-lg md:text-[17px] lg:text-[17px] max-sm:text-xs md:justify-center md:items-center text-[#4F5D81] mt-3 space-x-3">
                         <p>Android</p> <p>|</p>
-                        <p>Apple</p> <p>|</p>
+                        <p>Iphone</p> <p>|</p>
                         <p>Cross-Plotform</p>
                     </div>
                     <div className="icns space-x-3 md:justify-center md:items-center flex mt-3">
@@ -313,12 +313,11 @@ function Home () {
                             </div>
                         </div>
                     </div>
-                    <p className="text-[17px] max-sm:text-base font-roboto-serif text-[#302F68] mt-3 pr-2">At XXXXX, we excel in creating outstanding websites. Whether it's 
-                        crafting responsive designs, e-commerce solutions, 
-                        or custom web applications, we transform your web vision into reality with skill and innovation.</p>
+                    <p className="text-[17px] max-sm:text-base font-roboto-serif text-[#302F68] mt-3 pr-2">At XXXXX, we specialize in crafting exceptional mobile applications. 
+                        From iPhone to Android and cross-platform solutions, we bring your app ideas to life with precision and innovation.</p>
                 </div>
                 <div className="bxs max-sm:px-5 xl:pl-10 md:px-5 md:text-center lg:text-left w-full max-sm:w-full h-auto bg-[#FFFFFF] border-[1px] drop-shadow-xl rounded-lg rounded-bl-[90px] pb-10">
-                    <h3 className="text-[#0D4E57] pt-8 font-roboto-serif text-2xl lg:text-center max-sm:text-xl font-semibold">Web Development</h3>
+                    <h3 className="text-[#0D4E57] pt-8 font-roboto-serif text-2xl lg:text-center max-sm:text-xl font-semibold">UI/UX Development</h3>
                     <div className="flex md:text-[17px] lg:text-[17px] xl:text-lg max-sm:text-xs text-[#4F5D81] md:justify-center md:items-center mt-3 max-sm:space-x-2 lg:space-x-3">
                         <p>Figma</p> <p>|</p>
                         <p>Adobe XD</p> <p>|</p>
@@ -341,9 +340,9 @@ function Home () {
                             </div>
                         </div>
                     </div>
-                    <p className="text-[17px]  max-sm:text-base font-roboto-serif text-[#302F68] mt-3 pr-2">At XXXXX, we excel in creating outstanding websites. Whether it's 
-                        crafting responsive designs, e-commerce solutions, 
-                        or custom web applications, we transform your web vision into reality with skill and innovation.</p>
+                    <p className="text-[17px]  max-sm:text-base font-roboto-serif text-[#302F68] mt-3 pr-2">We specialize in creating exceptional user interfaces and experiences. 
+                        Our UI/UX designing services ensure your digital products are not only visually appealing but also highly user-friendly, 
+                        enhancing overall customer satisfaction.</p>
                 </div>
                 
 
@@ -393,7 +392,7 @@ function Home () {
                </div>
 
                <h1 className="font-roboto-serif font-medium text-[40px] text-[#365E7D] max-sm:px-4 max-sm:text-center md:px-3 lg:px-20 xl:px-60 text-center max-sm:mt-14 max-sm:text-2xl mt-28 ">Turning Ideas into Reality  <span className="text-[#FD4755]">Let's Begin Your Next  Project </span>  Together</h1>
-               <p className="text-[#090B4F] text-lg lg:px-20 xl:px-72 max-sm:px-4 md:px-5 text-center font-roboto-serif max-sm:text-[17px]  mt-4">Embark on a journey of innovation with Techweblabs. 
+               <p className="text-[#090B4F] text-lg lg:px-20 xl:px-72 max-sm:px-4 md:px-5 text-center font-roboto-serif max-sm:text-[17px]  mt-4">Embark on a journey of innovation with XXXX. 
                 Our expertise transforms your concepts into thriving projects. Let's start creating together.</p>
 
                 <div className="bt flex  mt-7  max-sm:w-[65%] w-64  h-14 border-2 border-white bg-[#3F36CD] mx-auto  rounded-[40px]">
@@ -426,10 +425,10 @@ function Home () {
             </div>
 
         </div>
-        <div className="quote-sec items-center  justify-center md:pb-5   lg:flex h-40">
+        <div className="quote-sec items-center  justify-center md:pb-5 lg:pt-5  h-auto">
             <h2 className="xl:text-[40px] lg:text-[37px] md:text-xl max-sm:text-[25px] md:pt-5 md:text-center max-sm:text-center max-sm:mt-10  text-[#108ABF] font-roboto-serif font-medium">We Promise. We Deliver.</h2>
             
-            <div className="bt flex lg:mx-0 max-sm:w-[60%] w-64 md:mx-auto md:mt-4   h-14 border-2 border-white bg-[#3F36CD] max-sm:mt-5 max-sm:mx-auto  rounded-[40px]">
+            <div className="bt flex  max-sm:w-[60%] w-64 md:mx-auto md:mt-4 lg:mt-4  h-14 border-2 border-white bg-[#3F36CD] max-sm:mt-5 max-sm:mx-auto  rounded-[40px]">
                 <button className='text-xl max-sm:text-base  text-white font-medium font-roboto my-auto mx-auto  flex'>REQUEST A QUOTE <FaGreaterThan className=" mt-[4px] ml-2 text-white"/>  </button> 
             </div>
 
