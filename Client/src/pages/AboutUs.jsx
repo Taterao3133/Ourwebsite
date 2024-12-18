@@ -13,7 +13,7 @@ import aboutAppro from '../images/about-approch.svg'
 import aboutCost from '../images/about-cost.svg'
 import callIcon from '../images/call-icon.svg'
 import charminarImg from '../images/charminarImg.svg'
-// import Portfolio from "../components/utils/Portfolio";
+import { Link } from "react-router-dom";
 
 
 
@@ -21,9 +21,9 @@ import charminarImg from '../images/charminarImg.svg'
 function AboutUs() {
   return (
    <div className="abt overflow-hidden">
-    <div className="about-sec  max-sm:h-auto lg:h-[600px] max-sm:justify-center max-sm:items-center w-full  lg:px-20 bg-gradient-to-b from-[#FFFFFF] to-[#e3fbd4]">
+    <div className="about-sec  max-sm:h-auto lg:h-[600px] max-sm:justify-center max-sm:items-center w-full  lg:px-8 xl:px-20 bg-gradient-to-b from-[#FFFFFF] to-[#e3fbd4]">
       <div className="flex pt-20 md:mx-auto  max-sm:mx-4 space-x-3">
-        <h2 className='text-[#E7A548]  text-lg max-sm:text-base font-roboto-serif font-medium'>Home </h2>
+        <h2 className='text-[#E7A548]  text-lg max-sm:text-base font-roboto-serif font-medium'><Link to='/'> Home</Link>  </h2>
         <div className="flex">
 
         <GoDotFill className="text-[#E7A548] mt-1" />
@@ -53,7 +53,7 @@ function AboutUs() {
       </div>
 
     </div>
-      <div className="bg-gradient-to-b md:px-8 from-[#FFFFFF] to-[#e4b94c1a] w-full h-auto pb-10 lg:px-20 lg:space-x-7 max-sm:px-4 lg:grid lg:grid-cols-2">
+      <div className="bg-gradient-to-b md:px-8 from-[#FFFFFF] to-[#e4b94c1a] w-full h-auto pb-10 lg:px-8 xl:px-20 lg:space-x-7 max-sm:px-4 lg:grid lg:grid-cols-2">
         <div className="l-c   pt-20 lg:pr-6">
           <h1 className="text-[40px] md:text-3xl max-sm:text-2xl max-md:text-center lg:text-left font-roboto-serif text-[#E13535] font-medium">India’s Top App Development & Digital Marketing Company working with talents on delivering unique ideas.</h1>
           <div className="flex md:mt-10 max-sm:justify-center max-sm:items-center max-sm:mt-8 lg:mt-16 space-x-6">
@@ -128,7 +128,7 @@ function AboutUs() {
                         </div>
         </div> 
         {/* choose section */}
-        <div className="choose-sec pb-14 lg:px-20">
+        <div className="choose-sec pb-14 lg:px-8 xl:px-20">
           <div className="txt text-center ">
             <h3 className="text-[#365E7D] font-medium max-sm:text-lg text-xl mt-7 font-roboto-serif">We Are Awesome</h3>
             <h2 className="text-[#0D4E57] font-roboto-serif mt-6 max-sm:text-2xl text-[40px]">Why Choose XXXXX</h2>
@@ -178,10 +178,10 @@ function AboutUs() {
                 
             </div>
         </div>
-        {/* <Portfolio/> */}
+      
         {/* office detail section */}
         <div className="o-d w-full h-auto bg-[#FFFFFF]  text-center pb-8 ">
-            <h2 className="text-[#2B2D3E]  text-xl max-sm:text-base font-roboto-serif mt-14"> OUR LOCATION</h2>
+            <h2 className="text-[#2B2D3E]  text-xl max-sm:text-base font-roboto-serif pt-14"> OUR LOCATION</h2>
             <h1 className=" text-[40px] max-sm:text-2xl  text-[#FD4755] font-roboto-serif font-medium">Our Office</h1>
                 <img src={charminarImg} alt="" className="mx-auto mt-3 max-sm:w-40 max-sm:h-auto border-t-1 border-[#FFFFFF]" />   
             <div className="txt max-sm:px-8 px-20 text-left">

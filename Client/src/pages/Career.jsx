@@ -5,12 +5,11 @@ import nodejsicon from '../images/nodejs-icon.svg'
 import expressicon from '../images/express-icon.svg'
 import reacticon from '../images/react-icon.svg'
 import careericon from '../images/career-icon.svg'
-// import appleicon from '../images/apple-icon.svg'
-// import androidicon from '../images/android-icon.svg'
-// import figmaicon from '../images/figma-icon.svg'
-// import photoshopicon from '../images/photshop-icon.svg'
-// import adobeicon from '../images/adobe-icon.svg'
-// import tableticon from '../images/tablet-icon.svg'
+import appleicon from '../images/apple-icon.svg'
+import androidicon from '../images/android-icon.svg'
+import figmaicon from '../images/figma-icon.svg'
+
+import tableticon from '../images/tablet-icon.svg'
 import { Link } from 'react-router-dom'
 
 
@@ -32,12 +31,12 @@ function Career() {
             <div className="txt-2 text-center max-sm:mx-4">
                 <p className=' text-lg max-sm:text-base font-roboto-serif font-medium underline text-[#FD4755]  max-sm:mt-8 lg:mt-24 '>Career</p>
                 <h1 className='text-[40px] max-sm:text-2xl font-roboto-serif font-medium mt-5'>Let's Join Our Team</h1>
-                <h3 className='text-lg max-sm:text-base font-roboto-serif font-medium mt-3'>Explore Exciting Career Opportunities at TechWebLabs.</h3>
+                <h3 className='text-lg max-sm:text-base font-roboto-serif font-medium mt-3'>Explore Exciting Career Opportunities at XXXX.</h3>
             </div>
             {/* career boxes */}
             <div className="bxs grid lg:grid-cols-3 lg:mx-20 md:space-y-3 max-sm:space-y-3  mt-10 lg:gap-3 mb-20">
                <div className="b-c border-2 w-full md:w-4/6 lg:w-[100%] lg:h-auto md:mx-auto max-sm:w-5/6 max-sm:mx-auto  max-sm:pl-4 h-auto pl-6 rounded-br-[32px] rounded-lg shadow-lg">
-               <h3 className="text-[#0D4E57] max-sm:text-center max-sm:mx-auto pt-8 font-roboto-serif max-sm:text-lg text-xl font-semibold">Web Development</h3>
+               <h3 className="text-[#0D4E57] max-sm:text-center max-sm:mx-auto pt-8 font-roboto-serif max-sm:text-lg text-xl font-semibold">Flutter Developement</h3>
                     <div className="flex text-[14px] max-sm:text-base max-sm:justify-center max-sm:items-center text-[#4F5D81] max-sm:mt-2 mt-3 space-x-3">
                         <p>ReactJs</p> <p>|</p>
                         <p>NodeJs</p> <p>|</p>
@@ -46,17 +45,17 @@ function Career() {
                     <div className="icns space-x-3 max-sm:justify-center max-sm:items-center flex  mt-3">
                         <div className="otr max-sm:w-16 max-sm:h-16 w-16 h-16 bg-[#4F98C1] rounded-full flex items-center justify-center">
                             <div className="mdl max-sm:w-12 max-sm:h-12 w-14 h-14 bg-[#D9D9D9] border-4  rounded-full flex items-center justify-center backdrop-blur-xl shadow-[0_1px_3px_rgba(217, 217, 217, 1)]">
-                                <img src={reacticon} alt="" className="relative lg:w-10 lg:h-10"  />
+                                <img src={androidicon} alt="" className="relative lg:w-10 lg:h-10"  />
                             </div>
                         </div>
                         <div className="otr max-sm:w-16 max-sm:h-16 w-16 h-16 bg-[#4F98C1] rounded-full flex items-center justify-center">
                             <div className="mdl max-sm:w-12 max-sm:h-12 w-14 h-14 bg-[#D9D9D9] border-4  rounded-full flex items-center justify-center backdrop-blur-xl shadow-[0_1px_3px_rgba(217, 217, 217, 1)]">
-                                <img src={nodejsicon} alt="" className="relative lg:w-10 lg:h-10" />
+                                <img src={appleicon} alt="" className="relative lg:w-10 lg:h-10" />
                             </div>
                         </div>
                         <div className="otr max-sm:w-16 max-sm:h-16 w-16 h-16 bg-[#4F98C1] rounded-full flex items-center justify-center">
                             <div className="mdl   max-sm:w-12 max-sm:h-12 w-14 h-14 bg-[#D9D9D9] border-4  rounded-full flex items-center justify-center backdrop-blur-xl shadow-[0_1px_3px_rgba(217, 217, 217, 1)]">
-                                <img src={expressicon} alt="" className="relative lg:w-10 lg:h-10" />
+                                <img src={tableticon} alt="" className="relative lg:w-10 lg:h-10" />
                             </div>
                         </div>
                     </div>
@@ -97,16 +96,16 @@ function Career() {
                     </div>
                </div>
                <div className="b-c border-2 w-full md:w-4/6 lg:w-[100%] lg:h-auto md:mx-auto max-sm:w-5/6 max-sm:mx-auto  max-sm:pl-4 h-auto pl-6 rounded-br-[32px] rounded-lg shadow-lg">
-               <h3 className="text-[#0D4E57] max-sm:text-center max-sm:mx-auto pt-8 font-roboto-serif max-sm:text-lg text-xl font-semibold">Web Development</h3>
+               <h3 className="text-[#0D4E57] max-sm:text-center max-sm:mx-auto pt-8 font-roboto-serif max-sm:text-lg text-xl font-semibold">Intern</h3>
                     <div className="flex text-[14px] max-sm:text-base max-sm:justify-center max-sm:items-center text-[#4F5D81] max-sm:mt-2 mt-3 space-x-3">
-                        <p>ReactJs</p> <p>|</p>
+                        <p>Figma</p> <p>|</p>
                         <p>NodeJs</p> <p>|</p>
                         <p>Express</p>
                     </div>
                     <div className="icns space-x-3 max-sm:justify-center max-sm:items-center flex  mt-3">
                         <div className="otr max-sm:w-16 max-sm:h-16 w-16 h-16 bg-[#4F98C1] rounded-full flex items-center justify-center">
                             <div className="mdl max-sm:w-12 max-sm:h-12 w-14 h-14 bg-[#D9D9D9] border-4  rounded-full flex items-center justify-center backdrop-blur-xl shadow-[0_1px_3px_rgba(217, 217, 217, 1)]">
-                                <img src={reacticon} alt="" className="relative lg:w-10 lg:h-10"  />
+                                <img src={figmaicon} alt="" className="relative lg:w-10 lg:h-10"  />
                             </div>
                         </div>
                         <div className="otr max-sm:w-16 max-sm:h-16 w-16 h-16 bg-[#4F98C1] rounded-full flex items-center justify-center">
