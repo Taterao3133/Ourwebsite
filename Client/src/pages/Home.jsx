@@ -263,12 +263,12 @@ function Home () {
             <div className="grid gap-2 max-sm:gap-y-2 max-sm:mt-16 mt-8 lg:mx-8 xl:mx-20 max-sm:justify-center max-sm:items-center  lg:grid-cols-3">
                 <div className="bxs max-sm:px-5 md:px-5 lg:pl-3 xl:pl-10 md:text-center  lg:text-left w-full h-auto bg-[#FFFFFF] border-[1px] drop-shadow-xl rounded-lg rounded-bl-[90px] pb-10">
                     <h3 className="text-[#0D4E57] pt-8   font-roboto-serif lg:text-center text-2xl font-semibold">Web Development</h3>
-                    <div className="flex md:text-[17px] lg:text-[17px] xl:text-lg text-[#4F5D81] md:justify-center md:items-center mt-3 space-x-3">
+                    <div className="flex md:text-[17px] lg:text-[17px] xl:text-lg text-[#4F5D81] justify-center items-center mt-3 space-x-3">
                         <p>ReactJs</p> <p>|</p>
                         <p>NodeJs</p> <p>|</p>
                         <p>Express</p>
                     </div>
-                    <div className="icns space-x-3 md:justify-center md:items-center flex mt-3">
+                    <div className="icns space-x-3 justify-center items-center flex mt-3">
                         <div className="otr w-20 h-20 max-sm:w-[60px] max-sm:h-[60px] bg-[#4F98C1] rounded-full flex items-center justify-center">
                             <div className="mdl w-16 h-16 bg-[#D9D9D9] border-4  rounded-full flex items-center justify-center backdrop-blur-xl shadow-[0_1px_3px_rgba(217, 217, 217, 1)]">
                                 <img src={reacticon} alt="" className="relative" />
@@ -291,12 +291,12 @@ function Home () {
                 </div>
                 <div className="bxs max-sm:px-5 lg:pl-3 md:px-5 md:text-center xl:pl-10 lg:text-left w-full h-auto bg-[#FFFFFF] border-[1px] drop-shadow-xl rounded-lg rounded-bl-[90px] pb-10">
                     <h3 className="text-[#0D4E57] pt-8 font-roboto-serif text-2xl lg:text-center font-semibold">App Development</h3>
-                    <div className="flex xl:text-lg md:text-[17px] lg:text-[17px] max-sm:text-xs md:justify-center md:items-center text-[#4F5D81] mt-3 space-x-3">
+                    <div className="flex xl:text-lg md:text-[17px] lg:text-[17px] max-sm:text-xs justify-center items-center text-[#4F5D81] mt-3 space-x-3">
                         <p>Android</p> <p>|</p>
                         <p>Iphone</p> <p>|</p>
                         <p>Cross-Plotform</p>
                     </div>
-                    <div className="icns space-x-3 md:justify-center md:items-center flex mt-3">
+                    <div className="icns space-x-3 justify-center items-center flex mt-3">
                         <div className="otr w-20 h-20 max-sm:w-[60px] max-sm:h-[60px] bg-[#4F98C1] rounded-full flex items-center justify-center">
                             <div className="mdl w-16 h-16 max-sm:w-[48px] max-sm:h-[48px] bg-[#D9D9D9] border-4  rounded-full flex items-center justify-center backdrop-blur-xl shadow-[0_1px_3px_rgba(217, 217, 217, 1)]">
                                 <img src={androidicon} alt="" className="relative" />
@@ -318,12 +318,12 @@ function Home () {
                 </div>
                 <div className="bxs max-sm:px-5 xl:pl-10 md:px-5 md:text-center lg:text-left w-full max-sm:w-full h-auto bg-[#FFFFFF] border-[1px] drop-shadow-xl rounded-lg rounded-bl-[90px] pb-10">
                     <h3 className="text-[#0D4E57] pt-8 font-roboto-serif text-2xl lg:text-center max-sm:text-xl font-semibold">UI/UX Development</h3>
-                    <div className="flex md:text-[17px] lg:text-[17px] xl:text-lg max-sm:text-xs text-[#4F5D81] md:justify-center md:items-center mt-3 max-sm:space-x-2 lg:space-x-3">
+                    <div className="flex md:text-[17px] lg:text-[17px] xl:text-lg max-sm:text-xs text-[#4F5D81] justify-center items-center mt-3 max-sm:space-x-2 lg:space-x-3">
                         <p>Figma</p> <p>|</p>
                         <p>Adobe XD</p> <p>|</p>
                         <p>Photoshop</p>
                     </div>
-                    <div className="icns space-x-3 md:justify-center md:items-center flex mt-3">
+                    <div className="icns space-x-3 justify-center items-center flex mt-3">
                         <div className="otr w-20 h-20 max-sm:w-[60px] max-sm:h-[60px] bg-[#4F98C1] rounded-full flex items-center justify-center">
                             <div className="mdl w-16 h-16 max-sm:w-[48px] max-sm:h-[48px] bg-[#D9D9D9] border-4  rounded-full flex items-center justify-center backdrop-blur-xl shadow-[0_1px_3px_rgba(217, 217, 217, 1)]">
                                 <img src={figmaicon} alt="" className="relative" />
