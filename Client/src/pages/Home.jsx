@@ -270,12 +270,12 @@ function Home () {
                     </div>
                     <div className="icns space-x-3 justify-center items-center flex mt-3">
                         <div className="otr w-20 h-20 max-sm:w-[60px] max-sm:h-[60px] bg-[#4F98C1] rounded-full flex items-center justify-center">
-                            <div className="mdl w-16 h-16 bg-[#D9D9D9] border-4  rounded-full flex items-center justify-center backdrop-blur-xl shadow-[0_1px_3px_rgba(217, 217, 217, 1)]">
+                            <div className="mdl w-16 h-16  max-sm:w-[48px] max-sm:h-[48px] bg-[#D9D9D9] border-4  rounded-full flex items-center justify-center backdrop-blur-xl shadow-[0_1px_3px_rgba(217, 217, 217, 1)]">
                                 <img src={reacticon} alt="" className="relative" />
                             </div>
                         </div>
                         <div className="otr w-20 h-20 max-sm:w-[60px] max-sm:h-[60px] bg-[#4F98C1] rounded-full flex items-center justify-center">
-                            <div className="mdl w-16 h-16 bg-[#D9D9D9] border-4  rounded-full flex items-center justify-center backdrop-blur-xl shadow-[0_1px_3px_rgba(217, 217, 217, 1)]">
+                            <div className="mdl w-16 h-16  max-sm:w-[48px] max-sm:h-[48px] bg-[#D9D9D9] border-4  rounded-full flex items-center justify-center backdrop-blur-xl shadow-[0_1px_3px_rgba(217, 217, 217, 1)]">
                                 <img src={nodejsicon} alt="" className="relative" />
                             </div>
                         </div>
