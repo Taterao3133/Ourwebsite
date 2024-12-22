@@ -81,15 +81,12 @@ function Header() {
         )}
         </div>
       </div>
-        
-
       <HeaderServiceslider 
          isServicesHovered={isServicesHovered} 
          setIsServicesHovered={setIsServicesHovered}
       />
     </div>
         </>
-
   )
 }
 
