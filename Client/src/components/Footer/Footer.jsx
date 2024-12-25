@@ -39,7 +39,7 @@ function Footer() {
         <div className="gr w-full max-sm:mt-8 h-auto">
           <h1 className='text-[#FFFFFF] font-roboto-serif underline-offset-[5px] underline font-medium max-sm:text-lg text-2xl'>SERVICES</h1>
           <div className="lnks max-sm:space-y-2 lg:space-y-5 max-sm:mt-2 lg:mt-7 ">
-            <p className='text-[#D9D9D9CC] text-lg max-sm:text-base font-roboto-serif hover:text-[#ce6ad0] cursor-pointer'>Custom App Development</p>
+            <p className='text-[#D9D9D9CC] text-lg max-sm:text-base font-roboto-serif hover:text-[#ce6ad0] cursor-pointer'><Link to='/customapp' >Custom App Development</Link></p>
             
             <p className='text-[#D9D9D9CC] text-lg max-sm:text-base font-roboto-serif hover:text-[#ce6ad0] cursor-pointer'>Android App Development</p>
             <p className='text-[#D9D9D9CC] text-lg max-sm:text-base font-roboto-serif hover:text-[#ce6ad0] cursor-pointer'>E-Commerce Website</p>
