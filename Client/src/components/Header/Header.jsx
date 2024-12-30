@@ -60,7 +60,9 @@ function Header() {
           <p className={`text-base font-roboto  font-semibold hover:text-[#ce6ad0]  hover:underline-offset-4 hover:underline text-[#090B4F] tracking-wide ${isSticky ? ' ':' text-[#fff]'}  ${location.pathname === '/about' ? 'text-[#ce6ad0] underline-offset-4 underline ' : ''}`}><Link to='about'>ABOUT US</Link></p>
           
           <p className={`text-base font-roboto  font-semibold hover:text-[#ce6ad0]  hover:underline-offset-4 hover:underline text-[#090B4F] tracking-wide ${isSticky ? ' ':' text-[#fff]'}  ${location.pathname === '/career' ? 'text-[#ce6ad0] underline-offset-4 underline ' : ''}`}><Link to='/career'>CAREERS</Link></p>
-          <img src={callIcon} alt="" className={`  p-2 bg-[#b857c7] shadow-lg  hover:h-14 hover:w-14 drop-shadow-lg rounded-[90%] ${isSticky ? 'h-12  w-12 ':' h-12 w-12'}`}/>
+          <div className="icn md:h-14 md:w-14 md:pt-1 cursor-pointer">
+            <img src={callIcon} alt="" className={`  p-2 bg-[#b857c7] shadow-lg  hover:h-[52px] hover:w-[52px] drop-shadow-lg rounded-[90%] ${isSticky ? 'h-12  w-12 ':' h-12 w-12'}`}/> 
+          </div>
           <div className="bt flex w-56  h-14 border-2 border-white bg-[#3434A1] drop-shadow-lg  rounded-[40px]">
               <button className='text-[17px] text-white bg-[#3434A1] font-medium font-roboto my-auto hover:text-red-600  mx-auto hover:animate-shake flex '>REQUEST A QUOTE <FaGreaterThan className=" mt-[4px] ml-2 text-white"/>  </button>    
           </div>
