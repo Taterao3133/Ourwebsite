@@ -65,7 +65,7 @@ function CustomApp() {
             </div>
             {/* cl2 */}
             <div className="cl2 w-[17%]  h-auto">
-              <img src={homemobile} alt="" className='mx-auto  xl:py-0 lg:mt-14' />
+              <img src={homemobile} alt="" className='mx-auto  xl:py-0 lg:mt-14 xl:mt-0' />
             </div>
             {/* cl3 */}
             <div className="cl3 w-2/5 h-auto  lg:p-4 lg:pt-7">
