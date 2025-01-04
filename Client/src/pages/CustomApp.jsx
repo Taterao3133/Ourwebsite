@@ -18,9 +18,13 @@ function CustomApp() {
             Trust us to help you maintain accurate inventory records, streamline order management, 
             and ultimately boost your business's productivity and profitability through efficient inventory management</p>
 
-            <div className="bt flex max-sm:mx-auto cursor-pointer  mt-7 md:mx-auto lg:mx-0 max-sm:w-[55%] max-sm:h-14 w-64  h-14 border-2 border-[#000000]  rounded-[40px]">
+            <div className="bt flex max-sm:mx-auto cursor-pointer  mt-7 md:mx-auto lg:mx-0 max-sm:w-[65%] max-sm:h-14 w-64  h-14 border-2 border-[#000000]  rounded-[40px]">
               <button className='text-xl max-sm:text-base max-sm:px-8 text-[#000000] font-medium font-roboto my-auto mx-auto flex'>GET STARTS <FaGreaterThan className=" mt-[4px] ml-2 text-[#000000]"/>  </button>
             </div>
+            {/* <div className="bt flex  mt-7  max-sm:w-[65%] w-64  h-14 border-2 border-white bg-[#3F36CD] mx-auto  rounded-[40px]">
+                    <button className='text-xl text-white max-sm:text-base font-medium font-roboto my-auto mx-auto  flex'>REQUEST A QUOTE <FaGreaterThan className=" mt-[4px] ml-2 text-white"/>  </button>
+                    
+                </div> */}
           </div>
            
 
@@ -33,8 +37,8 @@ function CustomApp() {
       </div>
       {/* client-trust page */}
       <div className="client_page text-center lg:w-3/6 xl:w-2/6 max-sm:px-4 lg:mx-auto pb-[80px]">
-        <h2 className='font-roboto-serif font-medium text-[40px] md:text-4xl max-sm:text-xl text-[#E13535] pt-[80px]'>Clients Trust TechnoNextGenSolutions for Their App Development Needs</h2>
-        <p className='font-roboto-serif text-lg md:text-base text-[#302F68] lg:mt-7 md:mt-5 max-sm:mt-4 md:px-12' >We believe in delivering excellence through cutting-edge design and development.
+        <h2 className='font-roboto-serif font-medium text-[40px] md:text-4xl max-sm:text-[22px] text-[#E13535] pt-[80px]'>Clients Trust TechnoNextGenSolutions for Their App Development Needs</h2>
+        <p className='font-roboto-serif max-sm:text-base text-lg md:text-base text-[#302F68] lg:mt-7 md:mt-5  max-sm:mt-4 md:px-12' >We believe in delivering excellence through cutting-edge design and development.
            Our team of experts is committed to pushing the boundaries of technology</p>
       </div>
 
@@ -51,7 +55,7 @@ function CustomApp() {
               </div>
               
               <h3 className='font-roboto-serif max-sm:mt-2 max-sm:text-center font-medium lg:text-lg text-[#0C3461] lg:mt-2'>Healthcare Apps</h3>
-              <p className='font-roboto-serif font-normal text-base text-[#302F68]'>We've crafted healthcare apps that enhance patient care, streamline medical processes,
+              <p className='font-roboto-serif font-normal text-base max-sm:px-4 text-[#302F68]'>We've crafted healthcare apps that enhance patient care, streamline medical processes,
                  and improve the overall healthcare experience</p>
 
               <div className="crcle bg-[#D9DFE3] max-sm:mx-auto w-[80px] h-[80px] rounded-[80%] mt-6">
@@ -93,19 +97,19 @@ function CustomApp() {
             <img src={customapp} alt="" className='lg:w-[80%] xl:w-[70%] h-auto md:mx-auto max-sm:w-[40%]  ' />
           </div>
           <div className="rt_cnt font-roboto-serif md:px-8 lg:px-0 max-lg:text-center md:mt-5 max-sm:pt-7 xl:mt-8">
-            <h2 className="font-medium xl:text-[40px] md:text-4xl max-sm:text-xl lg:text-[38px] text-[#484DA9]">Experience the Difference: Custom App Development with TechnoNextGenSolutions</h2>
-            <p className="font-medium lg:text-lg max-sm:text-xs font-roboto-serif text-[#0C3461] mt-4">Our journey in app development has been marked by a dedication 
+            <h2 className="font-medium xl:text-[40px] md:text-4xl max-sm:text-[22px] lg:text-[38px] text-[#484DA9]">Experience the Difference: Custom App Development with TechnoNextGenSolutions</h2>
+            <p className="font-medium lg:text-lg max-sm:text-base font-roboto-serif text-[#0C3461] mt-4">Our journey in app development has been marked by a dedication 
               to creating tailored solutions that meet the precise requirements of our clients. As we look ahead, we are excited about 
               the opportunities to continue innovating, collaborating, and making a meaningful impact on businesses across various industries. 
               Together, we'll shape the future of app development and empower businesses to thrive in the digital era. provides an overview of the diverse.</p>
 
-            <div className="bt flex max-sm:mx-auto cursor-pointer  mt-7 md:mx-auto lg:mx-0 max-sm:w-[55%] max-sm:h-14 w-64  h-14 border-2 bg-[#3F36CD]  rounded-[40px]">
+            <div className="bt flex max-sm:mx-auto cursor-pointer  mt-7 md:mx-auto lg:mx-0 max-sm:w-[65%] max-sm:h-14 w-64  h-14 border-2 bg-[#3F36CD]  rounded-[40px]">
               <button className='text-xl max-sm:text-base max-sm:px-8 text-[#fafafa] font-medium font-roboto my-auto mx-auto flex'>Request a Quote <FaGreaterThan className=" mt-[4px] ml-2 text-[#fbfafa]"/>  </button>
             </div>
           </div>
           {/* small screen */}
-          <div className="lf_cnt md:hidden">
-            <img src={customapp} alt="" className='lg:w-[80%] xl:w-[70%] h-auto md:mx-auto max-sm:w-[40%]  ' />
+          <div className="lf_cnt md:hidden  max-sm:pt-7 max-sm:pb-7">
+            <img src={customapp} alt="" className='lg:w-[80%] xl:w-[70%] h-auto mx-auto max-sm:w-[70%]  ' />
           </div>
         </div>
       </div>
