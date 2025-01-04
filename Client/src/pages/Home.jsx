@@ -316,9 +316,9 @@ function Home () {
             </div>
             <div className="relative md:text-center lg:text-left z-10">
                <h3 className="text-[#FD4755] max-sm:text-center max-sm:text-base text-xl max-sm:mx-4 lg:ml-8 md:ml-5 xl:ml-20 font-roboto-serif font-medium pt-10">Why Choose Us</h3>
-               <div className="grid lg:grid-cols-2 max-sm:mx-4 lg:mx-8 md:mx-5 xl:mx-20">
+               <div className="grid lg:grid-cols-2 max-sm:px-4 lg:mx-8 md:mx-5 xl:mx-20">
                  <div className="l-c">
-                    <h2 className="text-[40px] max-sm:text-2xl max-sm:text-center font-medium text-[#000000] leading-tight mt-6">Why The  TechnoNextGenSolutions Ranked Top Among The Leading Web & App Development Companies</h2>
+                    <h2 className="text-[40px] max-sm:text-2xl max-sm:text-center font-medium text-[#000000] leading-tight mt-6">Why The TechnoNextGenSolutions Ranked Top Among The Leading Web & App Development Companies</h2>
                     <p className="text-xl max-sm:text-[17px] max-sm:text-center text-[#302F68] font-roboto-serif mt-7">Celebrated for our innovative solutions and unwavering commitment to client success, TechnoNextGenSolutions is 
                         recognized as a premier choice among web and app development companies. Explore what sets us apart</p>
 
