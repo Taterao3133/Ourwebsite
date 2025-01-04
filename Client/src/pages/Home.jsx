@@ -389,7 +389,7 @@ function Home () {
         <div className="quote-sec items-center  justify-center md:pb-5 lg:pt-5  h-auto">
             <h2 className="xl:text-[40px] lg:text-[37px] md:text-xl max-sm:text-[25px] md:pt-5 md:text-center max-sm:text-center max-sm:mt-10  text-[#108ABF] font-roboto-serif font-medium">We Promise. We Deliver.</h2>
             
-            <div className="bt flex  max-sm:w-[60%] w-64 md:mx-auto md:mt-4 lg:mt-4  h-14 border-2 border-white bg-[#3F36CD] max-sm:mt-5 max-sm:mx-auto  rounded-[40px]">
+            <div className="bt flex max-sm:mb-7 max-sm:w-[60%] w-64 md:mx-auto md:mt-4 lg:mt-4  h-14 border-2 border-white bg-[#3F36CD] max-sm:mt-5 max-sm:mx-auto  rounded-[40px]">
                 <button className='text-xl max-sm:text-base  text-white font-medium font-roboto my-auto mx-auto  flex'>REQUEST A QUOTE <FaGreaterThan className=" mt-[4px] ml-2 text-white"/>  </button> 
             </div>
 
@@ -505,7 +505,7 @@ function Home () {
         </div>
         {/* office detail section */}
         <div className="o-d w-full h-auto bg-[#FFFFFF]  text-center pb-8 ">
-            <h2 className="text-[#2B2D3E]  text-xl max-sm:text-base font-roboto-serif mt-14"> OUR LOCATION</h2>
+            <h2 className="text-[#2B2D3E]  text-xl max-sm:text-base font-roboto-serif pt-14"> OUR LOCATION</h2>
             <h1 className=" text-[40px] max-sm:text-2xl  text-[#FD4755] font-roboto-serif font-medium">Our Office</h1>
                 <img src={charminarImg} alt="" className="mx-auto mt-3 max-sm:w-40 max-sm:h-auto border-t-1 border-[#FFFFFF]" />   
             <div className="txt max-sm:px-8 px-20 text-left">
