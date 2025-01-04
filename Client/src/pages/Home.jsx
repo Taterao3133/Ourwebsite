@@ -164,59 +164,20 @@ function Home () {
 
         {/* client icons sections */}
         <div className="slidersh w-full  max-sm:h-16 xl:h-28 bg-[#bed9ed] ">
-        {/* <div className="clients-wicon xl:px-20 flex max-sm:space-x-7 space-x-48 justify-center items-center " ref={emblaRef}> */}
-            {/* <div className="embla__slide flex  xl:mt-4 mx-sm:mt-0 md:mt-16  text-">
-                <img src={salonIcn} alt="" className="w-16 h-20 max-sm:w-10 max-sm:h-10 my-auto"/>
-                <p className="text-xl max-sm:text-base font-roboto-serif font-medium  my-auto">Unique Beauty <br /> salon </p>
-                
-            </div>
-            <div className="embla__slide flex  xl:mt-4 md:mt-16  mx-sm:mt-2  text-">
-                <img src={iheal} alt="" className="w-16 h-20 my-auto"/>
-               
-                
-            </div>
-            <div className="embla__slide flex  xl:mt-4 mt-16 mx-sm:mt-2  text-">
-                <img src={salonIcn} alt="" className="w-16 h-20 my-auto"/>
-                <p className="text-xl font-roboto-serif  my-auto">Unique Beauty <br /> salon </p>                
-
-            </div>
-            <div className="embla__slide flex  xl:mt-4 mt-16 mx-sm:mt-2  text-">
-                <img src={iheal} alt="" className="w-16 h-20 my-auto"/>
-               
-                
-            </div> */}
-            {/* <div className="ci flex  xl:mt-4 mt-16  text-">
-                <img src={salonIcn} alt="" className="w-16 h-20 my-auto"/>
-                <p className="text-xl font-roboto-serif  my-auto">Unique Beauty <br /> salon </p>                
-                
-                
-            </div> */}
-            {/* <div className="ci flex  xl:mt-4 mt-16  text-">
-                <img src={iheal} alt="" className="w-16 h-20 my-auto"/>
-               
-                
-            </div>
-            <div className="ci flex  xl:mt-4 mt-16  text-">
-                <img src={salonIcn} alt="" className="w-16 h-20 my-auto"/>
-                <p className="text-xl font-roboto-serif  my-auto">Unique Beauty <br /> salon </p>                
-                
-                
-            </div> */}
-            
-        {/* </div> */}
+        
         </div>
         {/* company details */}
         <div className="cmp-details pb-10 w-full h-auto lg:grid lg:grid-cols-2 max-sm:bg-[rgb(255,255,255)] bg-[rgb(255,255,255)]">
             <div className="l-cmp-details md:px-5 xl:ml-20 max-sm:px-5 md:pt-14 md:text-center max-sm:text-center lg:text-left  max-sm:mt-0 max-sm:pt-14 lg:mt-9 h-auto  ">
-                <h3 className="font-roboto-serif text-[#000000] font-medium max-sm:text-2xl text-4xl"> <span className="text-[#e91e63]">XXXXX </span> Websites and App Development Company</h3>
-                <p className="text-[17px] max-sm:text-base font-roboto-serif text-[#302F68] mt-7">At XXXXX, we take pride in being a top-rated Websites and mobile app development company. Our team brings together creativity 
+                <h3 className="font-roboto-serif text-[#000000] font-medium max-sm:text-2xl text-4xl"> <span className="text-[#e91e63]">TechnoNextGenSolutions </span> Websites and App Development Company</h3>
+                <p className="text-[17px] max-sm:text-base font-roboto-serif text-[#302F68] mt-7">At TechnoNextGenSolutions, we take pride in being a top-rated Websites and mobile app development company. Our team brings together creativity 
                     and extensive experience to deliver cutting-edge Websites and mobile app solutions. Located in India, we have established 
                     ourselves as a leading force in the industry.</p>
-                <p className="text-[17px] max-sm:text-base font-roboto-serif text-[#302F68] max-sm:mt-3 mt-6">XXXXX is your go-to destination for cutting-edge websites and mobile app development solutions in Hyderabad, India. 
+                <p className="text-[17px] max-sm:text-base font-roboto-serif text-[#302F68] max-sm:mt-3 mt-6">TechnoNextGenSolutions is your go-to destination for cutting-edge websites and mobile app development solutions in Hyderabad, India. 
                     Renowned as a top-rated company, we pride ourselves on being the creative powerhouse behind numerous successful 
                     Websites and mobile applications</p>
 
-                <p className="font-roboto-serif max-sm:mt-3 mt-5 text-[#302F68] font-medium max-sm:text-base text-[17px">At XXXXX, we don't just create Websites, we craft exceptional user experiences that drive success.
+                <p className="font-roboto-serif max-sm:mt-3 mt-5 text-[#302F68] font-medium max-sm:text-base text-[17px">At TechnoNextGenSolutions, we don't just create Websites, we craft exceptional user experiences that drive success.
                      Join us on your journey to Website And Mobile App excellence</p>
 
                 <div className="bt flex  max-sm:mt-10 mt-7  md:mx-auto max-sm:mx-auto w-64  max-sm:w-[70%] max-sm:h-14 h-16 border-2 border-white bg-[#3F36CD]  rounded-[40px]">
@@ -285,7 +246,7 @@ function Home () {
                             </div>
                         </div>
                     </div>
-                    <p className="text-[17px] max-sm:text-base font-roboto-serif text-[#302F68] mt-3 pr-2">At XXXXX, we excel in creating outstanding websites. Whether it's 
+                    <p className="text-[17px] max-sm:text-base font-roboto-serif text-[#302F68] mt-3 pr-2">At TechnoNextGenSolutions, we excel in creating outstanding websites. Whether it's 
                         crafting responsive designs, e-commerce solutions, 
                         or custom web applications, we transform your web vision into reality with skill and innovation.</p>
                 </div>
@@ -313,7 +274,7 @@ function Home () {
                             </div>
                         </div>
                     </div>
-                    <p className="text-[17px] max-sm:text-base font-roboto-serif text-[#302F68] mt-3 pr-2">At XXXXX, we specialize in crafting exceptional mobile applications. 
+                    <p className="text-[17px] max-sm:text-base font-roboto-serif text-[#302F68] mt-3 pr-2">At TechnoNextGenSolutions, we specialize in crafting exceptional mobile applications. 
                         From iPhone to Android and cross-platform solutions, we bring your app ideas to life with precision and innovation.</p>
                 </div>
                 <div className="bxs max-sm:px-5 xl:pl-10 md:px-5 md:text-center lg:text-left w-full max-sm:w-full h-auto bg-[#FFFFFF] border-[1px] drop-shadow-xl rounded-lg rounded-bl-[90px] pb-10">
@@ -357,15 +318,15 @@ function Home () {
                <h3 className="text-[#FD4755] max-sm:text-center max-sm:text-base text-xl max-sm:mx-4 lg:ml-8 md:ml-5 xl:ml-20 font-roboto-serif font-medium pt-10">Why Choose Us</h3>
                <div className="grid lg:grid-cols-2 max-sm:mx-4 lg:mx-8 md:mx-5 xl:mx-20">
                  <div className="l-c">
-                    <h2 className="text-[40px] max-sm:text-2xl max-sm:text-center font-medium text-[#000000] leading-tight mt-6">Why The  XXXXX Ranked Top Among The Leading Web & App Development Companies</h2>
-                    <p className="text-xl max-sm:text-[17px] max-sm:text-center text-[#302F68] font-roboto-serif mt-7">Celebrated for our innovative solutions and unwavering commitment to client success, XXXXX is 
+                    <h2 className="text-[40px] max-sm:text-2xl max-sm:text-center font-medium text-[#000000] leading-tight mt-6">Why The  TechnoNextGenSolutions Ranked Top Among The Leading Web & App Development Companies</h2>
+                    <p className="text-xl max-sm:text-[17px] max-sm:text-center text-[#302F68] font-roboto-serif mt-7">Celebrated for our innovative solutions and unwavering commitment to client success, TechnoNextGenSolutions is 
                         recognized as a premier choice among web and app development companies. Explore what sets us apart</p>
 
                     <div className="c-in flex max-sm:mt-10 mt-8">
                         <img src={choosespm} alt="" className=" max-sm:w-[80px] lg:w-20 lg:h-20  max-sm:h-[80px]"  />
                         <div className="c-intxt ml-2">
                             <h3 className="font-roboto-serif text-2xl max-sm:text-xl font-medium">Streamlined Project Management</h3>
-                            <p className="text-lg text-[#302F68] max-sm:text-base font-roboto-serif mt-3">Efficiently navigate your projects with XXXXX streamlined management. 
+                            <p className="text-lg text-[#302F68] max-sm:text-base font-roboto-serif mt-3">Efficiently navigate your projects with TechnoNextGenSolutions streamlined management. 
                                 Our precision and expertise ensure your goals are met seamlessly.</p>
                         </div>
                     </div>
@@ -373,7 +334,7 @@ function Home () {
                         <img src={choosedte} alt="" />
                         <div className="c-intxt ml-2">
                             <h3 className="font-roboto-serif max-sm:text-xl  text-2xl font-medium">A Dedicated Team of Experts</h3>
-                            <p className="text-lg text-[#302F68] max-sm:text-base font-roboto-serif mt-3">Experience the power of a dedicated team of experts at XXXXX, committed to achieving your project's success.</p>
+                            <p className="text-lg text-[#302F68] max-sm:text-base font-roboto-serif mt-3">Experience the power of a dedicated team of experts at TechnoNextGenSolutions, committed to achieving your project's success.</p>
                         </div>
                         
                     </div>
@@ -385,14 +346,14 @@ function Home () {
                         <img src={choosecpt} alt="" className=" max-sm:w-[80px] lg:w-20 lg:h-20  max-sm:h-[80px]" />
                         <div className="c-intxt ml-2   ">
                             <h3 className="font-roboto-serif text-2xl max-sm:text-xl font-medium">Completion of Project in Given Time</h3>
-                            <p className="text-lg text-[#302F68] max-sm:text-base font-roboto-serif mt-3">We guarantee timely project completion at XXXXX, delivering on our promises and meeting your deadlines.</p>
+                            <p className="text-lg text-[#302F68] max-sm:text-base font-roboto-serif mt-3">We guarantee timely project completion at TechnoNextGenSolutions, delivering on our promises and meeting your deadlines.</p>
                         </div>
                     </div>
                  </div>
                </div>
 
                <h1 className="font-roboto-serif font-medium text-[40px] text-[#365E7D] max-sm:px-4 max-sm:text-center md:px-3 lg:px-20 xl:px-60 text-center max-sm:mt-14 max-sm:text-2xl mt-28 ">Turning Ideas into Reality  <span className="text-[#FD4755]">Let's Begin Your Next  Project </span>  Together</h1>
-               <p className="text-[#090B4F] text-lg lg:px-20 xl:px-72 max-sm:px-4 md:px-5 text-center font-roboto-serif max-sm:text-[17px]  mt-4">Embark on a journey of innovation with XXXX. 
+               <p className="text-[#090B4F] text-lg lg:px-20 xl:px-72 max-sm:px-4 md:px-5 text-center font-roboto-serif max-sm:text-[17px]  mt-4">Embark on a journey of innovation with TechnoNextGenSolutions. 
                 Our expertise transforms your concepts into thriving projects. Let's start creating together.</p>
 
                 <div className="bt flex  mt-7  max-sm:w-[65%] w-64  h-14 border-2 border-white bg-[#3F36CD] mx-auto  rounded-[40px]">
@@ -439,7 +400,7 @@ function Home () {
                 <h4 className="font-roboto-serif text-[#333262] max-sm:text-base text-xl">WE HAVE WORKED ACROSS MULTIPLE INDUSTRIES</h4>
                 <h2 className="text-[40px] max-sm:text-[26px] font-roboto-serif text-[#D54653] mt-4 font-medium">Industries We Serve</h2>
 
-                <p className="font-roboto-serif text-[#333262] text-lg  max-sm:text-base mt-4 max-sm:px-4 px-20"> XXXXX, we cater to a diverse range of industries, providing
+                <p className="font-roboto-serif text-[#333262] text-lg  max-sm:text-base mt-4 max-sm:px-4 px-20"> TechnoNextGenSolutions, we cater to a diverse range of industries, providing
                      tailored solutions to <br className="max-md:hidden"/> meet the unique needs of each sector</p>
                  <p className="md:hidden font-roboto-serif text-[#333262] text-lg  max-sm:text-base max-sm:mx-4">meet the unique needs of each sector</p>
             </div>
@@ -502,7 +463,7 @@ function Home () {
         <div className="cs max-sm:h-auto lg:h-auto lg:pb-10  max-sm:w-[100%] bg-[#FFFFFF] max-sm:px-4 lg:px-8 xl:px-20 pt-5">
             <div className="grid lg:grid-cols-2  max-sm:pt-10 lg:pt-20 ">
                 <div className="l-cs pt-7 md:text-center max-sm:text-center w-[100%] h-auto">
-                    <h3 className="text-2xl  max-sm:text-base font-roboto-serif text-[#0D4E57] ">WHAT OUR CLIENTS SAY ABOUT xxxxx</h3>
+                    <h3 className="text-2xl  max-sm:text-base font-roboto-serif text-[#0D4E57] ">WHAT OUR CLIENTS SAY ABOUT TechnoNextGenSolutions</h3>
                     <h1 className="text-[40px] max-sm:text-center max-sm:text-2xl mt-5 leading-snug font-roboto-serif text-[#AE7C36] font-medium"  >Over 10+ Satisfied <br /> Clients and Growing</h1>
 
                     <p className="text-[#263156] font-roboto-serif max-sm:text-xl max-sm:mt-7 lg:mt-10 text-xl">  Read More Reviews</p>

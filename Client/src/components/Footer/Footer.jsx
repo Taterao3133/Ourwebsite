@@ -10,7 +10,7 @@ import { Link } from 'react-router-dom'
 function Footer() {
   return (
     <div className='foot w-full h-auto overflow-hidden bg-[#141064] pb-5'>
-      <div className=" grid md:grid-cols-2 md:mx-10 lg:grid-cols-3 md:space-x-32 lg:space-x-16 pb-5 pt-16 max-sm:mx-4 lg:px-8 xl:px-20" >
+      <div className=" grid md:grid-cols-2 md:mx-10 lg:grid-cols-3 md:space-x-32 lg:space-x-16 pb-5 pt-16 max-sm:mx-4 lg:px-8 xl:px-20 overflow-hidden" >
         <div className="gr  w-full h-auto  ">
           <h1 className='text-[#FFFFFF] font-roboto-serif underline-offset-[5px] underline font-medium max-sm:text-lg text-2xl'>CONTACT US</h1>
 
@@ -66,7 +66,7 @@ function Footer() {
           <img src={fbIcon} alt=""  className='cursor-pointer'/>
           <img src={linkedInIcon} alt=""  className='cursor-pointer'/>
         </div>
-          <p className='text-lg max-sm:text-xs text-[#D9D9D9] text-center mt-4 '>© 2024. All Rights Reserved By XXXXX</p>
+          <p className='text-lg max-sm:text-xs text-[#D9D9D9] text-center mt-4 '>© 2024. All Rights Reserved By TechnoNextGenSolutions.</p>
 
       </div>
 
