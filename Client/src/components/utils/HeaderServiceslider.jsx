@@ -17,6 +17,7 @@ import VD from '../../images/VD-service.svg'
 import W from '../../images/W-service.svg'
 import WM from '../../images/WM-service.svg'
 import WT from '../../images/WT-service.svg'
+import { Link } from "react-router-dom";
 
 
 function HeaderServiceslider({ isServicesHovered , setIsServicesHovered}) {
@@ -58,7 +59,7 @@ function HeaderServiceslider({ isServicesHovered , setIsServicesHovered}) {
                     <div className="icons">
                       <img src={CAD} alt="" />
                     </div>
-                    <p className="mt-2 ml-2 text-[#302F68]  hover:text-[#ce6ad0] cursor-pointer">Custom App Development</p>
+                    <p className="mt-2 ml-2 text-[#302F68]  hover:text-[#ce6ad0] cursor-pointer"><Link to='/customapp' >Custom App Development </Link></p>
                   </div>
                   <div className="flex">
                     <div className="icons">

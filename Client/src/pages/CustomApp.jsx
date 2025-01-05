@@ -18,7 +18,7 @@ function CustomApp() {
             Trust us to help you maintain accurate inventory records, streamline order management, 
             and ultimately boost your business's productivity and profitability through efficient inventory management</p>
 
-            <div className="bt flex max-sm:mx-auto cursor-pointer  mt-7 md:mx-auto lg:mx-0 max-sm:w-[65%] max-sm:h-14 w-64  h-14 border-2 border-[#000000]  rounded-[40px]">
+            <div className="bt flex max-sm:mx-auto cursor-pointer hover:bg-[#ce6ad0] hover:border-none hover:drop-shadow-lg mt-7 md:mx-auto lg:mx-0 max-sm:w-[65%] max-sm:h-14 w-64  h-14 border-2 border-[#000000]  rounded-[40px]">
               <button className='text-xl max-sm:text-base max-sm:px-8 text-[#000000] font-medium font-roboto my-auto mx-auto flex'>GET STARTS <FaGreaterThan className=" mt-[4px] ml-2 text-[#000000]"/>  </button>
             </div>
             {/* <div className="bt flex  mt-7  max-sm:w-[65%] w-64  h-14 border-2 border-white bg-[#3F36CD] mx-auto  rounded-[40px]">
@@ -103,8 +103,8 @@ function CustomApp() {
               the opportunities to continue innovating, collaborating, and making a meaningful impact on businesses across various industries. 
               Together, we'll shape the future of app development and empower businesses to thrive in the digital era. provides an overview of the diverse.</p>
 
-            <div className="bt flex max-sm:mx-auto cursor-pointer  mt-7 md:mx-auto lg:mx-0 max-sm:w-[65%] max-sm:h-14 w-64  h-14 border-2 bg-[#3F36CD]  rounded-[40px]">
-              <button className='text-xl max-sm:text-base max-sm:px-8 text-[#fafafa] font-medium font-roboto my-auto mx-auto flex'>Request a Quote <FaGreaterThan className=" mt-[4px] ml-2 text-[#fbfafa]"/>  </button>
+            <div className="bt flex max-sm:mx-auto cursor-pointer hover:bg-[#ce6ad0] hover:border-none hover:drop-shadow-lg mt-7 md:mx-auto lg:mx-0 max-sm:w-[65%] max-sm:h-14 w-64  h-14 border-2 bg-[#3F36CD]  rounded-[40px]">
+              <button className='text-xl max-sm:text-base max-sm:px-4 text-[#fafafa] font-medium font-roboto my-auto mx-auto flex'>Request a Quote <FaGreaterThan className=" mt-[4px] ml-2 text-[#fbfafa]"/>  </button>
             </div>
           </div>
           {/* small screen */}

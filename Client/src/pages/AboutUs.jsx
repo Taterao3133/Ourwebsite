@@ -22,18 +22,18 @@ function AboutUs() {
   return (
    <div className="abt overflow-hidden">
     <div className="about-sec  max-sm:h-auto lg:h-[600px] max-sm:justify-center max-sm:items-center w-full  lg:px-8 xl:px-20 bg-gradient-to-b from-[#FFFFFF] to-[#e3fbd4]">
-      <div className="flex pt-20 md:mx-auto  max-sm:mx-4 space-x-3">
-        <h2 className='text-[#E7A548]  text-lg max-sm:text-base font-roboto-serif font-medium'><Link to='/'> Home</Link>  </h2>
+      <div className="flex pt-20 max-lg:items-center max-lg:justify-center  max-sm:mx-4 space-x-3">
+        <h2 className='text-[#E7A548]  text-lg max-sm:text-base font-roboto-serif cursor-pointer font-medium'><Link to='/'> Home</Link>  </h2>
         <div className="flex">
 
-        <GoDotFill className="text-[#E7A548] mt-1" />
-        <h4 className='text-[#E7A548] underline text-lg max-sm:text-base font-roboto-serif font-medium'>About Us</h4>
+        <GoDotFill className="text-[#E7A548] mt-2" />
+        <h4 className='text-[#E7A548] underline text-lg  cursor-pointer max-sm:ml-2 md:ml-2 max-sm:text-base font-roboto-serif  font-medium'>About Us</h4>
         </div>
       </div>
       <div className="grid lg:grid-cols-2 mt-6">
         <div className="l-c pb-5 pt-3 pr-4 md:text-center lg:text-left">
-          <h1 className="font-roboto-serif max-sm:text-center md:mx-auto  text-[40px] md:text-4xl max-sm:text-xl bg-clip-text text-transparent w-80 font-medium  bg-gradient-to-r from-[#F471FF] via-[#FA8166] to-[#FBCA84]">
-            About TechnoNextGenSolutions
+          <h1 className="font-roboto-serif max-md:text-center  text-[40px] md:text-4xl max-sm:text-xl bg-clip-text text-transparent  font-medium  bg-gradient-to-r from-[#F471FF] via-[#FA8166] to-[#FBCA84]">
+            About <br /> TechnoNextGenSolutions
           </h1>
           <p className="text-lg md:text-base md:px-7 lg:px-0 max-sm:text-base max-sm:text-center font-roboto-serif max-sm:px-4 lg:font-medium text-[#0C3461] mt-4">At TechnoNextGenSolutions, we combine the agility and innovation of a startup with over 7 years of industry experience. 
             Founded with a vision for innovation and a passion for excellence, TechnoNextGenSolutions emerged onto the scene in recent years,
@@ -41,8 +41,8 @@ function AboutUs() {
              endeavor has flourished into a dynamic force, propelled by a steadfast commitment to our core values of creativity, 
              integrity, and excellence</p>
 
-             <div className="bt flex md:mx-auto  mt-7 max-sm:mx-auto w-56 max-sm:w-[50%] max-sm:h-auto max-sm:py-2  h-14 border-2 border-[#000000]  rounded-[40px]">
-                <button className='text-lg max-sm:text-base text-[#000000] font-medium font-roboto-serif my-auto mx-auto flex'>Contact Us <FaGreaterThan  className=" mt-[4px] ml-2 text-[#000000]"/>  </button>
+             <div className="bt flex md:mx-auto  hover:bg-[#ce6ad0] hover:border-none cursor-pointer mt-7 max-sm:mx-auto w-56 max-sm:w-[50%] max-sm:h-auto max-sm:py-2 hover:drop-shadow-lg h-14 border-2 border-[#000000]  rounded-[40px]">
+                <button className='text-lg max-sm:text-base hover:text-[#fff]  text-[#000000] font-medium font-roboto-serif my-auto mx-auto flex'>Contact Us <FaGreaterThan  className=" mt-[4px] ml-2  hover:text-[#fff] text-[#000000]"/>  </button>
               </div>
 
         </div>
@@ -92,9 +92,9 @@ function AboutUs() {
             
                             <p className="font-roboto-serif max-sm:mt-3 mt-5 text-[#302F68] font-medium max-sm:text-base text-[17px">At TechnoNextGenSolutions, we don't just create Websites, we craft exceptional user experiences that drive success.
                                  Join us on your journey to Website And Mobile App excellence</p>
-            
-                            <div className="bt flex  max-sm:mt-10 mt-7  md:mx-auto max-sm:mx-auto w-64  max-sm:w-[70%] max-sm:h-14 h-16 border-2 border-white bg-[#3F36CD]  rounded-[40px]">
-                                <button className='text-xl text-white max-sm:text-base max-sm:px-4 font-medium font-roboto my-auto mx-auto  flex'>REQUEST A QUOTE <FaGreaterThan className=" mt-[4px] max-sm:ml-[1px] ml-2 text-white"/>  </button>
+             
+                            <div className="bt flex cursor-pointer max-sm:mt-10 mt-7 hover:bg-[#ce6ad0] hover:border-none hover:drop-shadow-lg md:mx-auto max-sm:mx-auto w-64  max-sm:w-[70%] max-sm:h-14 h-16 border-2 border-white bg-[#3F36CD]  rounded-[40px]">
+                                <button className='text-xl text-white hover:text-[#fff] max-sm:text-base max-sm:px-4 font-medium font-roboto my-auto mx-auto  flex'>REQUEST A QUOTE <FaGreaterThan className=" mt-[4px] max-sm:ml-[1px] ml-2 text-white"/>  </button>
                                 
                             </div>
                         </div>
@@ -168,7 +168,7 @@ function AboutUs() {
         <div className="w-sec bg-[#B9C5E3] w-full h-auto pb-5 justify-center text-center items-center">
             <h3 className="text-xl max-sm:text-base text-[#263156] font-roboto-serif pt-10">LET'S WORK TOGETHER</h3>
             <h1 className="font-roboto-serif font-medium max-sm:text-2xl text-[40px]  text-[#365E7D] mt-3">We Love to Listen to Your <br /> Requirements</h1>
-            <div className="bt flex  mt-10  w-64  h-14 border-2 border-[#302F68] mx-auto  rounded-[40px]">
+            <div className="bt flex  mt-10  w-64 hover:bg-[#ce6ad0] hover:border-none hover:drop-shadow-lg  h-14 border-2 border-[#302F68] mx-auto  rounded-[40px]">
                 <button className='text-xl max-sm:text-base text-[#302F68] font-medium font-roboto my-auto mx-auto  flex'>GET STARTS <FaGreaterThan className=" mt-[4px] ml-2 text-[#302F68]"/>  </button>   
             </div>
             <div className="cal-d flex text-center items-center justify-center mt-11 gap-2">

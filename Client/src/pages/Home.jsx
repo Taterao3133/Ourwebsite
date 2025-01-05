@@ -91,8 +91,8 @@ function Home () {
                         solutions that solve real problems and drive lasting change
                     </h4>
                 </div> 
-                <div className="bt flex max-sm:mx-auto  mt-7 md:mx-auto max-sm:w-[55%] max-sm:h-14 w-64  h-14 border-2 border-white  rounded-[40px]">
-                    <button className='text-xl max-sm:text-base max-sm:px-8 text-white font-medium font-roboto my-auto mx-auto flex'>GET STARTS <FaGreaterThan className=" mt-[4px] ml-2 text-white"/>  </button>
+                <div className="bt flex max-sm:mx-auto hover:bg-[#ce6ad0] cursor-pointer hover:border-none hover:drop-shadow-lg mt-7 md:mx-auto max-sm:w-[55%] max-sm:h-14 w-64  h-14 border-2 border-white  rounded-[40px]">
+                    <button className='text-xl max-sm:text-base max-sm:px-4 text-white font-medium font-roboto my-auto mx-auto flex'>GET STARTS <FaGreaterThan className=" mt-[4px] ml-2 text-white"/>  </button>
                     
                 </div>
                 
@@ -180,7 +180,7 @@ function Home () {
                 <p className="font-roboto-serif max-sm:mt-3 mt-5 text-[#302F68] font-medium max-sm:text-base text-[17px">At TechnoNextGenSolutions, we don't just create Websites, we craft exceptional user experiences that drive success.
                      Join us on your journey to Website And Mobile App excellence</p>
 
-                <div className="bt flex  max-sm:mt-10 mt-7  md:mx-auto max-sm:mx-auto w-64  max-sm:w-[70%] max-sm:h-14 h-16 border-2 border-white bg-[#3F36CD]  rounded-[40px]">
+                <div className="bt flex  max-sm:mt-10 mt-7 hover:bg-[#ce6ad0] hover:border-none hover:drop-shadow-lg  md:mx-auto max-sm:mx-auto w-64  max-sm:w-[70%] max-sm:h-14 h-16 border-2 border-white bg-[#3F36CD]  rounded-[40px]">
                     <button className='text-xl text-white max-sm:text-base max-sm:px-4 font-medium font-roboto my-auto mx-auto  flex'>REQUEST A QUOTE <FaGreaterThan className=" mt-[4px] max-sm:ml-[1px] ml-2 text-white"/>  </button>
                     
                 </div>
@@ -356,7 +356,7 @@ function Home () {
                <p className="text-[#090B4F] text-lg lg:px-20 xl:px-72 max-sm:px-4 md:px-5 text-center font-roboto-serif max-sm:text-[17px]  mt-4">Embark on a journey of innovation with TechnoNextGenSolutions. 
                 Our expertise transforms your concepts into thriving projects. Let's start creating together.</p>
 
-                <div className="bt flex  mt-7  max-sm:w-[65%] w-64  h-14 border-2 border-white bg-[#3F36CD] mx-auto  rounded-[40px]">
+                <div className="bt flex  mt-7  max-sm:w-[65%] w-64 hover:bg-[#ce6ad0] hover:border-none hover:drop-shadow-lg h-14 border-2 border-white bg-[#3F36CD] mx-auto  rounded-[40px]">
                     <button className='text-xl text-white max-sm:text-base font-medium font-roboto my-auto mx-auto  flex'>REQUEST A QUOTE <FaGreaterThan className=" mt-[4px] ml-2 text-white"/>  </button>
                     
                 </div>
@@ -389,7 +389,7 @@ function Home () {
         <div className="quote-sec items-center  justify-center md:pb-5 lg:pt-5  h-auto">
             <h2 className="xl:text-[40px] lg:text-[37px] md:text-xl max-sm:text-[25px] md:pt-5 md:text-center max-sm:text-center max-sm:mt-10  text-[#108ABF] font-roboto-serif font-medium">We Promise. We Deliver.</h2>
             
-            <div className="bt flex max-sm:mb-7 max-sm:w-[60%] w-64 md:mx-auto md:mt-4 lg:mt-4  h-14 border-2 border-white bg-[#3F36CD] max-sm:mt-5 max-sm:mx-auto  rounded-[40px]">
+            <div className="bt flex max-sm:mb-7 max-sm:w-[60%] hover:bg-[#ce6ad0] hover:border-none hover:drop-shadow-lg w-64 md:mx-auto md:mt-4 lg:mt-4  h-14 border-2 border-white bg-[#3F36CD] max-sm:mt-5 max-sm:mx-auto  rounded-[40px]">
                 <button className='text-xl max-sm:text-base  text-white font-medium font-roboto my-auto mx-auto  flex'>REQUEST A QUOTE <FaGreaterThan className=" mt-[4px] ml-2 text-white"/>  </button> 
             </div>
 
@@ -493,7 +493,7 @@ function Home () {
         <div className="w-sec bg-[#B9C5E3] w-full h-auto pb-5 justify-center text-center items-center">
             <h3 className="text-xl max-sm:text-base text-[#263156] font-roboto-serif pt-10">LET'S WORK TOGETHER</h3>
             <h1 className="font-roboto-serif font-medium max-sm:text-2xl text-[40px]  text-[#365E7D] mt-3">We Love to Listen to Your <br /> Requirements</h1>
-            <div className="bt flex  mt-10  w-64  h-14 border-2 border-[#302F68] mx-auto  rounded-[40px]">
+            <div className="bt flex  mt-10 hover:bg-[#ce6ad0] hover:border-none hover:drop-shadow-lg w-64  h-14 border-2 border-[#302F68] mx-auto  rounded-[40px]">
                 <button className='text-xl max-sm:text-base text-[#302F68] font-medium font-roboto my-auto mx-auto  flex'>GET STARTS <FaGreaterThan className=" mt-[4px] ml-2 text-[#302F68]"/>  </button>   
             </div>
             <div className="cal-d flex text-center items-center justify-center mt-11 gap-2">
