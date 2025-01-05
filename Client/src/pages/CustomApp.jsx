@@ -6,12 +6,22 @@ import education from '../images/education-apps.svg'
 import ecommerce from '../images/ecommerce1.svg'
 import consultation from '../images/consultation.svg'
 import PortfolioSlider from '../components/utils/PortfolioSlider'
+import { GoDotFill } from 'react-icons/go'
+import { Link } from 'react-router-dom'
 
 function CustomApp() {
   return (
     <div className="cust_app">
       <div className="about-sec  max-sm:h-auto lg:h-[620px] md:h-auto max-sm:justify-center max-sm:items-center w-full  lg:px-8 xl:px-20 bg-gradient-to-b from-[#FFFFFF] to-[#e3fbd4]">
-        <div className="lg:grid-cols-2 lg:pb-5 lg:grid pt-20 md:mx-auto  max-sm:mx-4 lg:space-x-6 xl:space-x-32">
+        <div className="flex pt-20 max-lg:items-center max-lg:justify-center  max-sm:mx-4 space-x-3">
+                <h2 className='text-[#E7A548]  text-lg max-sm:text-base font-roboto-serif cursor-pointer font-medium'><Link to='/'> Home</Link>  </h2>
+                <div className="flex">
+        
+                <GoDotFill className="text-[#E7A548] mt-2" />
+                <h4 className='text-[#E7A548] underline text-lg  cursor-pointer max-sm:ml-2 md:ml-2 max-sm:text-base font-roboto-serif  font-medium'>Custom App page</h4>
+                </div>
+              </div>
+        <div className="lg:grid-cols-2 lg:pb-5 lg:grid pt-2 md:mx-auto  max-sm:mx-4 lg:space-x-6 xl:space-x-32">
           <div className="lf_cnt font-roboto-serif md:px-7 xl:px-7 lg:px-0 max-lg:text-center xl:mt-16">
             <h2 className="font-medium max-sm:text-xl lg:text-[40px] md:text-4xl text-[#484DA9]">Elevate Your Business with Custom App Development by TechnoNextGenSolutions</h2>
             <p className="font-medium lg:text-lg md:text-base max-sm:text-base max-sm:px-0 md:px-9 lg:px-0  text-[#0C3461] mt-4">TechnoNextGenSolutions inventory management apps are here to transform the way you manage and track your inventory. 
