@@ -41,8 +41,8 @@ function AboutUs() {
              endeavor has flourished into a dynamic force, propelled by a steadfast commitment to our core values of creativity, 
              integrity, and excellence</p>
 
-             <div className="bt flex md:mx-auto  hover:bg-[#ce6ad0] hover:border-none cursor-pointer mt-7 max-sm:mx-auto w-56 max-sm:w-[50%] max-sm:h-auto max-sm:py-2 hover:drop-shadow-lg h-14 border-2 border-[#000000]  rounded-[40px]">
-                <button className='text-lg max-sm:text-base hover:text-[#fff]  text-[#000000] font-medium font-roboto-serif my-auto mx-auto flex'>Contact Us <FaGreaterThan  className=" mt-[4px] ml-2  hover:text-[#fff] text-[#000000]"/>  </button>
+             <div className="bt flex   hover:bg-[#ce6ad0] hover:border-none cursor-pointer mt-7 max-lg:mx-auto w-56 max-sm:w-[50%] max-sm:h-auto max-sm:py-2 hover:drop-shadow-lg h-14 border-2 border-[#000000]  rounded-[40px]">
+                <a href="https://wa.me/8331950396" className='text-lg max-sm:text-base hover:text-[#fff]  text-[#000000] font-medium font-roboto-serif my-auto mx-auto flex'>Contact Us <FaGreaterThan  className=" mt-[4px] ml-2  hover:text-[#fff] text-[#000000]"/>  </a>
               </div>
 
         </div>

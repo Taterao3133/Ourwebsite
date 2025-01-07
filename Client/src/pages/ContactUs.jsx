@@ -4,8 +4,30 @@ import { GoDotFill } from 'react-icons/go';
 import Email from '../images/footer-emailIcon.svg';
 import LocationIcon from '../images/footer-locationIcon.svg';
 import Phone from '../images/footer-callIcon.svg';
+import { useEffect, useState } from 'react';
+import { doc, getDoc } from 'firebase/firestore';
+import { db } from '../firebase';
 
 function ContactUs() {
+  const [contactDetails, setContactDetails] = useState({ email: "", phone: "", address: "" });
+  
+    useEffect(() => {
+      const fetchContactDetails = async () => {
+        try {
+          const contactDoc = await getDoc(doc(db, "siteDetails", "contact"));
+          if (contactDoc.exists()) {
+            setContactDetails(contactDoc.data());
+          } else {
+            console.log("Contact data not found");
+          }
+        } catch (error) {
+          console.error("Error fetching contact data:", error);
+        }
+      };
+  
+      fetchContactDetails();
+    }, []);
+  
   return (
     <div className="cts px-4 md:px-8 lg:px-16">
       {/* Header Section */}
@@ -64,7 +86,7 @@ function ContactUs() {
             <img src={Email} alt="" className="h-16 w-16 md:h-[80px] md:w-[80px] mr-4" />
             <div>
               <h2 className="text-2xl md:text-3xl text-[#000000] font-roboto-serif">EMAIL</h2>
-              <p className="mt-1 text-[#302F68] font-roboto text-xl sm:text-lg md:text-2xl">Omhoge@Gmail.com</p>
+              <p className="mt-1 text-[#302F68] font-roboto text-xl sm:text-lg md:text-2xl">{contactDetails.email}</p>
             </div>
           </div>
 
@@ -72,7 +94,7 @@ function ContactUs() {
             <img src={Phone} alt="" className="h-16 w-16 md:h-[80px] md:w-[80px] mr-4" />
             <div>
               <h2 className="text-2xl md:text-3xl text-[#000000] font-roboto-serif">PHONE</h2>
-              <p className="mt-1 text-[#302F68] font-roboto text-xl md:text-2xl">8331950396</p>
+              <p className="mt-1 text-[#302F68] font-roboto text-xl md:text-2xl">{contactDetails.phone}</p>
             </div>
           </div>
 

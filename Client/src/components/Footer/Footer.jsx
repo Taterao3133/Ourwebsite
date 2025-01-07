@@ -3,11 +3,50 @@ import callIcon from '../../images/footer-callIcon.svg'
 import locationIcon from '../../images/footer-locationIcon.svg'
 import whatsappIcon from '../../images/whatsappIcon.svg'
 import instaIcon from '../../images/instaIcon.svg'
-import fbIcon from '../../images/fbIcon.svg'
+// import fbIcon from '../../images/fbIcon.svg'
 import linkedInIcon from '../../images/linkedInIcon.svg'
 import { Link } from 'react-router-dom'
+import { useEffect, useState } from 'react'
+import { doc, getDoc } from 'firebase/firestore'
+import { db } from '../../firebase'
+
 
 function Footer() {
+  const [contactDetails, setContactDetails] = useState({ email: "", phone: "", address: "" });
+  const [socialLinks, setSocialLinks] = useState({});
+
+  const whatsApplink = `https://wa.me/${socialLinks.whatsUpNumber}`
+
+  useEffect(() => {
+    const fetchSocialLinks = async () => {
+      try {
+        const socialRef = doc(db, "siteDetails", "socialLinks");
+        const socialDoc = await getDoc(socialRef);
+        if (socialDoc.exists()) {
+          setSocialLinks(socialDoc.data());
+        }
+      } catch (error) {
+        console.error("Error fetching social links:", error);
+      }
+    };
+
+    fetchSocialLinks();
+    const fetchContactDetails = async () => {
+      try {
+        const contactDoc = await getDoc(doc(db, "siteDetails", "contact"));
+        if (contactDoc.exists()) {
+          setContactDetails(contactDoc.data());
+        } else {
+          console.log("Contact data not found");
+        }
+      } catch (error) {
+        console.error("Error fetching contact data:", error);
+      }
+    };
+
+    fetchContactDetails();
+  }, []);
+
   return (
     <div className='foot w-full h-auto overflow-hidden bg-[#141064] pb-5'>
       <div className=" grid md:grid-cols-2 md:mx-10 lg:grid-cols-3 md:space-x-32 lg:space-x-16 pb-5 pt-16 max-sm:mx-4 lg:px-8 xl:px-20 overflow-hidden" >
@@ -18,14 +57,14 @@ function Footer() {
             <img src={emaiIcon} alt="" />
             <div className="txt">
               <h2 className='text-xl max-sm:text-lg text-[#D9D9D9] pt-8 font-roboto-serif'>EMAIL</h2>
-              <p className='text-[#D9D9D9CC] mt-1 font-roboto-serif max-sm:text-base text-lg'>Dummy@Gmail.com</p>
+              <p className='text-[#D9D9D9CC] mt-1 font-roboto-serif max-sm:text-base text-lg'>{contactDetails.email || "Not Available"}</p>
             </div>
           </div>
           <div className="flex  space-x-3">
             <img src={callIcon} alt="" className='mt-1'/>
             <div className="txt">
               <h2 className='text-xl text-[#D9D9D9] pt-8 font-roboto-serif'>PHONE</h2>
-              <p className='text-[#D9D9D9CC] mt-1 font-roboto-serif max-sm:text-base text-lg'>8331950396</p>
+              <p className='text-[#D9D9D9CC] mt-1 font-roboto-serif max-sm:text-base text-lg'>{contactDetails.phone || "Not "}</p>
             </div>
           </div>
           <div className="flex  space-x-3">
@@ -61,10 +100,31 @@ function Footer() {
       </div>
       <div className="footer-sIcon ">
         <div className="icns flex gap-x-5 justify-center items-center text-center  ">
-          <img src={whatsappIcon} alt=""  className='cursor-pointer'/>
-          <img src={instaIcon} alt="" className='cursor-pointer' />
-          <img src={fbIcon} alt=""  className='cursor-pointer'/>
-          <img src={linkedInIcon} alt=""  className='cursor-pointer'/>
+        <a
+            href={whatsApplink} 
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-pink-500"
+          >
+            <img src={whatsappIcon} alt=""  className='cursor-pointer'/>
+          </a>
+          <a
+            href={socialLinks.instagram}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-pink-500"
+          >
+            <img src={instaIcon} alt="" className='cursor-pointer' />
+          </a>
+         {/* <img src={fbIcon} alt=""  className='cursor-pointer'/> */}
+          <a
+            href={socialLinks.Linkedin}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-pink-500"
+          >
+            <img src={linkedInIcon} alt=""  className='cursor-pointer'/>
+          </a>
         </div>
           <p className='text-lg max-sm:text-xs text-[#D9D9D9] text-center mt-4 '>© 2024. All Rights Reserved By TechnoNextGenSolutions.</p>
 
@@ -72,7 +132,9 @@ function Footer() {
 
 
     </div>
+    
   )
 }
+
 
 export default Footer

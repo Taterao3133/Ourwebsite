@@ -60,20 +60,6 @@ function Home () {
         <div key={index} className="border-l border-[#4F5D8133]"></div>
       ));
 
-    //   const [fsRef, fs] = useEmblaCarousel({ loop: true });
-    //   useEffect(() => {
-    //     if (!fs) return;
-    
-        
-    //     const interval = setInterval(() => {
-    //         fs.scrollNext();
-    //     }, 3000);
-    
-       
-    //     return () => clearInterval(interval);
-    // }, [fs]);
-    
-
   return (
     <div className='root-home scroll-smooth overflow-hidden'>
         <div className="hero-section bg-[#3434A1] w-full xl:h-auto lg:h-auto xl:pb-4 md:text-center md:px-7  max-sm:h-auto lg:pb-10   lg:grid lg:grid-cols-2">
@@ -92,8 +78,14 @@ function Home () {
                     </h4>
                 </div> 
                 <div className="bt flex max-sm:mx-auto hover:bg-[#ce6ad0] cursor-pointer hover:border-none hover:drop-shadow-lg mt-7 md:mx-auto max-sm:w-[55%] max-sm:h-14 w-64  h-14 border-2 border-white  rounded-[40px]">
-                    <button className='text-xl max-sm:text-base max-sm:px-4 text-white font-medium font-roboto my-auto mx-auto flex'>GET STARTS <FaGreaterThan className=" mt-[4px] ml-2 text-white"/>  </button>
+                <a
+                    href="https://wa.me/8331950396"
+                    target="_blank"
+                    rel="noopener noreferrer"
                     
+                
+                    className='text-xl max-sm:text-base max-sm:px-4 text-white font-medium font-roboto my-auto mx-auto flex'>GET STARTS <FaGreaterThan className=" mt-[4px] ml-2 text-white"/>  
+               </a>     
                 </div>
                 
            </div>
