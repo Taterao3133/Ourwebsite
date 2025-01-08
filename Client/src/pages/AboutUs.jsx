@@ -94,7 +94,12 @@ function AboutUs() {
                                  Join us on your journey to Website And Mobile App excellence</p>
              
                             <div className="bt flex cursor-pointer max-sm:mt-10 mt-7 hover:bg-[#ce6ad0] hover:border-none hover:drop-shadow-lg md:mx-auto max-sm:mx-auto w-64  max-sm:w-[70%] max-sm:h-14 h-16 border-2 border-white bg-[#3F36CD]  rounded-[40px]">
-                                <button className='text-xl text-white hover:text-[#fff] max-sm:text-base max-sm:px-4 font-medium font-roboto my-auto mx-auto  flex'>REQUEST A QUOTE <FaGreaterThan className=" mt-[4px] max-sm:ml-[1px] ml-2 text-white"/>  </button>
+                            <a
+                                href="https://wa.me/8331950396"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                
+                                className='text-xl text-white hover:text-[#fff] max-sm:text-base max-sm:px-4 font-medium font-roboto my-auto mx-auto  flex'>REQUEST A QUOTE <FaGreaterThan className=" mt-[4px] max-sm:ml-[1px] ml-2 text-white"/> </a>
                                 
                             </div>
                         </div>
@@ -169,7 +174,12 @@ function AboutUs() {
             <h3 className="text-xl max-sm:text-base text-[#263156] font-roboto-serif pt-10">LET'S WORK TOGETHER</h3>
             <h1 className="font-roboto-serif font-medium max-sm:text-2xl text-[40px]  text-[#365E7D] mt-3">We Love to Listen to Your <br /> Requirements</h1>
             <div className="bt flex  mt-10  w-64 hover:bg-[#ce6ad0] hover:border-none hover:drop-shadow-lg  h-14 border-2 border-[#302F68] mx-auto  rounded-[40px]">
-                <button className='text-xl max-sm:text-base text-[#302F68] font-medium font-roboto my-auto mx-auto  flex'>GET STARTS <FaGreaterThan className=" mt-[4px] ml-2 text-[#302F68]"/>  </button>   
+            <a
+                    href="https://wa.me/8331950396"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    
+                 className='text-xl max-sm:text-base text-[#302F68] font-medium font-roboto my-auto mx-auto  flex'>GET STARTS <FaGreaterThan className=" mt-[4px] ml-2 text-[#302F68]"/>  </a>  
             </div>
             <div className="cal-d flex text-center items-center justify-center mt-11 gap-2">
                 <h3 className="font-roboto-serif max-sm:text-base text-xl text-[#263156]">Or call us now</h3>

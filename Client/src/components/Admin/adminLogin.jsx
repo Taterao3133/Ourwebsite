@@ -22,26 +22,30 @@ const AdminLogin = () => {
   };
 
   return (
-    <div className="lgn w-full bg-[#ffff]">
-      <div className="lg w-96 h-60 mx-auto text-center border-2">
+    <div className="space-y-8 mt-5 mb-8 border-2 border-[#ce6ad0] rounded-lg py-5 mx-auto grid justify-center items-center grid-flow-row max-sm:w-[90%] w-[60%] text-center">
+        <h3 className="text-center text-4xl max-sm:text-2xl font-roboto-serif font-medium">Admin Login </h3>
         <form className="grid grid-flow-row gap-y-4" onSubmit={handleLogin}>
           <input
             type="email"
             onChange={(e) => setEmail(e.target.value)}
             placeholder="Email"
-            className="border-2 p-3"
+            required
+            className="border-2 border-[#c26bc4] rounded-lg p-3 w-full"
           />
           <input
             type="password"
+            required
             onChange={(e) => setPassword(e.target.value)}
             placeholder="Password"
-            className="border-2 p-3"
+            className="border-2 border-[#c26bc4] rounded-lg p-3 w-full"
           />
-          <button type="submit">Login</button>
+           <div  className="bt flex md:mx-auto  hover:bg-[#ce6ad0] hover:border-none cursor-pointer mt-7 max-sm:mx-auto w-56 max-sm:w-[60%] max-sm:h-auto max-sm:py-2 hover:drop-shadow-lg h-14 border-2 border-[#000000]  rounded-[20px]">
+                    <button className='text-lg max-sm:text-base hover:text-[#fff]  text-[#000000] font-medium font-roboto-serif my-auto mx-auto flex'>Login</button>
+                  </div>
           {error && <p>{error}</p>}
         </form>
       </div>
-    </div>
+    
   );
 };
 

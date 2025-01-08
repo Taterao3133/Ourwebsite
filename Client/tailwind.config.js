@@ -32,18 +32,18 @@ module.exports = {
       },
       smoke: {
         '0%': { opacity: '0', transform: 'translateX(0) translateY(0) scale(0.5)' },
-        '50%': { opacity: '0.7', transform: 'translateX(10px) translateY(-10px) scale(0.8)' },
-        '100%': { opacity: '0', transform: 'translateX(20px) translateY(-30px) scale(1)' },
+        '30%': { opacity: '0.6', transform: 'translateX(-10px) translateY(-5px) scale(0.7)' },
+        '60%': { opacity: '0.4', transform: 'translateX(-20px) translateY(-10px) scale(0.9)' },
+        '100%': { opacity: '0', transform: 'translateX(-30px) translateY(-15px) scale(1)' },
       },
     },
     animation1: {
       shake: 'shake 0.5s ease-in-out',
+      smoke: 'smoke 2s infinite ease-out',
     },
     animation: {
       shake: 'shake 0.5s ease-in-out',
       'text-travel': 'text-travel 5s linear infinite',
-        // 'text-travel-middle': 'text-travel-middle 12s linear infinite',
-        // 'text-travel-inner': 'text-travel-inner 12s linear infinite',
       'moveCar': 'moveCar 15s infinite ease-in-out',
       'smoke': 'smoke 2s infinite ease-out',
       'spin-slow': 'spin 10s linear infinite',

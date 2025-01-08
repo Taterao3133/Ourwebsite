@@ -1,19 +1,19 @@
 import { Navigate } from 'react-router-dom';
 import { useAuthState } from 'react-firebase-hooks/auth';
-import { auth } from '../../firebase'; // Ensure this is the correct path to your firebase auth setup
+import { auth } from '../../firebase'; 
 
 const PrivateRoute = ({ children }) => {
-  const [user, loading] = useAuthState(auth); // Check the authentication state
+  const [user, loading] = useAuthState(auth); 
 
   if (loading) {
-    return <div>Loading...</div>; // You can customize this loading screen
+    return <div>Loading...</div>; 
   }
 
   if (!user) {
-    return <Navigate to="admin/login" replace />; // Redirect to login if user is not authenticated
+    return <Navigate to="admin/login" replace />; 
   }
 
-  return children; // Render children if the user is authenticated
+  return children; 
 };
 
 export default PrivateRoute;

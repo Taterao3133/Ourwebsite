@@ -9,7 +9,7 @@ import ScrollToTop from '../../Utils/ScrolltoTop';
 import CustomApp from '../../pages/CustomApp';
 import AdminLogin from '../Admin/adminLogin';
 import AdminPanel from '../Admin/AdminPage';
-import PrivateRoute from '../PrivateRoute/PrivateRoute'; // Import PrivateRoute
+import PrivateRoute from '../PrivateRoute/PrivateRoute'; 
 
 function RouteConfig() {
   return (
