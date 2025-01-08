@@ -126,13 +126,10 @@ function Footer() {
             <img src={linkedInIcon} alt=""  className='cursor-pointer'/>
           </a>
         </div>
-          <p className='text-lg max-sm:text-xs text-[#D9D9D9] text-center mt-4 '>© 2024. All Rights Reserved By TechnoNextGenSolutions.</p>
+          <p className='text-lg max-sm:text-xs text-[#D9D9D9] text-center mt-4 '>© 2024. All Rights Reserved By TechnoNextGenSolutions.</p>
 
       </div>
-
-
     </div>
-    
   )
 }
 

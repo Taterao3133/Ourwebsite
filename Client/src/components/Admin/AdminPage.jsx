@@ -181,9 +181,6 @@ const AdminPanel = () => {
             </div>
           ))}
         </div>
-
-        
-       
       </div>
  {/* contact details */}
       <div className="space-y-8 mt-5 border-2 border-[#ce6ad0] rounded-lg py-5 mx-auto grid justify-center items-center grid-flow-row max-sm:w-[90%] w-[60%] text-center">

@@ -199,9 +199,6 @@ function AboutUs() {
                <h4 className="text-xl max-sm:text-base font-roboto-serif text-[#365E7D] mt-4">REGISTERED OFFICE</h4>
                <p className="font-roboto-serif text-xl max-sm:text-base text-[#090B4F] mt-3">Flat no 102, Narayanguda Main Rd, <br /> Beside Shanthi Theatre Narayanguda,<br /> Hyderabad, 500029</p>
             </div>
-            
-
-
         </div>
   </div>
   )

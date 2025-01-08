@@ -164,7 +164,6 @@ function HeaderServiceslider({ isServicesHovered , setIsServicesHovered}) {
                     <p className=" ml-2 text-[#302F68]  cursor-pointerhover:text-[#ce6ad0]">Information Architecture</p>
                   </div>
                 </div>
-                {/* knk */}
 
                 <div className="lg:space-y-5 xl:space-y-8 max-xl:text-[15px] xl:text-[16px] font-roboto-serif font-medium ">
                   <div className="header-s"><h2 className=" font-roboto font-medium xl:text-xl max-xl:text-[17px] text-center text-[#0C3461]">DIGITAL MARKENTING SERVICES</h2>
@@ -187,9 +186,6 @@ function HeaderServiceslider({ isServicesHovered , setIsServicesHovered}) {
              </div>
              
           </div>
-          {/* <header class="bg-white shadow-md"> */}
-  
-
       </div>
   );
 }
