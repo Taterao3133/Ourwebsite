@@ -63,7 +63,7 @@ function PortfolioSlider() {
                     </p>
                   </div>
                   <div className="r-c lg:mt-20 md:mt-3 md:ml-5   ">
-                    <img
+                    <img 
                       src={items.imageUrl}
                       alt={items.title}
                       className='md:w-[80%] md:h-auto md:mx-auto lg:w-[90%] lg:h-[90%] lg:border-2 lg:object-cover'

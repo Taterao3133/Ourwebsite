@@ -58,7 +58,7 @@ function Header() {
       <div className='h-c justify-between flex   transition-all duration-700 ease-in-out max-sm:mx-9 md:px-16  lg:px-20'>
         <div className="l-c">
           <div className="logo">
-            <img src={logo} alt=""  className="w-auto h-12"/>
+            <img src={logo} alt=""  className="w-auto h-12 my-auto"/>
           </div>
 {/*  */}
         </div>
