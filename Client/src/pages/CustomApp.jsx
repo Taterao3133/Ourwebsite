@@ -8,8 +8,29 @@ import consultation from '../images/consultation.svg'
 import PortfolioSlider from '../components/utils/PortfolioSlider'
 import { GoDotFill } from 'react-icons/go'
 import { Link } from 'react-router-dom'
+import { useEffect, useState } from 'react'
+import { doc, getDoc } from 'firebase/firestore'
+import { db } from '../firebase'
 
 function CustomApp() {
+  const [socialLinks, setSocialLinks]=useState({})
+  const whatsApplink = `https://wa.me/${socialLinks.whatsUpNumber}%20Hello%20I%20want%20make%20an%20appointment`
+
+  useEffect(() => {
+    const fetchSocialLinks = async () => {
+      try {
+        const socialRef = doc(db, "siteDetails", "socialLinks");
+        const socialDoc = await getDoc(socialRef);
+        if (socialDoc.exists()) {
+          setSocialLinks(socialDoc.data());
+        }
+      } catch (error) {
+        console.error("Error fetching social links:", error);
+      }
+    };
+
+    fetchSocialLinks();
+    },[]);
   return (
     <div className="cust_app">
       <div className="about-sec  max-sm:h-auto lg:h-[620px] md:h-auto max-sm:justify-center max-sm:items-center w-full  lg:px-8 xl:px-20 bg-gradient-to-b from-[#FFFFFF] to-[#e3fbd4]">
@@ -30,7 +51,7 @@ function CustomApp() {
 
             <div className="bt flex max-sm:mx-auto cursor-pointer hover:bg-[#ce6ad0] hover:border-none hover:drop-shadow-lg mt-7 md:mx-auto lg:mx-0 max-sm:w-[65%] max-sm:h-14 w-64  h-14 border-2 border-[#000000]  rounded-[40px]">
             <a
-                    href="https://wa.me/8331950396"
+                    href={whatsApplink}
                     target="_blank"
                     rel="noopener noreferrer"
                     
@@ -116,7 +137,7 @@ function CustomApp() {
 
             <div className="bt flex max-sm:mx-auto cursor-pointer hover:bg-[#ce6ad0] hover:border-none hover:drop-shadow-lg mt-7 md:mx-auto lg:mx-0 max-sm:w-[65%] max-sm:h-14 w-64  h-14 border-2 bg-[#3F36CD]  rounded-[40px]">
             <a
-                    href="https://wa.me/8331950396"
+                    href={whatsApplink}
                     target="_blank"
                     rel="noopener noreferrer"
                     

@@ -4,7 +4,7 @@ import { FaGreaterThan } from "react-icons/fa";
 import { Link, useLocation } from "react-router-dom";
 import HeaderServiceslider from '../utils/HeaderServiceslider'; 
 import { FiMenu, FiX } from "react-icons/fi";
-
+import logo from '../../images/Logo.svg'
 
 
 function Header() {
@@ -58,7 +58,7 @@ function Header() {
       <div className='h-c justify-between flex   transition-all duration-700 ease-in-out max-sm:mx-9 md:px-16  lg:px-20'>
         <div className="l-c">
           <div className="logo">
-            tech solutions
+            <img src={logo} alt=""  className="w-auto h-12"/>
           </div>
 {/*  */}
         </div>

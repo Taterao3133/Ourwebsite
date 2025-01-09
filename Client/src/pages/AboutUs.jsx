@@ -14,11 +14,32 @@ import aboutCost from '../images/about-cost.svg'
 import callIcon from '../images/call-icon.svg'
 import charminarImg from '../images/charminarImg.svg'
 import { Link } from "react-router-dom";
+import { useEffect, useState } from "react";
+import { doc, getDoc } from "firebase/firestore";
+import { db } from "../firebase";
 
 
 
 
 function AboutUs() {
+  const [socialLinks, setSocialLinks] = useState({})
+  const whatsApplink = `https://wa.me/${socialLinks.whatsUpNumber}%20Hello%20I%20want%20make%20an%20appointment`
+
+  useEffect(() => {
+    const fetchSocialLinks = async () => {
+      try {
+        const socialRef = doc(db, "siteDetails", "socialLinks");
+        const socialDoc = await getDoc(socialRef);
+        if (socialDoc.exists()) {
+          setSocialLinks(socialDoc.data());
+        }
+      } catch (error) {
+        console.error("Error fetching social links:", error);
+      }
+    };
+
+    fetchSocialLinks();
+    },[]);
   return (
    <div className="abt overflow-hidden">
     <div className="about-sec  max-sm:h-auto lg:h-[600px] max-sm:justify-center max-sm:items-center w-full  lg:px-8 xl:px-20 bg-gradient-to-b from-[#FFFFFF] to-[#e3fbd4]">
@@ -42,7 +63,7 @@ function AboutUs() {
              integrity, and excellence</p>
 
              <div className="bt flex   hover:bg-[#ce6ad0] hover:border-none cursor-pointer mt-7 max-lg:mx-auto w-56 max-sm:w-[50%] max-sm:h-auto max-sm:py-2 hover:drop-shadow-lg h-14 border-2 border-[#000000]  rounded-[40px]">
-                <a href="https://wa.me/8331950396" className='text-lg max-sm:text-base hover:text-[#fff]  text-[#000000] font-medium font-roboto-serif my-auto mx-auto flex'>Contact Us <FaGreaterThan  className=" mt-[4px] ml-2  hover:text-[#fff] text-[#000000]"/>  </a>
+                <a href={whatsApplink} className='text-lg max-sm:text-base hover:text-[#fff]  text-[#000000] font-medium font-roboto-serif my-auto mx-auto flex'>Contact Us <FaGreaterThan  className=" mt-[4px] ml-2  hover:text-[#fff] text-[#000000]"/>  </a>
               </div>
 
         </div>
@@ -95,7 +116,7 @@ function AboutUs() {
              
                             <div className="bt flex cursor-pointer max-sm:mt-10 mt-7 hover:bg-[#ce6ad0] hover:border-none hover:drop-shadow-lg md:mx-auto max-sm:mx-auto w-64  max-sm:w-[70%] max-sm:h-14 h-16 border-2 border-white bg-[#3F36CD]  rounded-[40px]">
                             <a
-                                href="https://wa.me/8331950396"
+                                href={whatsApplink}
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 
@@ -175,7 +196,7 @@ function AboutUs() {
             <h1 className="font-roboto-serif font-medium max-sm:text-2xl text-[40px]  text-[#365E7D] mt-3">We Love to Listen to Your <br /> Requirements</h1>
             <div className="bt flex  mt-10  w-64 hover:bg-[#ce6ad0] hover:border-none hover:drop-shadow-lg  h-14 border-2 border-[#302F68] mx-auto  rounded-[40px]">
             <a
-                    href="https://wa.me/8331950396"
+                    href={whatsApplink}
                     target="_blank"
                     rel="noopener noreferrer"
                     

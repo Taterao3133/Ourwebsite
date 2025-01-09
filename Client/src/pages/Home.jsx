@@ -43,22 +43,41 @@ import callIcon from '../images/call-icon.svg'
 import charminarImg from '../images/charminarImg.svg'
 import CarAnimation from "../components/utils/CarAnimation";
 
-// import { Swiper, SwiperSlide } from "swiper/react";
-// import { Pagination, Navigation } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
+import { useEffect, useState } from "react";
+import { doc, getDoc } from "firebase/firestore";
+import { db } from "../firebase";
 
-// import useEmblaCarousel  from "embla-carousel-react";
-// import { useEffect } from "react";
 
 
 
 function Home () {
-
+    const [socialLinks, setSocialLinks] = useState({});
     const lines = Array.from({ length: 100 }).map((_, index) => (
         <div key={index} className="border-l border-[#4F5D8133]"></div>
       ));
+
+  const whatsApplink = `https://wa.me/${socialLinks.whatsUpNumber}%20Hello%20I%20want%20make%20an%20appointment`
+
+  useEffect(() => {
+    const fetchSocialLinks = async () => {
+      try {
+        const socialRef = doc(db, "siteDetails", "socialLinks");
+        const socialDoc = await getDoc(socialRef);
+        if (socialDoc.exists()) {
+          setSocialLinks(socialDoc.data());
+        }
+      } catch (error) {
+        console.error("Error fetching social links:", error);
+      }
+    };
+
+    fetchSocialLinks();
+    },[]);
+
+    
 
   return (
     <div className='root-home scroll-smooth overflow-hidden'>
@@ -79,7 +98,7 @@ function Home () {
                 </div> 
                 <div className="bt flex max-sm:mx-auto hover:bg-[#ce6ad0] cursor-pointer hover:border-none hover:drop-shadow-lg mt-7 lg:mt-8 xl:mt-14 md:mx-auto max-sm:w-[55%] max-sm:h-14 w-64  h-14 border-2 border-white  rounded-[40px]">
                 <a
-                    href="https://wa.me/8331950396"
+                    href={whatsApplink}
                     target="_blank"
                     rel="noopener noreferrer"
                     
@@ -100,64 +119,6 @@ function Home () {
             </div>
           
         </div>
-
-        {/* nn */}
-
-        {/* <div className="our-amb bg-[#3434A1] md:px-10 md:h-auto px-10 max-sm:mt-10 max-sm:mx-10 pt-10 pb-5 max-sm:text-center">
-            <h2 className="font-roboto font-medium md:text-center text-white max-sm:text-[17px] text-2xl tracking-wide">
-                OUR AMBITION
-            </h2>
-
-            <div className="mt-3 md:mt-4 md:pt-10 mx-auto flex flex-wrap justify-center gap-x-24">
-                <div
-                className="cr-content max-sm:w-[120px] max-sm:text-center max-sm:h-[120px] w-[152px] h-[152px] pt-[1px] pl-[1px] rounded-[30%] relative"
-                style={{ boxShadow: '0 0 4px 4px rgba(255, 255, 255, 1)' }}
-                >
-                <div className="inr w-[150px] h-[150px] max-sm:w-[119px] max-sm:h-[119px] rounded-full border-2 bg-transparent">
-                    <h3 className="font-roboto-serif text-center mt-2 font-semibold max-sm:text-base text-lg text-[#F2F2F2] underline underline-offset-4">
-                    Scalable Architecture
-                    </h3>
-                    <p className="font-roboto-serif font-medium max-sm:text-xs text-base text-center text-[#D9DFE3] -mt-1 p-3 leading-tight">
-                    Built to expand as you do
-                    </p>
-                </div>
-                </div>
-
-                <div
-                className="cr-content max-sm:w-[120px] max-sm:text-center max-sm:h-[120px] w-[152px] h-[152px] pt-[1px] pl-[1px] rounded-[30%] relative"
-                style={{ boxShadow: '0 0 4px 4px rgba(255, 255, 255, 1)' }}
-                >
-                <div className="inr w-[150px] h-[150px] max-sm:w-[119px] max-sm:h-[119px] rounded-full border-2 border-[#f4f3f2] bg-transparent">
-                    <h3 className="font-roboto-serif text-center mt-3 font-semibold max-sm:text-base text-lg text-[#F2F2F2] underline underline-offset-4">
-                    Innovative Ideas
-                    </h3>
-                    <p className="font-roboto-serif font-medium max-sm:text-xs text-base text-center text-[#D9DFE3] -mt-1 p-3 leading-tight">
-                    Fresh concepts that stand out
-                    </p>
-                </div>
-                </div>
-
-                <div
-                className="cr-content max-sm:w-[120px] max-sm:text-center max-sm:h-[120px] w-[152px] h-[152px] pt-[1px] pl-[1px] rounded-[30%] relative"
-                style={{ boxShadow: '0 0 4px 4px rgba(255, 255, 255, 1)' }}
-                >
-                <div className="inr w-[150px] h-[150px] max-sm:w-[119px] max-sm:h-[119px] rounded-full border-2 border-[#f4f3f2] bg-transparent">
-                    <h3 className="font-roboto-serif text-center mt-2 font-semibold max-sm:text-base text-lg text-[#F2F2F2] underline underline-offset-4">
-                    Client Approach
-                    </h3>
-                    <p className="font-roboto-serif font-medium max-sm:text-xs text-base text-center text-[#D9DFE3] max-sm:-mt-1 mt-2 p-3 leading-tight">
-                    Your needs are our priority
-                    </p>
-                </div>
-                </div>
-            </div>
-         </div> */}
-
-
-        {/* client icons sections */}
-        {/* <div className="slidersh w-full  max-sm:h-16 xl:h-28 bg-[#bed9ed] ">
-        
-        </div> */}
         {/* company details */}
         <div className="cmp-details pb-10 w-full h-auto lg:grid lg:grid-cols-2 max-sm:bg-[rgb(255,255,255)] bg-[rgb(255,255,255)]">
             <div className="l-cmp-details md:px-5 xl:ml-20 max-sm:px-5 md:pt-14 md:text-center max-sm:text-center lg:text-left  max-sm:mt-0 max-sm:pt-14 lg:mt-9 h-auto  ">
@@ -174,7 +135,7 @@ function Home () {
 
                 <div className="bt flex  max-sm:mt-10 mt-7 hover:bg-[#ce6ad0] hover:border-none hover:drop-shadow-lg  md:mx-auto max-sm:mx-auto w-64  max-sm:w-[70%] max-sm:h-14 h-16 border-2 border-white bg-[#3F36CD]  rounded-[40px]">
                 <a
-                    href="https://wa.me/8331950396"
+                    href={whatsApplink}
                     target="_blank"
                     rel="noopener noreferrer"
                     
@@ -355,7 +316,7 @@ function Home () {
 
                 <div className="bt flex  mt-7  max-sm:w-[65%] w-64 hover:bg-[#ce6ad0] hover:border-none hover:drop-shadow-lg h-14 border-2 border-white bg-[#3F36CD] mx-auto  rounded-[40px]">
                 <a
-                    href="https://wa.me/8331950396"
+                    href={whatsApplink}
                     target="_blank"
                     rel="noopener noreferrer"
                     
@@ -393,7 +354,7 @@ function Home () {
             
             <div className="bt flex max-sm:mb-7 max-sm:w-[60%] hover:bg-[#ce6ad0] hover:border-none hover:drop-shadow-lg w-64 md:mx-auto md:mt-4 lg:mt-4  h-14 border-2 border-white bg-[#3F36CD] max-sm:mt-5 max-sm:mx-auto  rounded-[40px]">
             <a
-                    href="https://wa.me/8331950396"
+                    href={whatsApplink}
                     target="_blank"
                     rel="noopener noreferrer"
                     
@@ -502,7 +463,7 @@ function Home () {
             <h1 className="font-roboto-serif font-medium max-sm:text-2xl text-[40px]  text-[#365E7D] mt-3">We Love to Listen to Your <br /> Requirements</h1>
             <div className="bt flex  mt-10 hover:bg-[#ce6ad0] hover:border-none hover:drop-shadow-lg w-64  h-14 border-2 border-[#302F68] mx-auto  rounded-[40px]">
             <a
-                    href="https://wa.me/8331950396"
+                    href={whatsApplink}
                     target="_blank"
                     rel="noopener noreferrer"
                     
