@@ -45,9 +45,9 @@ function PortfolioSlider() {
         <h1 className='font-roboto-serif text-[40px] max-sm:text-2xl text-[#365E7D] font-medium mt-3 underline-[4px] underline underline-offset-8'>Portfolio</h1>
       </div>
 
-      <div className="w-full mt-11 h-[470px] flex justify-center">
+      <div className="w-full mt-11  max-sm:h-[320px] h-[470px] flex justify-center">
         <div className="relative w-[90%]">
-          <div className="min-w-full overflow-hidden bg-[#FFFFFF] h-[470px] rounded-tl-[80px]">
+          <div className="min-w-full overflow-hidden bg-[#FFFFFF] max-sm:h-auto  h-[470px] rounded-tl-[80px]">
             <div
               className="flex transition-transform duration-1000"
               style={{ transform: `translateX(-${currentIndex * 100}%)` }}
@@ -62,24 +62,24 @@ function PortfolioSlider() {
                       {items.description}
                     </p>
                   </div>
-                  <div className="r-c lg:mt-20 md:mt-3 md:ml-5   ">
+                  <div className="r-c lg:mt-20 md:mt-3 max-sm:-mt-32 md:ml-5   ">
                     <img 
                       src={items.imageUrl}
                       alt={items.title}
-                      className='md:w-[80%] md:h-auto md:mx-auto lg:w-[90%] lg:h-[90%] lg:border-2 lg:object-cover'
+                      className='md:w-[80%] max-sm:w-[80%] max-sm:h-[40%] mx-auto md:h-auto md:mx-auto lg:w-[90%] lg:h-[90%] lg:border-2 lg:object-cover'
                     />
                   </div>
                 </div>
               ))}
             </div>
-            <div className="progression-btn flex ml-11 gap-2">
+            <div className="progression-btn flex max-sm:items-center max-sm:justify-center max-sm:-mt-44 max-sm:pb-10 max-sm:ml-0 ml-11 gap-2">
               {portfolioData.map((_, i) => (
                 <div
                   key={i}
                   style={{ width: currentIndex === i ? '40px' : '16px' }}
                   className={`${
                     currentIndex === i ? 'bg-[#FD4755]' : 'border-2 border-black'
-                  } h-3 rounded-[5px]`}
+                  } h-3 rounded-[5px] m`}
                 ></div>
               ))}
             </div>
