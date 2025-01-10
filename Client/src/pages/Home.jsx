@@ -59,7 +59,8 @@ function Home () {
         <div key={index} className="border-l border-[#4F5D8133]"></div>
       ));
 
-  const whatsApplink = `https://wa.me/${socialLinks.whatsUpNumber}%20Hello%20I%20want%20make%20an%20appointment`
+  const countryCode = '+91';
+  const whatsApplink = `https://wa.me/${countryCode}${socialLinks.whatsUpNumber}%20Hello%20I%20want%20make%20an%20appointment`
 
   useEffect(() => {
     const fetchSocialLinks = async () => {
