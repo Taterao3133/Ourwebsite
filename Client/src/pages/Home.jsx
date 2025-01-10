@@ -60,7 +60,7 @@ function Home () {
       ));
 
   const countryCode = '+91';
-  const whatsApplink = `https://wa.me/${countryCode}${socialLinks.whatsUpNumber}%20Hello%20I%20want%20make%20an%20appointment`
+  const whatsApplink = `https://wa.me/${countryCode}${socialLinks.whatsUpNumber}?text=Hello%20I%20want%20make%20an%20appointment`
 
   useEffect(() => {
     const fetchSocialLinks = async () => {
