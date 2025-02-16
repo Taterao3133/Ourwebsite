@@ -14,7 +14,8 @@ function Footer() {
   const [contactDetails, setContactDetails] = useState({ email: "", phone: "", address: "" });
   const [socialLinks, setSocialLinks] = useState({});
 
-  const whatsApplink = `https://wa.me/${socialLinks.whatsUpNumber}`
+  const countryCode='+91'
+  const whatsApplink = `https://wa.me/${countryCode}${socialLinks.whatsUpNumber}`
 
   useEffect(() => {
     const fetchSocialLinks = async () => {
