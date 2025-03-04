@@ -1,10 +1,13 @@
 import { useEffect, useState } from "react";
-import callIcon from '../../images/header-callIcon.svg'
+
 import { FaGreaterThan } from "react-icons/fa";
 import { Link, useLocation } from "react-router-dom";
 import HeaderServiceslider from '../utils/HeaderServiceslider'; 
 import { FiMenu, FiX } from "react-icons/fi";
-import logo from '../../images/Logo.svg'
+import logo from '../../images/webvortex1.svg'
+import { doc, getDoc } from "firebase/firestore";
+import { IoCallOutline } from "react-icons/io5";
+import { db } from "../../firebase";
 
 
 function Header() {
@@ -12,8 +15,28 @@ function Header() {
     const [isServicesHovered, setIsServicesHovered] = useState(false);
     const [isMenuOpen, setIsMenuOpen] = useState(false);
     const [bgColor, setBgColor] = useState('#fffefe');
+    const [socialLinks, setSocialLinks] = useState({});
     const location = useLocation();
-    
+    const countryCode = '+91';
+  const whatsApplink = `https://wa.me/${countryCode}${socialLinks.whatsUpNumber}?text=Hello%20I%20want%20make%20an%20appointment`
+  const tellcal=`tel:${countryCode}${socialLinks.whatsUpNumber}`
+
+  useEffect(() => {
+  const fetchSocialLinks = async () => {
+    try {
+      const socialRef = doc(db, "siteDetails", "socialLinks");
+      const socialDoc = await getDoc(socialRef);
+      if (socialDoc.exists()) {
+        setSocialLinks(socialDoc.data());
+      }
+    } catch (error) {
+      console.error("Error fetching social links:", error);
+    }
+  };
+
+  fetchSocialLinks();
+  },[]);
+
 
     useEffect(() => {
         const handleScroll = () => {
@@ -58,7 +81,7 @@ function Header() {
       <div className='h-c justify-between flex   transition-all duration-700 ease-in-out max-sm:mx-9 md:px-16  lg:px-20'>
         <div className="l-c">
           <div className="logo">
-            <img src={logo} alt=""  className="w-auto h-12 my-auto"/>
+          <Link to='/' >  <img src={logo} alt=""  className="w-auto lg:h-14 my-auto md:h-12  max-sm:h-10"/> </Link>
           </div>
 {/*  */}
         </div>
@@ -80,10 +103,15 @@ function Header() {
           
           <p className={`text-base font-roboto  font-semibold hover:text-[#ce6ad0]  hover:underline-offset-4 hover:underline text-[#090B4F] tracking-wide ${isSticky ? ' ':' text-[#fff]'}  ${location.pathname === '/career' ? 'text-[#ce6ad0] underline-offset-4 underline ' : ''}`}><Link to='/career'>CAREERS</Link></p>
           <div className="icn md:h-14 md:w-14 md:pt-1 cursor-pointer">
-            <img src={callIcon} alt="" className={`  p-2 bg-[#b857c7] shadow-lg  hover:h-[52px] hover:w-[52px] drop-shadow-lg rounded-[90%] ${isSticky ? 'h-12  w-12 ':' h-12 w-12'}`}/> 
+            <a href={tellcal}> <IoCallOutline  alt="" className={`  p-2 bg-[#b857c7] shadow-lg  hover:h-[52px] hover:w-[52px] drop-shadow-lg rounded-[90%] ${isSticky ? 'h-12  w-12 text-white':' h-12 w-12'}`}/> 
+            </a>
           </div>
           <div className="bt flex w-56 cursor-pointer  h-14 border-2 hover:border-none hover:drop-shadow-lg hover:bg-[#ce6ad0] hover:animate-shake  border-white bg-[#3434A1] drop-shadow-lg   rounded-[40px]">
-              <button className='text-[17px] text-white  hover:bg-[#ce6ad0] hover:text-[#fff] font-medium font-roboto my-auto  mx-auto flex  '>REQUEST A QUOTE <FaGreaterThan className=" mt-[4px] ml-2 text-white"/>  </button>    
+              <button className='text-[17px] text-white  hover:bg-[#ce6ad0] hover:text-[#fff] font-medium font-roboto my-auto  mx-auto flex  '>
+                <a href={whatsApplink}
+                    target="_blank"
+                    rel="noopener noreferrer">REQUEST A QUOTE
+                </a><FaGreaterThan className=" mt-[4px] ml-2 text-white"/>  </button>    
           </div>
 
           </div>

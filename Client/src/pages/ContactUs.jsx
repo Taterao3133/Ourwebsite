@@ -29,7 +29,7 @@ function ContactUs() {
     }, []);
   
   return (
-    <div className="cts px-4 md:px-8 lg:px-16">
+    <div className="cts px-4 md:px-8 lg:px-16 overflow-hidden">
       {/* Header Section */}
       <div className="flex flex-col md:flex-row items-center justify-center bg-[#D9D9D999] h-auto md:h-48 w-full border-2 pt-8 space-y-4 md:space-y-0 md:space-x-8">
         <div className="statue">
@@ -42,7 +42,7 @@ function ContactUs() {
             <GoDotFill className="text-[#E7A548] mt-1" />
             <p className="underline underline-offset-4">Contact</p>
           </div>
-          <p className="text-3xl md:text-[44px] font-roboto-serif font-medium bg-clip-text text-transparent bg-gradient-to-r from-[#F471FF] via-[#FA8166] to-[#AAD2E2]">
+          <p className="text-3xl md:text-[44px] lg:mt-5 font-roboto-serif font-medium bg-clip-text text-transparent bg-gradient-to-r from-[#F471FF] via-[#FA8166] to-[#AAD2E2]">
             Contact Us
           </p>
         </div>

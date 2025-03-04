@@ -55,10 +55,10 @@ function AboutUs() {
       <div className="grid lg:grid-cols-2 mt-6">
         <div className="l-c pb-5 pt-3 pr-4 md:text-center lg:text-left">
           <h1 className="font-roboto-serif max-md:text-center  text-[40px] md:text-4xl max-sm:text-xl bg-clip-text text-transparent  font-medium  bg-gradient-to-r from-[#F471FF] via-[#FA8166] to-[#FBCA84]">
-            About <br /> TechnoNextGenSolutions
+            About <br /> Web Vortex Solutions
           </h1>
-          <p className="text-lg md:text-base md:px-7 lg:px-0 max-sm:text-base max-sm:text-center font-roboto-serif max-sm:px-4 lg:font-medium text-[#0C3461] mt-4">At TechnoNextGenSolutions, we combine the agility and innovation of a startup with over 7 years of industry experience. 
-            Founded with a vision for innovation and a passion for excellence, TechnoNextGenSolutions emerged onto the scene in recent years,
+          <p className="text-lg md:text-base md:px-7 lg:px-0 max-sm:text-base max-sm:text-center font-roboto-serif max-sm:px-4 lg:font-medium text-[#0C3461] mt-4">At Web Vortex Solutions, we combine the agility and innovation of a startup with over 7 years of industry experience. 
+            Founded with a vision for innovation and a passion for excellence, Web Vortex Solutions emerged onto the scene in recent years,
              driven by the desire to redefine industry standards and push the boundaries of possibility. What began as a humble 
              endeavor has flourished into a dynamic force, propelled by a steadfast commitment to our core values of creativity, 
              integrity, and excellence</p>
@@ -87,7 +87,7 @@ function AboutUs() {
 
         </div>
         <div className="r-c max-sm:mt-10 md:mt-5 max-sm:text-center lg:text-left lg:mt-20">
-          <p className="text-lg max-sm:hidden max-sm:text-base md:text-base font-roboto-serif text-[#302F68]">At TechnoNextGenSolutions, the intersection of innovation and experience is where magic happens. Join us on our journey as we continue to push the boundaries of what's possible and shape the future of technology, one groundbreaking idea at a time.
+          <p className="text-lg max-sm:hidden max-sm:text-base md:text-base font-roboto-serif text-[#302F68]">At Web Vortex Solutions, the intersection of innovation and experience is where magic happens. Join us on our journey as we continue to push the boundaries of what's possible and shape the future of technology, one groundbreaking idea at a time.
 
             With over seven years of industry experience under our belt, we bring a wealth of knowledge, expertise, and insights to every project we undertake.
             Our track record speaks for itself, 
@@ -97,22 +97,22 @@ function AboutUs() {
             <img src={ourMission} alt="" className=" max-sm:w-28 max-sm:h-auto" />
             <p className="text-2xl max-sm:text-lg  text-[#E13535] mt-7 font-roboto-serif font-medium">Our Mission</p>
           </div>
-          <p className="text-lg max-sm:text-base md:text-base max-sm:text-center font-roboto-serif text-[#302F68] mt-6">At TechnoNextGenSolutions, we are dedicated to delivering top-tier apps, applications, and websites that exceed client expectations. Leveraging our 7 years of expertise, we strive to create intuitive, user-friendly digital solutions that enhance productivity and engagement. Our mission is to foster 
+          <p className="text-lg max-sm:text-base md:text-base max-sm:text-center font-roboto-serif text-[#302F68] mt-6">At Web Vortex Solutions, we are dedicated to delivering top-tier apps, applications, and websites that exceed client expectations. Leveraging our 7 years of expertise, we strive to create intuitive, user-friendly digital solutions that enhance productivity and engagement. Our mission is to foster 
             long-term partnerships by consistently delivering high-quality, reliable, and innovative technology that transforms ideas into reality."</p>
         </div>
       </div>
       {/*  */}
       <div className="cmp-details pb-10 w-full h-auto grid lg:grid-cols-2 max-sm:text-center   bg-[#E0CDE7]">
             <div className="l-cmp-details md:px-5 xl:ml-20 max-sm:px-5 md:pt-14 md:text-center max-sm:text-center lg:text-left  max-sm:mt-0 max-sm:pt-14 lg:mt-9 h-auto  ">
-                            <h3 className="font-roboto-serif text-[#000000] font-medium max-sm:text-2xl text-4xl"> <span className="text-[#e91e63]">TechnoNextGenSolutions </span> Websites and App Development Company</h3>
-                            <p className="text-[17px] max-sm:text-base font-roboto-serif text-[#302F68] mt-7">At TechnoNextGenSolutions, we take pride in being a top-rated Websites and mobile app development company. Our team brings together creativity 
+                            <h3 className="font-roboto-serif text-[#000000] font-medium max-sm:text-2xl text-4xl"> <span className="text-[#e91e63]">Web Vortex Solutions </span> Websites and App Development Company</h3>
+                            <p className="text-[17px] max-sm:text-base font-roboto-serif text-[#302F68] mt-7">At Web Vortex Solutions, we take pride in being a top-rated Websites and mobile app development company. Our team brings together creativity 
                                 and extensive experience to deliver cutting-edge Websites and mobile app solutions. Located in India, we have established 
                                 ourselves as a leading force in the industry.</p>
-                            <p className="text-[17px] max-sm:text-base font-roboto-serif text-[#302F68] max-sm:mt-3 mt-6">TechnoNextGenSolutions is your go-to destination for cutting-edge websites and mobile app development solutions in Hyderabad, India. 
+                            <p className="text-[17px] max-sm:text-base font-roboto-serif text-[#302F68] max-sm:mt-3 mt-6">Web Vortex Solutions is your go-to destination for cutting-edge websites and mobile app development solutions in Hyderabad, India. 
                                 Renowned as a top-rated company, we pride ourselves on being the creative powerhouse behind numerous successful 
                                 Websites and mobile applications</p>
             
-                            <p className="font-roboto-serif max-sm:mt-3 mt-5 text-[#302F68] font-medium max-sm:text-base text-[17px">At TechnoNextGenSolutions, we don't just create Websites, we craft exceptional user experiences that drive success.
+                            <p className="font-roboto-serif max-sm:mt-3 mt-5 text-[#302F68] font-medium max-sm:text-base text-[17px">At Web Vortex Solutions, we don't just create Websites, we craft exceptional user experiences that drive success.
                                  Join us on your journey to Website And Mobile App excellence</p>
              
                             <div className="bt flex cursor-pointer max-sm:mt-10 mt-7 hover:bg-[#ce6ad0] hover:border-none hover:drop-shadow-lg md:mx-auto max-sm:mx-auto w-64  max-sm:w-[70%] max-sm:h-14 h-16 border-2 border-white bg-[#3F36CD]  rounded-[40px]">
@@ -158,7 +158,7 @@ function AboutUs() {
         <div className="choose-sec pb-14 lg:px-8 xl:px-20">
           <div className="txt text-center ">
             <h3 className="text-[#365E7D] font-medium max-sm:text-lg text-xl mt-7 font-roboto-serif">We Are Awesome</h3>
-            <h2 className="text-[#0D4E57] font-roboto-serif mt-6 max-sm:text-2xl text-[40px]">Why Choose TechnoNextGenSolutions</h2>
+            <h2 className="text-[#0D4E57] font-roboto-serif mt-6 max-sm:text-2xl text-[40px]">Why Choose Web Vortex Solutions</h2>
 
           </div>
           <div className="grid lg:grid-cols-4 gap-3 mt-6">

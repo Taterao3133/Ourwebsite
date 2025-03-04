@@ -35,19 +35,19 @@ function CustomApp() {
     },[]);
   return (
     <div className="cust_app">
-      <div className="about-sec  max-sm:h-auto lg:h-[620px] md:h-auto max-sm:justify-center max-sm:items-center w-full  lg:px-8 xl:px-20 bg-gradient-to-b from-[#FFFFFF] to-[#e3fbd4]">
+      <div className="about-sec  max-sm:h-auto lg:h-[620px] xl:h-auto xl:pb-7 md:h-auto max-sm:justify-center max-sm:items-center w-full  lg:px-8 xl:px-20 bg-gradient-to-b from-[#FFFFFF] to-[#e3fbd4]">
         <div className="flex pt-20 max-lg:items-center max-lg:justify-center  max-sm:mx-4 space-x-3">
                 <h2 className='text-[#E7A548]  text-lg max-sm:text-base font-roboto-serif cursor-pointer font-medium'><Link to='/'> Home</Link>  </h2>
                 <div className="flex">
         
                 <GoDotFill className="text-[#E7A548] mt-2" />
-                <h4 className='text-[#E7A548] underline text-lg  cursor-pointer max-sm:ml-2 md:ml-2 max-sm:text-base font-roboto-serif  font-medium'>Custom App page</h4>
+                <h4 className='text-[#E7A548]  text-lg  cursor-pointer max-sm:ml-2 md:ml-2 max-sm:text-base font-roboto-serif  font-medium'>Custom App page</h4>
                 </div>
               </div>
-        <div className="lg:grid-cols-2 lg:pb-5 lg:grid pt-2 md:mx-auto  max-sm:mx-4 lg:space-x-6 xl:space-x-32">
-          <div className="lf_cnt font-roboto-serif md:px-7 xl:px-7 lg:px-0 max-lg:text-center xl:mt-16">
-            <h2 className="font-medium max-sm:text-xl lg:text-[40px] md:text-4xl text-[#484DA9]">Elevate Your Business with Custom App Development by TechnoNextGenSolutions</h2>
-            <p className="font-medium lg:text-lg md:text-base max-sm:text-base max-sm:px-0 md:px-9 lg:px-0  text-[#0C3461] mt-4">TechnoNextGenSolutions inventory management apps are here to transform the way you manage and track your inventory. 
+        <div className="lg:grid-cols-2 lg:pb-5 lg:grid pt-2 md:mx-auto  max-sm:mx-4 lg:space-x-6 xl:space-x-7 2xl:space-x-32 ">
+          <div className="lf_cnt font-roboto-serif md:px-7 xl:px-7 2xl:px-2 lg:px-4 max-lg:text-center lg:mt-2 2xl:mt-16 xl:mt-8 ">
+            <h2 className="font-medium max-sm:text-xl xl:text-[37px] 2xl:text-[40px] md:text-4xl text-[#484DA9]">Elevate Your Business with Custom App Development by Web Vortex Solutions</h2>
+            <p className="font-medium lg:text-lg md:text-base max-sm:text-base max-sm:px-0 md:px-9 lg:px-0  text-[#0C3461] mt-4">Web Vortex Solutions inventory management apps are here to transform the way you manage and track your inventory. 
             Trust us to help you maintain accurate inventory records, streamline order management, 
             and ultimately boost your business's productivity and profitability through efficient inventory management</p>
 
@@ -62,8 +62,8 @@ function CustomApp() {
           </div>
            
 
-          <div className="rt_cnt md:mt-10 md:pb-8 max-sm:pb-8 max-sm:mt-7 ">
-            <img src={customapp} alt="" className='lg:h- md:h-auto md:w-3/6 md:mx-auto max-sm:mx-auto lg:h-auto lg:w-[80%] max-sm:w-[70%]' />
+          <div className="rt_cnt md:mt-10 xl:mt-3 md:pb-8 max-sm:pb-8 max-sm:mt-7 ">
+            <img src={customapp} alt="" className=' md:h-auto md:w-3/6 md:mx-auto max-sm:mx-auto lg:h-auto xl:w-[80%] lg:w-[100%] max-sm:w-[70%]' />
           </div>
         </div>
 
@@ -71,14 +71,14 @@ function CustomApp() {
       </div>
       {/* client-trust page */}
       <div className="client_page text-center lg:w-3/6 xl:w-2/6 max-sm:px-4 lg:mx-auto pb-[80px]">
-        <h2 className='font-roboto-serif font-medium text-[40px] md:text-4xl max-sm:text-[22px] text-[#E13535] pt-[80px]'>Clients Trust TechnoNextGenSolutions for Their App Development Needs</h2>
+        <h2 className='font-roboto-serif font-medium text-[40px] md:text-4xl max-sm:text-[22px] text-[#E13535] pt-[80px]'>Clients Trust Web Vortex Solutions for Their App Development Needs</h2>
         <p className='font-roboto-serif max-sm:text-base text-lg md:text-base text-[#302F68] lg:mt-7 md:mt-5  max-sm:mt-4 md:px-12' >We believe in delivering excellence through cutting-edge design and development.
            Our team of experts is committed to pushing the boundaries of technology</p>
       </div>
 
       <div className="future bg-[#F2E4E066] h-auto w-full pt-10 xl:px-20 lg:px-8 pb-7">
         <h2 className='text-[#0C3461] font-roboto-serif font-medium text-[40px] md:text-4xl max-sm:text-xl text-center'> Features that makes <br /> app different!</h2>
-        <p className='font-roboto-serif font-normal text-[#5955A1] xl:pt-5 md:text-base max-sm:text-base max-sm:px-4 max-sm:mt-4 md:mt-5 lg:text-lg text-center xl:px-64'>"TechnoNextGenSolutions excels in creating innovative 
+        <p className='font-roboto-serif font-normal text-[#5955A1] xl:pt-5 md:text-base max-sm:text-base max-sm:px-4 max-sm:mt-4 md:mt-5 lg:text-lg text-center xl:px-64'>"Web Vortex Solutions excels in creating innovative 
           solutions that set your app apart from the competition,ensuring it stands out distinctly."</p>
 
           <div className="cols md:flex  mx-auto mt-7 ">
@@ -131,7 +131,7 @@ function CustomApp() {
             <img src={customapp} alt="" className='lg:w-[80%] xl:w-[70%] h-auto md:mx-auto max-sm:w-[40%]  ' />
           </div>
           <div className="rt_cnt font-roboto-serif md:px-8 lg:px-0 max-lg:text-center md:mt-5 max-sm:pt-7 xl:mt-8">
-            <h2 className="font-medium xl:text-[40px] md:text-4xl max-sm:text-[22px] lg:text-[38px] text-[#484DA9]">Experience the Difference: Custom App Development with TechnoNextGenSolutions</h2>
+            <h2 className="font-medium xl:text-[40px] md:text-4xl max-sm:text-[22px] lg:text-[38px] text-[#484DA9]">Experience the Difference: Custom App Development with Web Vortex Solutions</h2>
             <p className="font-medium lg:text-lg max-sm:text-base font-roboto-serif text-[#0C3461] mt-4">Our journey in app development has been marked by a dedication 
               to creating tailored solutions that meet the precise requirements of our clients. As we look ahead, we are excited about 
               the opportunities to continue innovating, collaborating, and making a meaningful impact on businesses across various industries. 

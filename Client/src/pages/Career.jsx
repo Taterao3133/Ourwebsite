@@ -31,7 +31,7 @@ function Career() {
             <div className="txt-2 text-center max-sm:mx-4">
                 <p className=' text-lg max-sm:text-base font-roboto-serif font-medium underline text-[#FD4755]  max-sm:mt-8 lg:mt-24 '>Career</p>
                 <h1 className='text-[40px] max-sm:text-2xl font-roboto-serif font-medium mt-5'>Let's Join Our Team</h1>
-                <h3 className='text-lg max-sm:text-base font-roboto-serif font-medium mt-3'>Explore Exciting Career Opportunities at TechnoNextGenSolutions.</h3>
+                <h3 className='text-lg max-sm:text-base font-roboto-serif font-medium mt-3'>Explore Exciting Career Opportunities at Web Vortex Solutions.</h3>
             </div>
             {/* career boxes */}
             <div className="bxs grid lg:grid-cols-3 lg:mx-20 md:space-y-3 max-sm:space-y-3  mt-10 lg:gap-3 mb-20">
