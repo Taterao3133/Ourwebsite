@@ -103,7 +103,7 @@ function Header() {
           
           <p className={`text-base font-roboto  font-semibold hover:text-[#ce6ad0]  hover:underline-offset-4 hover:underline text-[#090B4F] tracking-wide ${isSticky ? ' ':' text-[#fff]'}  ${location.pathname === '/career' ? 'text-[#ce6ad0] underline-offset-4 underline ' : ''}`}><Link to='/career'>CAREERS</Link></p>
           <div className="icn md:h-14 md:w-14 md:pt-1 cursor-pointer">
-            <a href={tellcal}> <IoCallOutline  alt="" className={`  p-2 bg-[#b857c7] shadow-lg  hover:h-[52px] hover:w-[52px] drop-shadow-lg rounded-[90%] ${isSticky ? 'h-12  w-12 text-white':' h-12 w-12'}`}/> 
+            <a href={tellcal}> <IoCallOutline  alt="" className={`  p-2  shadow-lg  hover:h-[52px] hover:w-[52px] drop-shadow-lg rounded-[90%] ${isSticky ? 'h-12  w-12 text-white bg-[#35359d]  hover:bg-[#b857c7] hover:drop-shadow-lg hover:shadow-slate-600':' bg-[#b857c7]  h-12 w-12'}`}/> 
             </a>
           </div>
           <div className="bt flex w-56 cursor-pointer  h-14 border-2 hover:border-none hover:drop-shadow-lg hover:bg-[#ce6ad0] hover:animate-shake  border-white bg-[#3434A1] drop-shadow-lg   rounded-[40px]">

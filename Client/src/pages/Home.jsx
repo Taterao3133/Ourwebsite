@@ -1,8 +1,9 @@
 import { FaGreaterThan } from "react-icons/fa";
-import homelaptop1 from '../images/homelaptop1.png'
+import homelaptop1 from '../images/Group89.svg'
 import salonIcn from '../images/salon-logo.png'
 import homemobile from '../images/homemobile.svg'
 import iheal2 from '../images/iheal2.svg'
+import contructions from '../images/Suri.svg'
 import aboutexpicon from '../images/about-expicon.svg'
 import aboutproicon from '../images/about-proicon.png'
 import aboutclieicon from '../images/about-clieicon.svg'
@@ -37,7 +38,7 @@ import review1 from '../images/review-1.svg'
 import review2 from '../images/review-2.svg'
 import review3 from '../images/review-3.svg'
 import reviewImg1 from '../images/review-img.png'
-import reviewImg2 from '../images/reviewimg.png'
+import reviewImg2 from '../images/7081473.jpg'
 import callIcon from '../images/call-icon.svg'
 import charminarImg from '../images/charminarImg.svg'
 import CarAnimation from "../components/utils/CarAnimation";
@@ -338,8 +339,8 @@ function Home () {
                     <h2 className="font-roboto-serif max-md:hidden  text-[#E7A548] font-medium ml-4 text-2xl my-auto">iHeal</h2>
                 </div>
                 <div className="flex bg-[#fff] border-2 w-full max-sm:h-24 max-sm:w-24 max-sm:mt-3 mt-9 max-xl:h-28 xl:h-36 rounded-xl">
-                    <img src={salonIcn} alt="" className="w-auto max-sm:h-20 max-xl:h-20   h-24 my-auto max-sm:mx-auto  max-xl:ml-2 xl:ml-11" />
-                    <h2 className="font-roboto-serif  max-md:hidden font-medium ml-4 lg:text-xl xl:text-2xl my-auto">UNIQUE<br /> SALON</h2>
+                    <img src={contructions} className="w-auto max-sm:h-20 max-xl:h-20   h-24 my-auto max-sm:mx-auto  max-xl:ml-2 xl:ml-11" />
+                    <h2 className="font-roboto-serif  max-md:hidden font-medium ml-4 lg:text-xl xl:text-xl my-auto">AB<br />BUILDS</h2>
                 </div>
                 <div className="flex bg-[#fff]  border-2 w-full max-sm:h-24 max-sm:w-24 max-sm:mt-3 mt-9 lg:h-28 xl:h-36 rounded-xl">
                     <img src={iheal2} alt="" className="w-auto max-sm:h-20  lg:h-20   h-24 my-auto max-sm:mx-auto  lg:ml-2 md:ml-11 xl:ml-11" />
