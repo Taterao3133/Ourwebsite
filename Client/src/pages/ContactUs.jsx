@@ -85,24 +85,24 @@ function ContactUs() {
           <div className="w-full md:w-[515px] h-auto border-2 bg-[#E29E8A] flex items-center rounded-br-[32px] rounded-lg p-4">
             <img src={Email} alt="" className="h-16 w-16 md:h-[80px] md:w-[80px] mr-4" />
             <div>
-              <h2 className="text-2xl md:text-3xl text-[#000000] font-roboto-serif">EMAIL</h2>
-              <p className="mt-1 text-[#302F68] font-roboto text-xl sm:text-lg md:text-2xl">{contactDetails.email}</p>
+              <h2 className="text-xl md:text-2xl text-[#000000] font-roboto-serif">EMAIL</h2>
+              <p className="mt-1 text-[#302F68] font-roboto text-xl sm:text-lg md:text-xl">{contactDetails.email}</p>
             </div>
           </div>
 
           <div className="w-full md:w-[515px] h-auto border-2 bg-[#FFCEBF] flex items-center rounded-br-[32px] rounded-lg p-4">
             <img src={Phone} alt="" className="h-16 w-16 md:h-[80px] md:w-[80px] mr-4" />
             <div>
-              <h2 className="text-2xl md:text-3xl text-[#000000] font-roboto-serif">PHONE</h2>
-              <p className="mt-1 text-[#302F68] font-roboto text-xl md:text-2xl">{contactDetails.phone}</p>
+              <h2 className="text-xl md:text-2xl text-[#000000] font-roboto-serif">PHONE</h2>
+              <p className="mt-1 text-[#302F68] font-roboto text-lg md:text-xl">{contactDetails.phone}</p>
             </div>
           </div>
 
           <div className="w-full md:w-[515px] h-auto border-2 bg-[#6A95D3] flex items-center rounded-br-[32px] rounded-lg p-4">
             <img src={LocationIcon} alt="" className="h-16 w-16 md:h-[80px] md:w-[80px] mr-4" />
             <div>
-              <h2 className="text-2xl md:text-3xl text-[#000000] font-roboto-serif">ADDRESS</h2>
-              <p className="mt-1 text-[#302F68] font-roboto text-xl md:text-2xl">
+              <h2 className="text-xl md:text-2xl text-[#000000] font-roboto-serif">ADDRESS</h2>
+              <p className="mt-1 text-[#302F68] font-roboto text-lg md:text-xl">
                 Flat no 102, Narayanguda Main Rd, beside Shanthi Theatre, Narayanguda, Hyderabad, 500029
               </p>
             </div>
