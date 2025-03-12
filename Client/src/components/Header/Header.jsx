@@ -8,7 +8,7 @@ import logo from '../../images/webvtx logo2.svg'
 import { doc, getDoc } from "firebase/firestore";
 import { MdWifiCalling3 } from "react-icons/md";
 import { db } from "../../firebase";
-
+import callGif from '../../images/icons8-call.gif'
 
 function Header() {
     const [isSticky, setIsSticky] = useState(false);
@@ -80,12 +80,12 @@ function Header() {
      <div className={`header w-full  transition-all lg:duration-700 md:duration-350 ease-in-out ${isSticky ? 'fixed top-0 left-0 bg-[#f9f8f8]  border-none h-16 pt-2   lg:pt-1 shadow-lg z-50' : 'lg:h-20 h-16 text-white pt-2 bg-[#35359d] lg:pt-2 py-auto border-b-[1px] border-[#7285bf] lg:z-30'}`}>
       <div className='h-c justify-between flex   transition-all duration-700 ease-in-out max-sm:mx-9 md:px-16  lg:px-20'>
         <div className="l-c">
-          <div className="logo flex gap-x-4">
-          <Link to='/' >  <img src={logo} alt=""  className="w-auto my-auto max-sm:h-12 md:h-12 lg:h-14 max-sm:my-auto "/> 
+          <div className="logo flex max-md:gap-x-2 gap-x-4">
+          <Link to='/' >  <img src={logo} alt=""  className="w-auto my-auto max-sm:h-10 md:h-12 lg:h-14 max-sm:my-auto "/> 
           </Link>
-          <div className={`${isSticky ? 'text-[#ce6ad0]':'text-white'} max-md:hidden  `}>
-           <p className=' font-roboto-serif pt-2  my-auto  font-semibold  text-xl' >Web Vortex <br /> </p>
-           <p className="text-base text-[#de87df] font-roboto-serif -mt-1 ">Solutions </p>
+          <div className={`${isSticky ? 'text-[#ce6ad0]':'text-white'}   `}>
+           <Link to='/' ><p className=' font-roboto-serif pt-2 max-md:pt-0  my-auto  font-semibold max-sm:text-lg text-xl' >Web Vortex <br /> </p>
+           <p className="text-base text-[#de87df] font-roboto-serif -mt-1 max-sm:text-sm ">Solutions </p> </Link>
            </div>
           </div>
 {/*  */}
@@ -108,15 +108,23 @@ function Header() {
           
           <p className={`text-base font-roboto  font-semibold hover:text-[#ce6ad0]  hover:underline-offset-4 hover:underline text-[#090B4F] tracking-wide ${isSticky ? ' ':' text-[#fff]'}  ${location.pathname === '/career' ? 'text-[#ce6ad0] underline-offset-4 underline ' : ''}`}><Link to='/career'>CAREERS</Link></p>
           <div className="icn md:h-14 md:w-14 md:pt-1 cursor-pointer relative group">
-            <a href={tellcal} className="relative">
+            <a href={tellcal} className="relative flex items-center justify-center">
+              {/* Call Icon */}
               <MdWifiCalling3
-                className={`p-2 shadow-lg drop-shadow-lg mg rounded-full transition-all duration-300 ease-in-out
-                  h-12 w-12 bg-[#b857c7] text-white 
-                  group-hover:bg-[#35359d]  group-hover:ring-4 group-hover:ring-[#b857c7] group-hover:ring-opacity-50`}
+                className="p-2 shadow-lg drop-shadow-lg rounded-full transition-all duration-300 ease-in-out
+                h-12 w-12 bg-[#b857c7] text-white relative group-hover:hidden"
               />
-              <span className="absolute inset-0 doted flex items-center justify-center animate-pulse-circle"></span>
+
+              {/* WiFi Signal Animation */}
+              <div className="wifi-effect"></div>
+              <img 
+                src={callGif} 
+                alt="Call Animation" 
+                className="relative p-1 shadow-lg drop-shadow-lg bg-[#b857c7] text-white rounded-full h-12 w-12 hidden group-hover:block"
+              />
             </a>
           </div>
+
 
 
           <div className="bt flex w-56 cursor-pointer  h-14 border-2 hover:border-none hover:drop-shadow-lg hover:bg-[#ce6ad0] hover:animate-shake  border-white bg-[#3434A1] drop-shadow-lg   rounded-[40px]">
